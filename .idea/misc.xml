@@ -31,6 +31,7 @@
         <entry key="app/src/main/res/drawable-night/quran_list.xml" value="0.1905" />
         <entry key="app/src/main/res/drawable-v21/app_widget_background.xml" value="0.18" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.18" />
+        <entry key="app/src/main/res/drawable/background_gradient_primary_clear.xml" value="0.2025" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.16875" />
         <entry key="app/src/main/res/drawable/circle_black_alpha_30.xml" value="0.2984375" />
         <entry key="app/src/main/res/drawable/circle_border_accent.xml" value="0.181" />
@@ -44,8 +45,10 @@
         <entry key="app/src/main/res/drawable/circle_yellow50.xml" value="0.15520833333333334" />
         <entry key="app/src/main/res/drawable/gradient.xml" value="0.154" />
         <entry key="app/src/main/res/drawable/ic_access_time_filled.xml" value="0.2984375" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.309" />
         <entry key="app/src/main/res/drawable/ic_agenda.xml" value="0.3765" />
         <entry key="app/src/main/res/drawable/ic_align_center.xml" value="0.2325" />
+        <entry key="app/src/main/res/drawable/ic_arrow_drop_down.xml" value="0.2025" />
         <entry key="app/src/main/res/drawable/ic_asr_primary.xml" value="0.2984375" />
         <entry key="app/src/main/res/drawable/ic_attachment.xml" value="0.2984375" />
         <entry key="app/src/main/res/drawable/ic_back.xml" value="0.2984375" />
@@ -82,11 +85,13 @@
         <entry key="app/src/main/res/drawable/ic_count.xml" value="0.222" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1796875" />
         <entry key="app/src/main/res/drawable/ic_dhuhr_primary.xml" value="0.2828125" />
+        <entry key="app/src/main/res/drawable/ic_double_down.xml" value="0.2025" />
         <entry key="app/src/main/res/drawable/ic_dzikir.xml" value="0.188" />
         <entry key="app/src/main/res/drawable/ic_dzikir_placeholder.xml" value="0.353" />
         <entry key="app/src/main/res/drawable/ic_dzikir_primary.xml" value="0.2984375" />
         <entry key="app/src/main/res/drawable/ic_dzikir_white.xml" value="0.2828125" />
         <entry key="app/src/main/res/drawable/ic_edit.xml" value="0.2125" />
+        <entry key="app/src/main/res/drawable/ic_edit_note.xml" value="0.2025" />
         <entry key="app/src/main/res/drawable/ic_fajr_primary.xml" value="0.236" />
         <entry key="app/src/main/res/drawable/ic_folder.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_footer.xml" value="0.1485" />
@@ -107,12 +112,16 @@
         <entry key="app/src/main/res/drawable/ic_link.xml" value="0.1805" />
         <entry key="app/src/main/res/drawable/ic_list.xml" value="0.3765" />
         <entry key="app/src/main/res/drawable/ic_maghrib_primary.xml" value="0.236" />
+        <entry key="app/src/main/res/drawable/ic_menu.xml" value="0.2025" />
         <entry key="app/src/main/res/drawable/ic_menu_book.xml" value="0.2984375" />
+        <entry key="app/src/main/res/drawable/ic_more_vert.xml" value="0.2025" />
         <entry key="app/src/main/res/drawable/ic_mosque.xml" value="0.1545" />
+        <entry key="app/src/main/res/drawable/ic_note.xml" value="0.2025" />
         <entry key="app/src/main/res/drawable/ic_notes.xml" value="0.3615" />
         <entry key="app/src/main/res/drawable/ic_notification.xml" value="0.222" />
         <entry key="app/src/main/res/drawable/ic_notifications.xml" value="0.25" />
         <entry key="app/src/main/res/drawable/ic_prayer.xml" value="0.188" />
+        <entry key="app/src/main/res/drawable/ic_publish.xml" value="0.2025" />
         <entry key="app/src/main/res/drawable/ic_qibla.xml" value="0.3765625" />
         <entry key="app/src/main/res/drawable/ic_qiblafinder_withgoogle.xml" value="1.0476716483763342" />
         <entry key="app/src/main/res/drawable/ic_qiblafinder_withgoogle__1_.xml" value="0.3765625" />
@@ -135,7 +144,7 @@
         <entry key="app/src/main/res/drawable/ic_subract.xml" value="0.1955" />
         <entry key="app/src/main/res/drawable/ic_subtract.xml" value="0.1935" />
         <entry key="app/src/main/res/drawable/ic_subtract2.xml" value="0.1955" />
-        <entry key="app/src/main/res/drawable/ic_subtract_2.xml" value="0.188" />
+        <entry key="app/src/main/res/drawable/ic_subtract_2.xml" value="0.40143383789062503" />
         <entry key="app/src/main/res/drawable/ic_subtract_3.xml" value="0.2495" />
         <entry key="app/src/main/res/drawable/ic_surah_frame.xml" value="1.9513124408003801" />
         <entry key="app/src/main/res/drawable/ic_timer_filled.xml" value="0.3615" />
