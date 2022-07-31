@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/mayburger/dzikirqu-android/blob/master/app/src/main/res/drawable/ic_logo_144.png?raw=true" alt='Quran for Android logo'/>
+<img src="https://github.com/mayburger/dzikirqu-android/blob/master/app/src/main/res/drawable/ic_logo_144_circle.png?raw=true" alt='Quran for Android logo'/>
 
 # DzikirQu
 [![Downloads](https://PlayBadges.pavi2410.me/badge/downloads?id=com.wagyufari.dzikirqu)](https://play.google.com/store/apps/details?id=com.wagyufari.dzikirqu)
@@ -17,4 +17,6 @@ Is an All in One app for Muslims with lots of features such as Prayer Times & Ad
 - [Quran.com](https://github.com/quran/quran.com-images)
 - [Praytimes.org](http://praytimes.org/)
 - [Sunnah.com](https://sunnah.com/)
+- [Tanzil.net](https://tanzil.net/)
+- [Quranwbw.com](https://quranwbw.com/)
 - Buku Do'a dan Wirid oleh Ustadz Yazid bin Abdul Qadir Jawas *hafidzahullahuta'ala*
