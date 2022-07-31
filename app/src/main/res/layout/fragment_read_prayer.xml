@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.wagyufari.dzikirqu.ui.read.prayer.ReadPrayerViewModel" />
+
+        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+
+        <import type="android.view.View" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <androidx.compose.ui.platform.ComposeView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--        <LinearLayout-->
+        <!--            android:id="@+id/toolbar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="?attr/colorPrimary"-->
+        <!--            android:gravity="center_vertical"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:padding="16dp"-->
+        <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="24dp"-->
+        <!--                android:layout_height="24dp"-->
+        <!--                android:onClick="@{()->viewModel.navigator.finish()}"-->
+        <!--                android:src="@drawable/ic_back"-->
+        <!--                app:tint="@color/white" />-->
+
+        <!--            <LinearLayout-->
+        <!--                android:id="@+id/name"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:orientation="vertical"-->
+        <!--                android:paddingLeft="32dp"-->
+        <!--                android:paddingRight="32dp">-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="@{viewModel.bookName}"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textColor="@color/white"-->
+        <!--                    android:textSize="16sp"-->
+        <!--                    android:fontFamily="@font/bold"-->
+        <!--                    tools:text="Buku Do'a" />-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="@{viewModel.prayerName}"-->
+        <!--                    android:textAlignment="center"-->
+        <!--                    android:textColor="@color/white"-->
+        <!--                    android:textSize="12sp"-->
+        <!--                    android:fontFamily="@font/regular"-->
+        <!--                    tools:text="Dzikir Pagi" />-->
+
+        <!--            </LinearLayout>-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="24dp"-->
+        <!--                android:layout_height="24dp"-->
+        <!--                android:onClick="@{()->viewModel.onClickSettings()}"-->
+        <!--                android:src="@drawable/ic_settings_white" />-->
+
+        <!--        </LinearLayout>-->
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/neutral_50"
+            android:elevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:tabIndicatorColor="?attr/colorPrimary"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="auto"
+            app:tabSelectedTextColor="@color/textPrimary"
+            app:tabTextColor="@color/textTertiary" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/neutral_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tab"
+            app:readPrayerData="@{viewModel.prayerData}" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/recite"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="?attr/colorPrimary"-->
+        <!--            android:foreground="?selectableItemBackground"-->
+        <!--            android:paddingLeft="32dp"-->
+        <!--            android:paddingTop="16dp"-->
+        <!--            android:paddingRight="32dp"-->
+        <!--            android:paddingBottom="16dp"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:translationY="150dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            tools:text="Recite 3x" />-->
+
+        <LinearLayout
+            android:id="@+id/bottomContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/recite"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/colorPrimary"
+                android:elevation="2dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:maxLines="2"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/pin"
+                tools:text="Recite 3x" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/neutral_0"
+                app:elevation="2dp"
+                app:fabCustomSize="48dp"
+                app:srcCompat="@drawable/ic_star"
+                app:tint="@color/colorPrimary" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/neutral_0"
+                app:elevation="2dp"
+                app:fabCustomSize="48dp"
+                app:srcCompat="@drawable/ic_bookmarks"
+                app:tint="@color/colorPrimary" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

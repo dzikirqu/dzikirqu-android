@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "196229059680",
+    "firebase_url": "https://dzikirqu-149a3-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dzikirqu-149a3",
+    "storage_bucket": "dzikirqu-149a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196229059680:android:d8d81d1ca02b97d4175f05",
+        "android_client_info": {
+          "package_name": "com.wagyufari.dzikirqu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196229059680-edndesqakv6mjml46fsu4credg4hre9i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wagyufari.dzikirqu",
+            "certificate_hash": "5e24be43c1ce1d91cfacf10e29bfc56d6f45c3c0"
+          }
+        },
+        {
+          "client_id": "196229059680-mu64uc2lfm8rh91lto7f9ka6nqsiodgb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wagyufari.dzikirqu",
+            "certificate_hash": "55e7df84a1e5f9a8d907a6e3f45bd6ea980a87f1"
+          }
+        },
+        {
+          "client_id": "196229059680-s3285vd19tkv153i8j51qj167pnpjgh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz66Be5xJrOtUk3-P7QBQpIUvdt3naMmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196229059680-s3285vd19tkv153i8j51qj167pnpjgh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196229059680:android:24828a60609774cd175f05",
+        "android_client_info": {
+          "package_name": "com.wagyufari.dzikirqu.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196229059680-9ehl3bkdtr79kh1pa6qgkskgs2rr6i4q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wagyufari.dzikirqu.dev",
+            "certificate_hash": "55e7df84a1e5f9a8d907a6e3f45bd6ea980a87f1"
+          }
+        },
+        {
+          "client_id": "196229059680-tm387bag628uriqdv1u1vu1ftua4kggj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wagyufari.dzikirqu.dev",
+            "certificate_hash": "5e24be43c1ce1d91cfacf10e29bfc56d6f45c3c0"
+          }
+        },
+        {
+          "client_id": "196229059680-s3285vd19tkv153i8j51qj167pnpjgh4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz66Be5xJrOtUk3-P7QBQpIUvdt3naMmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196229059680-s3285vd19tkv153i8j51qj167pnpjgh4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

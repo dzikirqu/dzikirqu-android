@@ -1,0 +1,1742 @@
+[
+    {
+        "_id": "605def04a7f8a1731181477c",
+        "id": "605def04a7f8a1731181477c",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Mohon Kesabaran Dan Diwafatkan Dalam Keadaan Muslim",
+                "language": "bahasa"
+            },
+            {
+                "text": "Protection and Righteous Death",
+                "language": "english"
+            }
+        ],
+        "order": 20
+    },
+    {
+        "_id": "605def04a7f8a17311814777",
+        "id": "605def04a7f8a17311814777",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Agar Hati Ditetapkan Dalam Hidayah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Doa Agar Hati Ditetapkan Dalam Hidayah",
+                "language": "english"
+            }
+        ],
+        "order": 15
+    },
+    {
+        "_id": "605df040a7f8a17311814786",
+        "id": "605df040a7f8a17311814786",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Bagi Orang Yang Mengenakan pakaian Baru",
+                "language": "bahasa"
+            },
+            {
+                "text": "To someone wearing a new garment",
+                "language": "english"
+            }
+        ],
+        "order": 13
+    },
+    {
+        "_id": "605df040a7f8a17311814789",
+        "id": "605df040a7f8a17311814789",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Keluar Dari WC",
+                "language": "bahasa"
+            },
+            {
+                "text": "After leaving the bathroom",
+                "language": "english"
+            }
+        ],
+        "order": 8
+    },
+    {
+        "_id": "605df040a7f8a1731181478a",
+        "id": "605df040a7f8a1731181478a",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Bacaan Sebelum Wudhu'",
+                "language": "bahasa"
+            },
+            {
+                "text": "When starting ablution",
+                "language": "english"
+            }
+        ],
+        "order": 9
+    },
+    {
+        "_id": "605def78a7f8a1731181477f",
+        "id": "605def78a7f8a1731181477f",
+        "book_id": "605debabb3d5e20e3b54ea7e",
+        "title": [
+            {
+                "text": "Dzikir Sore",
+                "language": "bahasa"
+            },
+            {
+                "text": "Evening Dzikir",
+                "language": "english"
+            }
+        ],
+        "order": 2
+    },
+    {
+        "_id": "605def04a7f8a1731181477d",
+        "id": "605def04a7f8a1731181477d",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Agar Dibimbing Ke Jalan Yang Lurus",
+                "language": "bahasa"
+            },
+            {
+                "text": "Guidance to the right path",
+                "language": "english"
+            }
+        ],
+        "order": 21
+    },
+    {
+        "_id": "605def04a7f8a1731181476e",
+        "id": "605def04a7f8a1731181476e",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Berlindung Dari Orang-Orang Zhalim",
+                "language": "bahasa"
+            },
+            {
+                "text": "Protection from the Zhalim",
+                "language": "english"
+            }
+        ],
+        "order": 6
+    },
+    {
+        "_id": "605df040a7f8a17311814787",
+        "id": "605df040a7f8a17311814787",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Bacaan Ketika Meletakkan Pakaian",
+                "language": "bahasa"
+            },
+            {
+                "text": "Before Undressing",
+                "language": "english"
+            }
+        ],
+        "order": 14
+    },
+    {
+        "_id": "605df040a7f8a17311814794",
+        "id": "605df040a7f8a17311814794",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Isftitah Saat Tahajjud",
+                "language": "bahasa"
+            },
+            {
+                "text": "Iftitah Dua during Night Prayer (Tahajjud)",
+                "language": "english"
+            }
+        ],
+        "order": 21
+    },
+    {
+        "_id": "605df040a7f8a17311814798",
+        "id": "605df040a7f8a17311814798",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Sujud",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua during sujud",
+                "language": "english"
+            }
+        ],
+        "order": 24
+    },
+    {
+        "_id": "605def04a7f8a17311814771",
+        "id": "605def04a7f8a17311814771",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Berlindung Dari Fitnah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Protection from fitnah",
+                "language": "english"
+            }
+        ],
+        "order": 9
+    },
+    {
+        "_id": "605def04a7f8a17311814778",
+        "id": "605def04a7f8a17311814778",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Agar Dilapangkan Hati Dan Dimudahkan Dalam Segala Urusan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Ease all task",
+                "language": "english"
+            }
+        ],
+        "order": 16
+    },
+    {
+        "_id": "605df040a7f8a1731181479b",
+        "id": "605df040a7f8a1731181479b",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Tasyahud",
+                "language": "bahasa"
+            },
+            {
+                "text": "The Tashahhud",
+                "language": "english"
+            }
+        ],
+        "order": 27
+    },
+    {
+        "_id": "605df040a7f8a1731181479c",
+        "id": "605df040a7f8a1731181479c",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Shalawat Setelah Tasyahud",
+                "language": "bahasa"
+            },
+            {
+                "text": "Shalawat after Tashahhud",
+                "language": "english"
+            }
+        ],
+        "order": 28
+    },
+    {
+        "_id": "605df040a7f8a1731181478c",
+        "id": "605df040a7f8a1731181478c",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Bacaan Ketika Keluar Rumah",
+                "language": "bahasa"
+            },
+            {
+                "text": "When leaving the home",
+                "language": "english"
+            }
+        ],
+        "order": 15
+    },
+    {
+        "_id": "605df040a7f8a1731181479a",
+        "id": "605df040a7f8a1731181479a",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Sujud Tilawah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for Sujud Al-Tilawah",
+                "language": "english"
+            }
+        ],
+        "order": 26
+    },
+    {
+        "_id": "605df040a7f8a173118147a0",
+        "id": "605df040a7f8a173118147a0",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Qunut Witir",
+                "language": "bahasa"
+            },
+            {
+                "text": "Qunoot Al-Witr (dua qunoot)",
+                "language": "english"
+            }
+        ],
+        "order": 31
+    },
+    {
+        "_id": "605def04a7f8a17311814769",
+        "id": "605def04a7f8a17311814769",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Memohon Ampunan Dan Rahmat Allah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Asking For Allah's Forgiveness",
+                "language": "english"
+            }
+        ],
+        "order": 1
+    },
+    {
+        "_id": "605def04a7f8a1731181477b",
+        "id": "605def04a7f8a1731181477b",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Meminta Pertolongan Dan Perlindungan Dari Orang Kafir",
+                "language": "bahasa"
+            },
+            {
+                "text": "Protection from the disbelievers",
+                "language": "english"
+            }
+        ],
+        "order": 19
+    },
+    {
+        "_id": "605df040a7f8a17311814785",
+        "id": "605df040a7f8a17311814785",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Ketika Mengenakan Pakaian Baru",
+                "language": "bahasa"
+            },
+            {
+                "text": "When wearing a new garment",
+                "language": "english"
+            }
+        ],
+        "order": 12
+    },
+    {
+        "_id": "605df040a7f8a17311814799",
+        "id": "605df040a7f8a17311814799",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Duduk Antara Dua Sujud",
+                "language": "bahasa"
+            },
+            {
+                "text": "Between the two sujud",
+                "language": "english"
+            }
+        ],
+        "order": 25
+    },
+    {
+        "_id": "605df040a7f8a1731181479f",
+        "id": "605df040a7f8a1731181479f",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Apabila Ada Yang Menakutkan Dalam Tidur",
+                "language": "bahasa"
+            },
+            {
+                "text": "Upon experiencing unrest, fear, apprehensiveness and the like during sleep",
+                "language": "english"
+            }
+        ],
+        "order": 3
+    },
+    {
+        "_id": "605def04a7f8a1731181476f",
+        "id": "605def04a7f8a1731181476f",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Agar Diterimanya Amal Ibadah Dan Taubat",
+                "language": "bahasa"
+            },
+            {
+                "text": "Acceptance of deeds and taubah",
+                "language": "english"
+            }
+        ],
+        "order": 7
+    },
+    {
+        "_id": "605def04a7f8a17311814772",
+        "id": "605def04a7f8a17311814772",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Agar Ditambahkan Ilmu",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for knowledge",
+                "language": "english"
+            }
+        ],
+        "order": 10
+    },
+    {
+        "_id": "605df040a7f8a17311814793",
+        "id": "605df040a7f8a17311814793",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Isftitah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Iftitah Dua",
+                "language": "english"
+            }
+        ],
+        "order": 21
+    },
+    {
+        "_id": "605df040a7f8a17311814795",
+        "id": "605df040a7f8a17311814795",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Ruku'",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua during ruku'",
+                "language": "english"
+            }
+        ],
+        "order": 22
+    },
+    {
+        "_id": "605def04a7f8a1731181476b",
+        "id": "605def04a7f8a1731181476b",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Agar Diberikan Keturunan Yang Shalih",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for a righteous(believing) descendants",
+                "language": "english"
+            }
+        ],
+        "order": 3
+    },
+    {
+        "_id": "605def78a7f8a17311814780",
+        "id": "605def78a7f8a17311814780",
+        "book_id": "605debabb3d5e20e3b54ea7e",
+        "title": [
+            {
+                "text": "Dzikir Pagi",
+                "language": "bahasa"
+            },
+            {
+                "text": "Morning Dzikir",
+                "language": "english"
+            }
+        ],
+        "order": 1
+    },
+    {
+        "_id": "605def78a7f8a17311814781",
+        "id": "605def78a7f8a17311814781",
+        "book_id": "605debabb3d5e20e3b54ea7e",
+        "title": [
+            {
+                "text": "Dzikir Setelah Shalat",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dzikir After Shalah",
+                "language": "english"
+            }
+        ],
+        "order": 3
+    },
+    {
+        "_id": "605df040a7f8a17311814783",
+        "id": "605df040a7f8a17311814783",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Bacaan Ketika Bangun Dari Tidur",
+                "language": "bahasa"
+            },
+            {
+                "text": "When Waking Up",
+                "language": "english"
+            }
+        ],
+        "order": 6
+    },
+    {
+        "_id": "605df040a7f8a1731181478b",
+        "id": "605df040a7f8a1731181478b",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Bacaan Setelah Wudhu'",
+                "language": "bahasa"
+            },
+            {
+                "text": "Upon completing the ablution",
+                "language": "english"
+            }
+        ],
+        "order": 10
+    },
+    {
+        "_id": "605df040a7f8a1731181478e",
+        "id": "605df040a7f8a1731181478e",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Pergi Ke Masjid",
+                "language": "bahasa"
+            },
+            {
+                "text": "When going to the Masjid",
+                "language": "english"
+            }
+        ],
+        "order": 17
+    },
+    {
+        "_id": "605df040a7f8a17311814790",
+        "id": "605df040a7f8a17311814790",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Keluar Dari Masjid",
+                "language": "bahasa"
+            },
+            {
+                "text": "Upon leaving the masjid",
+                "language": "english"
+            }
+        ],
+        "order": 19
+    },
+    {
+        "_id": "605def78a7f8a17311814782",
+        "id": "605def78a7f8a17311814782",
+        "book_id": "605debabb3d5e20e3b54ea7e",
+        "title": [
+            {
+                "text": "Dzikir Sebelum Tidur",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dzikir Before Sleep",
+                "language": "english"
+            }
+        ],
+        "order": 4
+    },
+    {
+        "_id": "605df040a7f8a17311814796",
+        "id": "605df040a7f8a17311814796",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Bangun Dari Ruku'",
+                "language": "bahasa"
+            },
+            {
+                "text": "Upon rising from ruku'",
+                "language": "english"
+            }
+        ],
+        "order": 23
+    },
+    {
+        "_id": "605def04a7f8a17311814770",
+        "id": "605def04a7f8a17311814770",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Bertawakkal Kepada Allah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Putting trust in Allah",
+                "language": "english"
+            }
+        ],
+        "order": 8
+    },
+    {
+        "_id": "605def04a7f8a17311814774",
+        "id": "605def04a7f8a17311814774",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Memohon Kebaikan Dunia Dan Akhirat",
+                "language": "bahasa"
+            },
+            {
+                "text": "Goodness in Dunya and Hereafter",
+                "language": "english"
+            }
+        ],
+        "order": 12
+    },
+    {
+        "_id": "605def04a7f8a1731181476d",
+        "id": "605def04a7f8a1731181476d",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Memohon Ketetapan Bagi Diri Sendiri Dan Keluarga Agar Selalu Mendirikan Shalat",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for self and family to always establishes prayer",
+                "language": "english"
+            }
+        ],
+        "order": 5
+    },
+    {
+        "_id": "605df040a7f8a17311814788",
+        "id": "605df040a7f8a17311814788",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Masuk WC",
+                "language": "bahasa"
+            },
+            {
+                "text": "Before entering the bathroom",
+                "language": "english"
+            }
+        ],
+        "order": 7
+    },
+    {
+        "_id": "605df040a7f8a17311814791",
+        "id": "605df040a7f8a17311814791",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Bacaan Ketika Mendengarkan Adzan",
+                "language": "bahasa"
+            },
+            {
+                "text": "During the adzan",
+                "language": "english"
+            }
+        ],
+        "order": 20
+    },
+    {
+        "_id": "605def04a7f8a1731181476a",
+        "id": "605def04a7f8a1731181476a",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Agar Termasuk Golongan Orang-Orang Beriman",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua to be included among the faithful believers",
+                "language": "english"
+            }
+        ],
+        "order": 2
+    },
+    {
+        "_id": "605df040a7f8a17311814784",
+        "id": "605df040a7f8a17311814784",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Ketika Mengenakan Pakaian",
+                "language": "bahasa"
+            },
+            {
+                "text": "When wearing a garment",
+                "language": "english"
+            }
+        ],
+        "order": 11
+    },
+    {
+        "_id": "605df040a7f8a1731181479d",
+        "id": "605df040a7f8a1731181479d",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Setelah Tasyahud Akhir Sebelum Salam",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua said after the last tashahhud and before salam",
+                "language": "english"
+            }
+        ],
+        "order": 29
+    },
+    {
+        "_id": "605def04a7f8a1731181476c",
+        "id": "605def04a7f8a1731181476c",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Memohonkan Ampunan Bagi Kedua Orang Tua Dan Bagi Kaum Mukminin",
+                "language": "bahasa"
+            },
+            {
+                "text": "Asking for Allah's forgiveness for our parents and believers",
+                "language": "english"
+            }
+        ],
+        "order": 4
+    },
+    {
+        "_id": "605def04a7f8a17311814773",
+        "id": "605def04a7f8a17311814773",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Agar Cahaya Sendiri Disempurnakan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Perfecting our light",
+                "language": "english"
+            }
+        ],
+        "order": 11
+    },
+    {
+        "_id": "605def04a7f8a17311814775",
+        "id": "605def04a7f8a17311814775",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Agar Dijadikan Hamba Yang Bersyukur",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua to be a grateful servant",
+                "language": "english"
+            }
+        ],
+        "order": 13
+    },
+    {
+        "_id": "605def04a7f8a17311814779",
+        "id": "605def04a7f8a17311814779",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Doa Untuk Keamanan Negeri Dan Berlindung Dari Syirik",
+                "language": "bahasa"
+            },
+            {
+                "text": "Protection for the city and from shikr",
+                "language": "english"
+            }
+        ],
+        "order": 17
+    },
+    {
+        "_id": "605df040a7f8a1731181478f",
+        "id": "605df040a7f8a1731181478f",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Masuk Masjid",
+                "language": "bahasa"
+            },
+            {
+                "text": "Upon entering the masjid",
+                "language": "english"
+            }
+        ],
+        "order": 18
+    },
+    {
+        "_id": "605df040a7f8a17311814792",
+        "id": "605df040a7f8a17311814792",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Setelah Mendengarkan Adzan",
+                "language": "bahasa"
+            },
+            {
+                "text": "After the adzan",
+                "language": "english"
+            }
+        ],
+        "order": 20
+    },
+    {
+        "_id": "605def04a7f8a17311814776",
+        "id": "605def04a7f8a17311814776",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Berlindung Dari Syaitan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Protection from Shaithan",
+                "language": "english"
+            }
+        ],
+        "order": 14
+    },
+    {
+        "_id": "605def04a7f8a1731181477a",
+        "id": "605def04a7f8a1731181477a",
+        "book_id": "605debabb3d5e20e3b54ea7d",
+        "title": [
+            {
+                "text": "Berlindung Dari Api Neraka",
+                "language": "bahasa"
+            },
+            {
+                "text": "Protection from Hellfire",
+                "language": "english"
+            }
+        ],
+        "order": 18
+    },
+    {
+        "_id": "605df040a7f8a1731181478d",
+        "id": "605df040a7f8a1731181478d",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Bacaan Apabila Masuk Rumah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Upon entering the home",
+                "language": "english"
+            }
+        ],
+        "order": 16
+    },
+    {
+        "_id": "605df040a7f8a1731181479e",
+        "id": "605df040a7f8a1731181479e",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Jika Terbangun Pada Malam Hari",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when waking up at night",
+                "language": "english"
+            }
+        ],
+        "order": 1
+    },
+    {
+        "_id": "616980c47f915e1aad8384b7",
+        "id": "616980c47f915e1aad8384b7",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Shalat Istikharah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Supplication for seeking guidance in forming a decision or choosing the proper course...etc (Al-Istikharah)",
+                "language": "english"
+            }
+        ],
+        "order": 33
+    },
+    {
+        "_id": "616980c47f915e1aad8384b8",
+        "id": "616980c47f915e1aad8384b8",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Kepada Pengantin",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua said to the newlywed",
+                "language": "english"
+            }
+        ],
+        "order": 34
+    },
+    {
+        "_id": "616980c47f915e1aad8384b9",
+        "id": "616980c47f915e1aad8384b9",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Pengantin Pria Kepada istrinya",
+                "language": "bahasa"
+            },
+            {
+                "text": "The groom's supplication for the bride",
+                "language": "english"
+            }
+        ],
+        "order": 35
+    },
+    {
+        "_id": "616980c47f915e1aad8384ba",
+        "id": "616980c47f915e1aad8384ba",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Do'a Sebelum Jima' (Bersetubuh)",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua before sexual intercourse",
+                "language": "english"
+            }
+        ],
+        "order": 36
+    },
+    {
+        "_id": "616980c47f915e1aad8384bb",
+        "id": "616980c47f915e1aad8384bb",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Sebelum Makan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua before eating",
+                "language": "english"
+            }
+        ],
+        "order": 37
+    },
+    {
+        "_id": "616980c47f915e1aad8384bc",
+        "id": "616980c47f915e1aad8384bc",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Sesudah Makan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua after eating",
+                "language": "english"
+            }
+        ],
+        "order": 38
+    },
+    {
+        "_id": "616980c47f915e1aad8384bd",
+        "id": "616980c47f915e1aad8384bd",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Untuk Orang Yang Memberi Makan Dan Minum",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for the person who gives you food and drinks",
+                "language": "english"
+            }
+        ],
+        "order": 39
+    },
+    {
+        "_id": "616980c47f915e1aad8384be",
+        "id": "616980c47f915e1aad8384be",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Tamu Kepada Tuan Rumah Yang Menghidangkan Makanan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for guest to the host who serves food",
+                "language": "english"
+            }
+        ],
+        "order": 40
+    },
+    {
+        "_id": "616980c47f915e1aad8384bf",
+        "id": "616980c47f915e1aad8384bf",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Ketika Berbuka Puasa",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when breaking fast",
+                "language": "english"
+            }
+        ],
+        "order": 41
+    },
+    {
+        "_id": "616980c47f915e1aad8384c0",
+        "id": "616980c47f915e1aad8384c0",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Ketika Berbuka Puasa Di Rumah Orang Lain",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when breaking fast in someone's home",
+                "language": "english"
+            }
+        ],
+        "order": 42
+    },
+    {
+        "_id": "616980c47f915e1aad8384c1",
+        "id": "616980c47f915e1aad8384c1",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa untuk seseorang yang melakukan kebaikan kepadamu",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for someone who did something good to you",
+                "language": "english"
+            }
+        ],
+        "order": 43
+    },
+    {
+        "_id": "616980c47f915e1aad8384c2",
+        "id": "616980c47f915e1aad8384c2",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Musafir Kepada Orang Yang Dia Tinggalkan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for Musafir (traveller) to the person they're leaving",
+                "language": "english"
+            }
+        ],
+        "order": 44
+    },
+    {
+        "_id": "616980c47f915e1aad8384c3",
+        "id": "616980c47f915e1aad8384c3",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Orang Yang Mukim Kepada Orang Yang Akan Bepergian (Musafir)",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for the Musafir (traveller)",
+                "language": "english"
+            }
+        ],
+        "order": 45
+    },
+    {
+        "_id": "616980c47f915e1aad8384c4",
+        "id": "616980c47f915e1aad8384c4",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Naik Kendaraan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when mounting an animal or any means of transport",
+                "language": "english"
+            }
+        ],
+        "order": 46
+    },
+    {
+        "_id": "616980c47f915e1aad8384c5",
+        "id": "616980c47f915e1aad8384c5",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Bepergian",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua before travelling",
+                "language": "english"
+            }
+        ],
+        "order": 47
+    },
+    {
+        "_id": "616980c47f915e1aad8384c6",
+        "id": "616980c47f915e1aad8384c6",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Bertakbir Jika Berjalan Mendaki Dan Bertasbih Jika Menurun Bagi Musafir",
+                "language": "bahasa"
+            },
+            {
+                "text": "Takbeer when ascending and Tasbih when descending when travelling",
+                "language": "english"
+            }
+        ],
+        "order": 48
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea48",
+        "id": "616a79aa9787c42fc49cea48",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Musafir Menjelang Subuh",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua of the musafir (traveller) as dawn approaches",
+                "language": "english"
+            }
+        ],
+        "order": 48
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea49",
+        "id": "616a79aa9787c42fc49cea49",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Ketika Singgah Di Suatu Tempat Dalam Safar Atau Selainnya",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when stopping or lodging somewhere",
+                "language": "english"
+            }
+        ],
+        "order": 49
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea4a",
+        "id": "616a79aa9787c42fc49cea4a",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa masuk desa atau kota",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua upon entering town or village, etc",
+                "language": "english"
+            }
+        ],
+        "order": 50
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea4b",
+        "id": "616a79aa9787c42fc49cea4b",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa Masuk Pasar",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when entering the market",
+                "language": "english"
+            }
+        ],
+        "order": 51
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea4c",
+        "id": "616a79aa9787c42fc49cea4c",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa apabila angin bertiup dengan kencang",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua during windstorm",
+                "language": "english"
+            }
+        ],
+        "order": 52
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea4d",
+        "id": "616a79aa9787c42fc49cea4d",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa meminta hujan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for rain",
+                "language": "english"
+            }
+        ],
+        "order": 53
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea4e",
+        "id": "616a79aa9787c42fc49cea4e",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa ketika mendengar Halilintar",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when hearing thunder",
+                "language": "english"
+            }
+        ],
+        "order": 54
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea4f",
+        "id": "616a79aa9787c42fc49cea4f",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa apabila turun Hujan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when it rains",
+                "language": "english"
+            }
+        ],
+        "order": 55
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea50",
+        "id": "616a79aa9787c42fc49cea50",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa setelah hujan turun",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua after rainfall",
+                "language": "english"
+            }
+        ],
+        "order": 56
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea51",
+        "id": "616a79aa9787c42fc49cea51",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa agar hujan segera berhenti atau dialihkan ke tempat lain",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua asking for the rain to stop or redirected to another place",
+                "language": "english"
+            }
+        ],
+        "order": 57
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea52",
+        "id": "616a79aa9787c42fc49cea52",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa melihat hilal sebagai pertanda awal bulan Hijriyyah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when sighting crescent moon (beginning of a Hijri month)",
+                "language": "english"
+            }
+        ],
+        "order": 58
+    },
+    {
+        "_id": "616a79aa9787c42fc49cea53",
+        "id": "616a79aa9787c42fc49cea53",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa ketika melihat putik buah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua said upon seeing the early or premature fruit",
+                "language": "english"
+            }
+        ],
+        "order": 59
+    },
+    {
+        "_id": "616a82089787c42fc49ceb06",
+        "id": "616a82089787c42fc49ceb06",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Bacaan ketika tertimpa sesuatu yang tidak diinginkan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when something undesirable happened",
+                "language": "english"
+            }
+        ],
+        "order": 60
+    },
+    {
+        "_id": "616a82089787c42fc49ceb07",
+        "id": "616a82089787c42fc49ceb07",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa pada waktu melihat orang yang mengalami cobaan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when seeing someone is struggling",
+                "language": "english"
+            }
+        ],
+        "order": 61
+    },
+    {
+        "_id": "616a82089787c42fc49ceb09",
+        "id": "616a82089787c42fc49ceb09",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa orang yang tertimpa musibah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when a disaster happens",
+                "language": "english"
+            }
+        ],
+        "order": 63
+    },
+    {
+        "_id": "616a82089787c42fc49ceb0a",
+        "id": "616a82089787c42fc49ceb0a",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa saat memejamkan mata jenazah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when closing eyes of the deceased",
+                "language": "english"
+            }
+        ],
+        "order": 64
+    },
+    {
+        "_id": "616a82089787c42fc49ceb0b",
+        "id": "616a82089787c42fc49ceb0b",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa shalat jenazah",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for the deceased at the Funeral prayer (Shalat-al-janazah)",
+                "language": "english"
+            }
+        ],
+        "order": 65
+    },
+    {
+        "_id": "616a82089787c42fc49ceb0c",
+        "id": "616a82089787c42fc49ceb0c",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa untuk jenazah anak kecil",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for if the deceased is a child",
+                "language": "english"
+            }
+        ],
+        "order": 66
+    },
+    {
+        "_id": "616a82089787c42fc49ceb0d",
+        "id": "616a82089787c42fc49ceb0d",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa untuk Ta'ziyah (belasungkawa)",
+                "language": "bahasa"
+            },
+            {
+                "text": "Condolences for the family of the deceased",
+                "language": "english"
+            }
+        ],
+        "order": 67
+    },
+    {
+        "_id": "616a82089787c42fc49ceb0e",
+        "id": "616a82089787c42fc49ceb0e",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa tatkala memasukkan jenazah ke liang kubur",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when placing the deceased in the grave",
+                "language": "english"
+            }
+        ],
+        "order": 68
+    },
+    {
+        "_id": "616a82089787c42fc49ceb0f",
+        "id": "616a82089787c42fc49ceb0f",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa setelah jenazah dimakamkan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua after burying the deceased",
+                "language": "english"
+            }
+        ],
+        "order": 69
+    },
+    {
+        "_id": "616a82089787c42fc49ceb10",
+        "id": "616a82089787c42fc49ceb10",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa ketika berziarah kubur",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua when visiting graves",
+                "language": "english"
+            }
+        ],
+        "order": 70
+    },
+    {
+        "_id": "616a82089787c42fc49ceb11",
+        "id": "616a82089787c42fc49ceb11",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa berlindung dari kesengsaraan, kesusahan, dan hilangnya nikmat",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for protection from misery, distress, and loss of pleasure",
+                "language": "english"
+            }
+        ],
+        "order": 71
+    },
+    {
+        "_id": "616a82089787c42fc49ceb12",
+        "id": "616a82089787c42fc49ceb12",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa diselamatkan dari kehinaan dan bencana",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua to be saved from humiliation and disaster",
+                "language": "english"
+            }
+        ],
+        "order": 72
+    },
+    {
+        "_id": "616a82089787c42fc49ceb13",
+        "id": "616a82089787c42fc49ceb13",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa berlindung dari kebinasaan dan kehancuran",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for protection from destruction",
+                "language": "english"
+            }
+        ],
+        "order": 73
+    },
+    {
+        "_id": "616a82089787c42fc49ceb14",
+        "id": "616a82089787c42fc49ceb14",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa berlindung dari fitnah-keburukan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for protection from evil fitnah (slander of evil)",
+                "language": "english"
+            }
+        ],
+        "order": 74
+    },
+    {
+        "_id": "616a82089787c42fc49ceb15",
+        "id": "616a82089787c42fc49ceb15",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Berlindung dari perbuatan buruk",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for protection from bad deeds",
+                "language": "english"
+            }
+        ],
+        "order": 75
+    },
+    {
+        "_id": "616a82089787c42fc49ceb16",
+        "id": "616a82089787c42fc49ceb16",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa memohon perlindungan dari keburukan berbagai penyakit",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for protection from diseases",
+                "language": "english"
+            }
+        ],
+        "order": 76
+    },
+    {
+        "_id": "616a82089787c42fc49ceb17",
+        "id": "616a82089787c42fc49ceb17",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa berlindung dari fitnah Dajjal",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for protection from Dajjal",
+                "language": "english"
+            }
+        ],
+        "order": 77
+    },
+    {
+        "_id": "616a82089787c42fc49ceb18",
+        "id": "616a82089787c42fc49ceb18",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa untuk keselamatan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for safety",
+                "language": "english"
+            }
+        ],
+        "order": 78
+    },
+    {
+        "_id": "616a82089787c42fc49ceb19",
+        "id": "616a82089787c42fc49ceb19",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa mendapatkan kebaikan dunia-akhirat",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for Dunya and Akhirah",
+                "language": "english"
+            }
+        ],
+        "order": 79
+    },
+    {
+        "_id": "616a82089787c42fc49ceb1a",
+        "id": "616a82089787c42fc49ceb1a",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa untuk kebaikan diri",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua for own good",
+                "language": "english"
+            }
+        ],
+        "order": 80
+    },
+    {
+        "_id": "616a82089787c42fc49ceb1b",
+        "id": "616a82089787c42fc49ceb1b",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa mohon diperbaiki urusan dunia dan akhirat",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua to ease the affairs of dunya and akhirah",
+                "language": "english"
+            }
+        ],
+        "order": 81
+    },
+    {
+        "_id": "616a82089787c42fc49ceb1c",
+        "id": "616a82089787c42fc49ceb1c",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa agar diberi kenikmatan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua to ask for goodness",
+                "language": "english"
+            }
+        ],
+        "order": 82
+    },
+    {
+        "_id": "616a82089787c42fc49ceb1d",
+        "id": "616a82089787c42fc49ceb1d",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa mohon keberkahan",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua to ask for blessings",
+                "language": "english"
+            }
+        ],
+        "order": 83
+    },
+    {
+        "_id": "616a82089787c42fc49ceb1e",
+        "id": "616a82089787c42fc49ceb1e",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa agar mendapatkan kemudahan ketika dihisab",
+                "language": "bahasa"
+            },
+            {
+                "text": "Dua to ease in the day of hisab (Day when the deeds are put on the scale)",
+                "language": "english"
+            }
+        ],
+        "order": 84
+    },
+    {
+        "_id": "616a82089787c42fc49ceb1f",
+        "id": "616a82089787c42fc49ceb1f",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Memohon surga serta berlindung dari api Neraka",
+                "language": "bahasa"
+            },
+            {
+                "text": "Asking for Jannah and Protection from Hellfire",
+                "language": "english"
+            }
+        ],
+        "order": 85
+    },
+    {
+        "_id": "616a82089787c42fc49ceb20",
+        "id": "616a82089787c42fc49ceb20",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa dicukupkan rezeki yang halal, qana'ah, dan keberkahan",
+                "language": "bahasa"
+            }
+        ],
+        "order": 86
+    },
+    {
+        "_id": "616a82089787c42fc49ceb21",
+        "id": "616a82089787c42fc49ceb21",
+        "book_id": "605debabb3d5e20e3b54ea7f",
+        "title": [
+            {
+                "text": "Doa memohon diberi ampunan dan kasih sayang",
+                "language": "bahasa"
+            },
+            {
+                "text": "Asking for forgiveness and love",
+                "language": "english"
+            }
+        ],
+        "order": 87
+    }
+]

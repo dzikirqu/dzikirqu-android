@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+
+        <variable
+            name="viewModel"
+            type="com.wagyufari.dzikirqu.ui.onboarding.fragments.viewmodels.OnBoardPraytimeViewModel" />
+
+        <import type="com.wagyufari.dzikirqu.constants.RingType" />
+
+    </data>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="Prayer Time"
+                android:textColor="@color/textPrimary"
+                android:textSize="20sp"
+                app:locale="@{LocaleConstants.PRAYER_TIME}" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/textTertiary"
+                android:textSize="18sp"
+                app:locale="@{LocaleConstants.CHOOSE_YOUR_PRAYER_TIME_ALERT_TYPE}"
+                tools:text="Choose your prefered language" />
+
+
+            <LinearLayout
+                android:id="@+id/fajr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shp_white_8dp"
+                android:backgroundTint="@color/neutral_0"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconFajr"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/color_primary_a20"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_fajr_primary" />
+
+                <TextView
+                    android:id="@+id/titleFajr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bold"
+                    android:text="Fajr"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:locale="@{LocaleConstants.FAJR}" />
+
+                <ImageView
+                    android:id="@+id/ringFajr"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="4dp"
+                    android:src="@{viewModel.ringFajr == RingType.SILENT ? @drawable/ic_volume_off : viewModel.ringFajr == RingType.NOTIFICATION ? @drawable/ic_notification : @drawable/ic_volume_up}"
+                    app:tint="@color/neutral_600"
+                    tools:src="@drawable/ic_volume_off" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dhuhr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shp_white_8dp"
+                android:backgroundTint="@color/neutral_0"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconDhuhr"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/color_primary_a20"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_dhuhr_primary" />
+
+                <TextView
+                    android:id="@+id/titleDhuhr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bold"
+                    android:text="Dhuhr"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:locale="@{LocaleConstants.DHUHR}" />
+
+                <ImageView
+                    android:id="@+id/ringDhuhr"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="4dp"
+                    android:src="@{viewModel.ringDhuhr == RingType.SILENT ? @drawable/ic_volume_off : viewModel.ringDhuhr == RingType.NOTIFICATION ? @drawable/ic_notification : @drawable/ic_volume_up}"
+                    app:tint="@color/neutral_600"
+                    tools:src="@drawable/ic_volume_off" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/asr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shp_white_8dp"
+                android:backgroundTint="@color/neutral_0"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconAsr"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/color_primary_a20"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_asr_primary" />
+
+                <TextView
+                    android:id="@+id/titleASr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bold"
+                    android:text="Asr"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:locale="@{LocaleConstants.ASR}" />
+
+                <ImageView
+                    android:id="@+id/ringAsr"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="4dp"
+                    android:src="@{viewModel.ringAsr == RingType.SILENT ? @drawable/ic_volume_off : viewModel.ringAsr == RingType.NOTIFICATION ? @drawable/ic_notification : @drawable/ic_volume_up}"
+                    app:tint="@color/neutral_600"
+                    tools:src="@drawable/ic_volume_off" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/maghrib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shp_white_8dp"
+                android:backgroundTint="@color/neutral_0"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconMaghrib"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/color_primary_a20"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_maghrib_primary" />
+
+                <TextView
+                    android:id="@+id/titleMaghrib"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bold"
+                    android:text="Maghrib"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:locale="@{LocaleConstants.MAGHRIB}" />
+
+                <ImageView
+                    android:id="@+id/ringMaghrib"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="4dp"
+                    android:src="@{viewModel.ringMaghrib == RingType.SILENT ? @drawable/ic_volume_off : viewModel.ringMaghrib == RingType.NOTIFICATION ? @drawable/ic_notification : @drawable/ic_volume_up}"
+                    app:tint="@color/neutral_600"
+                    tools:src="@drawable/ic_volume_off" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/isya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shp_white_8dp"
+                android:backgroundTint="@color/neutral_0"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconIsya"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="@color/color_primary_a20"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_isya_primary" />
+
+                <TextView
+                    android:id="@+id/titleIsya"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bold"
+                    android:text="Isya"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:locale="@{LocaleConstants.ISYA}" />
+
+                <ImageView
+                    android:id="@+id/ringIsya"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="4dp"
+                    android:src="@{viewModel.ringIsya == RingType.SILENT ? @drawable/ic_volume_off : viewModel.ringIsya == RingType.NOTIFICATION ? @drawable/ic_notification : @drawable/ic_volume_up}"
+                    app:tint="@color/neutral_600"
+                    tools:src="@drawable/ic_volume_off" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="?attr/colorPrimary"
+                android:padding="16dp"
+                android:src="@drawable/ic_arrow_forward"
+                app:tint="@color/white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

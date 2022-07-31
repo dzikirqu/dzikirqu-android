@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#2A6363</color>
+    <color name="colorAccent">#003737</color>
+    <color name="colorPrimaryDark">#003939</color>
+
+    <color name="card">@color/neutral_200</color>
+
+    <color name="neutral_900">#ffffff</color>
+    <color name="neutral_800">#f5f5f5</color>
+    <color name="neutral_700">#e9e9e9</color>
+    <color name="neutral_600">#d9d9d9</color>
+    <color name="neutral_500">#c4c4c4</color>
+    <color name="neutral_400">#9d9d9d</color>
+    <color name="neutral_300">#2C2C2C</color>
+    <color name="neutral_200">#212121</color>
+    <color name="neutral_100">#191919</color>
+    <color name="neutral_50">#121212</color>
+    <color name="neutral_0">#060606</color>
+
+    <color name="iconGray">@color/neutral_600</color>
+
+    <color name="primaryLight_white">@color/white</color>
+
+    <color name="neutral_100_night_200_light">@color/neutral_100</color>
+
+    <drawable name="ic_surah_frame">@drawable/ic_surah_frame_white</drawable>
+
+    <color name="textPrimary">@color/neutral_900</color>
+    <color name="textSecondary">@color/neutral_800</color>
+    <color name="textTertiary">@color/neutral_600</color>
+    <color name="hintColor">@color/white</color>
+
+    <color name="divider">#667B7B7B</color>
+
+    <color name="bottomNavigationColor">#090808</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/textTertiary</color>
+
+</resources>

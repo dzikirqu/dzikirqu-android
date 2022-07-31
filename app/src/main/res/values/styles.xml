@@ -1,0 +1,60 @@
+<resources>
+
+    <style name="Tab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MaterialSwitch" parent="TextAppearance.AppCompat.Widget.Switch">
+        <item name="fontFamily">@font/regular</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="SmallCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="fontFamily">@font/regular</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+    </style>
+
+    <style name="Widget.Starter.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="Widget.Starter.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="KhatamProgress" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="KhatamProgressLarge" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">12dip</item>
+        <item name="android:maxHeight">30dip</item>
+    </style>
+
+    <declare-styleable name="TitleSubtitleView">
+        <attr name="title" format="string"/>
+        <attr name="subtitle" format="string"/>
+        <attr name="drawableEnd" format="reference"/>
+        <attr name="drawableEndTint" format="color"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="subtitleTextColor" format="color"/>
+    </declare-styleable>
+
+    <style name="TextInputLayoutOutlined" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/textTertiary</item>
+    </style>
+
+
+</resources>

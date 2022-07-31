@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.wagyufari.dzikirqu.ui.bsd.quran.deeplink.QuranDeeplinkViewModel" />
+
+        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neutral_50"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/thumb"
+            android:layout_width="38dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/neutral_500"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/surah"
+            android:name="com.wagyufari.dzikirqu.ui.main.quran.fragment.SurahFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/jump"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/thumb" />
+
+        <LinearLayout
+            android:id="@+id/jump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/jumpCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardBackgroundColor="@color/neutral_0"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:id="@+id/jumpText"
+                    locale="@{LocaleConstants.GO_TO_SURAH}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/regular"
+                    android:padding="12dp"
+                    android:textColor="@color/neutral_900"
+                    android:textSize="16sp"
+                    app:drawableStartCompat="@drawable/ic_low_priority"
+                    app:drawableTint="@color/neutral_900"
+                    tools:text="Go to Surah" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

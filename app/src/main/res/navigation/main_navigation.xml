@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.wagyufari.dzikirqu.ui.main.home.MainHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_main_home" />
+    <fragment
+        android:id="@+id/navigation_quran"
+        android:name="com.wagyufari.dzikirqu.ui.main.quran.MainQuranFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_main_quran" />
+    <fragment
+        android:id="@+id/navigation_prayer"
+        android:name="com.wagyufari.dzikirqu.ui.main.prayer.MainPrayerFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_main_prayer" />
+    <fragment
+        android:id="@+id/navigation_notes"
+        android:name="com.wagyufari.dzikirqu.ui.main.note.personal.NotePersonalFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_note_personal" />
+</navigation>

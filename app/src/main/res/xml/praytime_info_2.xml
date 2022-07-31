@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_widget_description_2"
+    android:initialKeyguardLayout="@layout/praytime_widget_2"
+    android:initialLayout="@layout/praytime_widget_2"
+    android:minWidth="280dp"
+    android:minHeight="80dp"
+    android:previewImage="@drawable/praytime_2"
+    android:resizeMode="horizontal"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen" />

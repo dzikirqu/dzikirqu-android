@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.wagyufari.dzikirqu.ui.onboarding.fragments.viewmodels.OnBoardLoadingViewModel" />
+
+        <import type="android.view.View" />
+
+        <import type="com.wagyufari.dzikirqu.util.ResultEnum" />
+
+        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neutral_50"
+        android:orientation="vertical"
+        tools:context=".ui.onboarding.OnBoardActivity">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_dzikir"
+            tools:translationY="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="Assalamu'alaikum"
+                android:textColor="@color/textPrimary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                tools:text="Mohon bersabar, aplikasi sedang mempersiapkan konten :)"
+                app:locale="@{LocaleConstants.PLEASE_WAIT_WHILE_THE_APP_IS_PREPARING_THE_DATA}"
+                android:textAlignment="center"
+                android:textColor="@color/textSecondary"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/progressBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="Mengambil data buku"
+                    app:locale="@{LocaleConstants.FETCHING_BOOKS}"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/medium"
+                    />
+
+                <ProgressBar
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:indeterminateTint="?attr/colorPrimary"
+                    android:visibility="@{viewModel.isBookLoaded() == ResultEnum.Loading ? View.VISIBLE : View.GONE}" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_check"
+                    android:visibility="@{viewModel.isBookLoaded() == ResultEnum.Success ? View.VISIBLE : View.GONE}" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->viewModel.refreshBooks()}"
+                    android:text="Try Again"
+                    android:textColor="?attr/textColorPrimary"
+                    android:visibility="@{viewModel.isBookLoaded() == ResultEnum.Error ? View.VISIBLE : View.GONE}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/progressPrayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:translationY="-40dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/medium"
+                    tools:text="Mengambil data dzikir"
+                    app:locale="@{LocaleConstants.FETCHING_PRAYERS}"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="20sp" />
+
+                <ProgressBar
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:indeterminateTint="?attr/colorPrimary"
+                    android:visibility="@{viewModel.isPrayerLoaded()  == ResultEnum.Loading ? View.VISIBLE : View.GONE}" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_check"
+                    android:visibility="@{viewModel.isPrayerLoaded()  == ResultEnum.Success ? View.VISIBLE : View.GONE}" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:onClick="@{()->viewModel.refreshPrayer()}"
+                    android:text="Try Again"
+                    android:textColor="?attr/textColorPrimary"
+                    android:visibility="@{viewModel.isPrayerLoaded() == ResultEnum.Error ? View.VISIBLE : View.GONE}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/progressQuran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:translationY="-40dp"
+                android:visibility="invisible"
+                tools:translationY="0dp"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/medium"
+                        tools:text="Menyiapkan data Al-Qur'an"
+                        app:locale="@{LocaleConstants.PREPARING_QURAN_DATA}"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="20sp" />
+
+                    <ProgressBar
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:indeterminateTint="?attr/colorPrimary"
+                        android:visibility="@{viewModel.isQuranLoaded() == ResultEnum.Loading ? View.VISIBLE : View.GONE}" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_check"
+                        android:visibility="@{viewModel.isQuranLoaded() == ResultEnum.Success ? View.VISIBLE : View.GONE}" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Try Again"
+                        android:textColor="?attr/textColorPrimary"
+                        android:visibility="@{viewModel.isQuranLoaded() == ResultEnum.Error ? View.VISIBLE : View.GONE}" />
+                </LinearLayout>
+
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:max="611"
+                    android:progress="@{viewModel.mQuranImportProgress}"
+                    android:progressBackgroundTint="?attr/colorPrimary"
+                    android:progressTint="?attr/colorPrimary"
+                    tools:progress="25" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/progressHadith"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:translationY="-40dp"
+                android:visibility="invisible"
+                tools:translationY="0dp"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/medium"
+                        tools:text="Menyiapkan data Hadis"
+                        app:locale="@{LocaleConstants.PREPARING_HADITH_DATA}"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="20sp" />
+
+                    <ProgressBar
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:indeterminateTint="?attr/colorPrimary"
+                        android:visibility="@{viewModel.isHadithLoaded() == ResultEnum.Loading ? View.VISIBLE : View.GONE}" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_check"
+                        android:visibility="@{viewModel.isHadithLoaded() == ResultEnum.Success ? View.VISIBLE : View.GONE}" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="Try Again"
+                        android:textColor="?attr/textColorPrimary"
+                        android:visibility="@{viewModel.isHadithLoaded() == ResultEnum.Error ? View.VISIBLE : View.GONE}" />
+                </LinearLayout>
+
+                <ProgressBar
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:max="30"
+                    android:progress="@{viewModel.mHadithImportProgress}"
+                    android:progressBackgroundTint="?attr/colorPrimary"
+                    android:progressTint="?attr/colorPrimary"
+                    tools:progress="25" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

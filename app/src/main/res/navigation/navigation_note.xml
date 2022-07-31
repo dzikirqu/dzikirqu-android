@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_note"
+    app:startDestination="@id/mainNoteFragment">
+
+    <fragment
+        android:id="@+id/mainNoteFragment"
+        android:name="com.wagyufari.dzikirqu.ui.main.note.personal.NotePersonalFragment"
+        android:label="MainNoteFragment">
+        <action
+            android:id="@+id/actionOpenFolder"
+            app:destination="@id/mainNoteFragment" />
+        <argument
+            android:name="folderName"
+            app:argType="string"/>
+    </fragment>
+
+</navigation>

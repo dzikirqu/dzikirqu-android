@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:background="@drawable/shp_white_16dp"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:elevation="2dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Ukuran Font Arabic"
+            android:textColor="@color/textPrimary"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/arabicSlider"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:valueFrom="24.0"
+            android:valueTo="32.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Ukuran Font Terjemah"
+            android:textColor="@color/textPrimary"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/translationSlider"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:valueFrom="16.0"
+            android:valueTo="24.0" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/translation"
+            android:layout_width="match_parent"
+            app:buttonTint="?attr/colorPrimary"
+            android:text="Terjemah"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>

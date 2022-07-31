@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.wagyufari.flyercomposer">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <dist:module
+        dist:instant="false"
+        dist:title="@string/title_flyercomposer">
+        <dist:delivery>
+            <dist:on-demand />
+        </dist:delivery>
+
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+    <application>
+        <activity
+            android:name="com.wagyufari.flyercomposer.FlyerComposerActivity"
+            android:exported="false" />
+        <activity android:name="com.wagyufari.flyercomposer.gallery.GalleryPickerActivity"/>
+    </application>
+
+</manifest>

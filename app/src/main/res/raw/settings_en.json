@@ -1,0 +1,17 @@
+{
+  "title": "General",
+  "items": [
+    {
+      "title": "Language",
+      "description": "Select your prefered language",
+      "key": "language",
+      "image": "ic_language",
+      "subitems": [
+        {
+          "title": "English",
+          "value": "en"
+        }
+      ]
+    }
+  ]
+}

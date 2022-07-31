@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/neutral_0"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/textFajr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:locale="@{LocaleConstants.FAJR}"
+            tools:text="Fajr" />
+
+        <TextView
+            android:id="@+id/textValueFajr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/textSecondary"
+            app:layout_constraintBottom_toBottomOf="@id/textFajr"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textFajr"
+            tools:text="2 minutes" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_fajr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:stepSize="1"
+            android:valueFrom="-20.0"
+            android:valueTo="20.0"
+            app:layout_constraintTop_toBottomOf="@id/textFajr" />
+
+        <TextView
+            android:id="@+id/textDhuhr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slider_fajr"
+            app:locale="@{LocaleConstants.DHUHR}"
+            tools:text="Dhuhr" />
+
+        <TextView
+            android:id="@+id/textValueDhuhr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/textSecondary"
+            app:layout_constraintBottom_toBottomOf="@id/textDhuhr"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textDhuhr"
+            tools:text="2 minutes" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_dhuhr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:stepSize="1"
+            android:valueFrom="-20.0"
+            android:valueTo="20.0"
+            app:layout_constraintTop_toBottomOf="@id/textDhuhr" />
+
+        <TextView
+            android:id="@+id/textAsr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slider_dhuhr"
+            app:locale="@{LocaleConstants.ASR}"
+            tools:text="Asr" />
+
+        <TextView
+            android:id="@+id/textValueAsr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/textSecondary"
+            app:layout_constraintBottom_toBottomOf="@id/textAsr"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textAsr"
+            tools:text="2 minutes" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_asr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:stepSize="1"
+            android:valueFrom="-20.0"
+            android:valueTo="20.0"
+            app:layout_constraintTop_toBottomOf="@id/textAsr" />
+
+        <TextView
+            android:id="@+id/textMaghrib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slider_asr"
+            app:locale="@{LocaleConstants.MAGHRIB}"
+            tools:text="Maghrib" />
+
+        <TextView
+            android:id="@+id/textValueMaghrib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/textSecondary"
+            app:layout_constraintBottom_toBottomOf="@id/textMaghrib"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textMaghrib"
+            tools:text="2 minutes" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_maghrib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:stepSize="1"
+            android:valueFrom="-20.0"
+            android:valueTo="20.0"
+            app:layout_constraintTop_toBottomOf="@id/textMaghrib" />
+
+        <TextView
+            android:id="@+id/textIsya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slider_maghrib"
+            app:locale="@{LocaleConstants.ISYA}"
+            tools:text="Isya" />
+
+        <TextView
+            android:id="@+id/textValueIsya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/textSecondary"
+            app:layout_constraintBottom_toBottomOf="@id/textIsya"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textIsya"
+            tools:text="2 minutes" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slider_isya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:stepSize="1"
+            android:valueFrom="-20.0"
+            android:valueTo="20.0"
+            app:layout_constraintTop_toBottomOf="@id/textIsya" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

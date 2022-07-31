@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="permission_not_granted">App requires access to storage to access items stored in Gallery.</string>
+    <string name="grant_permission">Grant Permission</string>
+</resources>

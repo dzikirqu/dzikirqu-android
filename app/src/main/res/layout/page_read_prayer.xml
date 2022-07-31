@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neutral_0"
+        android:clickable="true"
+        android:clipToPadding="false"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="48dp"
+        android:paddingRight="16dp"
+        android:scrollbars="none"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="128dp">
+
+            <TextView
+                android:id="@+id/arabic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/uthman"
+                android:textAlignment="center"
+                android:textColor="@color/textPrimary"
+                android:textSize="32sp"
+                tools:text="قُلْ هُوَ اللَّهُ أَحَدٌ⦿اللَّهُ الصَّمَدُ⦿لَمْ يَلِدْ وَلَمْ يُولَدْ⦿وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ⦿" />
+
+            <View
+                android:id="@+id/primaryDivider"
+                android:layout_width="30dp"
+                android:layout_height="5dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/translation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textAlignment="center"
+                android:textColor="@color/textSecondary"
+                android:textSize="18sp"
+                tools:text="Katakanlah: Dialah Allah, Yang Maha Esa. Allah adalah ilah yang bergantung kepada-Nya segala urusan. Dia tidak beranak dan tiada pula diperanakkan, dan tidak ada seorang pun yang setara dengan Dia.\n(Al-Ikhlas: 1-4)" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shareButton"
+                locale="@{LocaleConstants.SHARE}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:icon="@drawable/ic_share"
+                app:iconTint="@color/white" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="16dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="64dp"
+                android:fontFamily="@font/regular"
+                android:textAlignment="center"
+                android:textColor="@color/textTertiary"
+                android:textSize="12sp"
+                tools:text="HR. Abu Dawud no. 5082, an-Nasa-i VIII/250 dan at-Tirmidzi no. 3575, Ahmad V/312, Shahiih at-Tirmidzi no. 2829, Tuhfatul Ahwadzi no. 3646, Shahiih at-Targhiib wat Tarhiib 1/411 no. 649" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</layout>

@@ -1,0 +1,291 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/radial_top_8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:scaleX="1.8"
+            android:scaleY="1.8"
+            android:src="@drawable/ic_subtract_2"
+            android:tint="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/rootHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nextPrayerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:text="Loading..."
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/nextPrayerTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:text="Loading..."
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/nextPrayerUntil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:text="Loading..."
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/lastRead"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/shp_8dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_quran"
+                app:tint="@color/colorPrimary" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rootPraytime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shp_bottom_8dp"
+        android:backgroundTint="@color/neutral_50"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="4dp"
+                android:layout_toStartOf="@id/icon"
+                android:ellipsize="end"
+                android:fontFamily="@font/bold"
+                android:maxLines="1"
+                android:text="Loading..."
+                android:textAlignment="textEnd"
+                android:textColor="@color/textPrimary"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_logo_png"
+                android:padding="4dp"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textHijriDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/icon"
+                android:fontFamily="@font/bold"
+                android:text="Loading..."
+                android:textColor="@color/textPrimary"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/fajrRoot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/regular"
+                        android:text="Fajr"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/fajrTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="12sp"
+                        tools:text="04:38" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dhuhrRoot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/regular"
+                        android:text="Dhuhr"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/dhuhrTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="12sp"
+                        tools:text="04:38" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/asrRoot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/regular"
+                        android:text="Asr"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/asrTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="12sp"
+
+                        tools:text="04:38" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/maghribRoot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/regular"
+                        android:text="Maghrib"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/maghribTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="12sp"
+                        tools:text="04:38" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/isyaRoot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/regular"
+                        android:text="Isya"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/isyaTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:fontFamily="@font/bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="12sp"
+                        tools:text="04:38" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="b_200">#DBEAFE</color>
+    <color name="b_800">#1E3A8A</color>
+    <color name="n_100">#FDFDFD</color>
+    <color name="n_200">#fafafa</color>
+    <color name="n_400">#CBD5E1</color>
+    <color name="n_500">#B4BFCD</color>
+    <color name="n_600">#94A3B8</color>
+    <color name="n_800">#475569</color>
+    <color name="n_900">#0F172A</color>
+    <color name="g_100">#f5fff6</color>
+    <color name="g_200">#e0ffe3</color>
+    <color name="g_600">#1DED31</color>
+    <color name="g_800">#039b12</color>
+    <color name="y_100">#fffbf5</color>
+    <color name="y_200">#fff4e0</color>
+    <color name="y_800">#9b6303</color>
+    <color name="v_600">#5417cf</color>
+    <color name="r_600">#dc2626</color>
+
+    <color name="indicator_low">#59B658</color>
+    <color name="indicator_high">#FF4F4F</color>
+</resources>

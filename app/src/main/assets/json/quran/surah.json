@@ -1,0 +1,2396 @@
+[
+  {
+    "id": 1,
+    "name": "Al-Fatihah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Pembukaan"
+      },
+      {
+        "language": "english",
+        "text": "The Opener"
+      },
+      {
+        "language": "arabic",
+        "text": "الفاتحة"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 7,
+    "page": 1
+  },
+  {
+    "id": 2,
+    "name": "Al-Baqarah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Sapi Betina"
+      },
+      {
+        "language": "english",
+        "text": "The Cow"
+      },
+      {
+        "language": "arabic",
+        "text": "البقرة"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 286,
+    "page": 2
+  },
+  {
+    "id": 3,
+    "name": "Ali 'Imran",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Keluarga Imran"
+      },
+      {
+        "language": "english",
+        "text": "Family of Imran"
+      },
+      {
+        "language": "arabic",
+        "text": "آل عمران"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 200,
+    "page":50
+  },
+  {
+    "id": 4,
+    "name": "An-Nisa",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Wanita"
+      },
+      {
+        "language": "english",
+        "text": "The Women"
+      },
+      {
+        "language": "arabic",
+        "text": "النساء"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 176,
+    "page":77
+  },
+  {
+    "id": 5,
+    "name": "Al-Ma'idah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Jamuan (Hidangan Makanan)"
+      },
+      {
+        "language": "english",
+        "text": "The Table Spread"
+      },
+      {
+        "language": "arabic",
+        "text": "المائدة"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 120,
+    "page":106
+  },
+  {
+    "id": 6,
+    "name": "Al-An'am",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Binatang Ternak"
+      },
+      {
+        "language": "english",
+        "text": "The Cattle"
+      },
+      {
+        "language": "arabic",
+        "text": "الأنعام"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 165,
+    "page":128
+  },
+  {
+    "id": 7,
+    "name": "Al-A'raf",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Tempat-tempat Tinggi"
+      },
+      {
+        "language": "english",
+        "text": "The Heights"
+      },
+      {
+        "language": "arabic",
+        "text": "الأعراف"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 206,
+    "page":151
+  },
+  {
+    "id": 8,
+    "name": "Al-Anfal",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Rampasan Perang"
+      },
+      {
+        "language": "english",
+        "text": "The Spoils of War"
+      },
+      {
+        "language": "arabic",
+        "text": "الأنفال"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 75,
+    "page":177
+  },
+  {
+    "id": 9,
+    "name": "At-Tawbah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Pengampunan"
+      },
+      {
+        "language": "english",
+        "text": "The Repentance"
+      },
+      {
+        "language": "arabic",
+        "text": "التوبة"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 129,
+    "page":187
+  },
+  {
+    "id": 10,
+    "name": "Yunus",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Yunus"
+      },
+      {
+        "language": "english",
+        "text": "Jonah"
+      },
+      {
+        "language": "arabic",
+        "text": "يونس"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 109,
+    "page":208
+  },
+  {
+    "id": 11,
+    "name": "Hud",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Hud"
+      },
+      {
+        "language": "english",
+        "text": "Hud"
+      },
+      {
+        "language": "arabic",
+        "text": "هود"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 123,
+    "page":221
+  },
+  {
+    "id": 12,
+    "name": "Yusuf",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Yusuf"
+      },
+      {
+        "language": "english",
+        "text": "Joseph"
+      },
+      {
+        "language": "arabic",
+        "text": "يوسف"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 111,
+    "page":235
+  },
+  {
+    "id": 13,
+    "name": "Ar-Ra'd",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Guruh (Petir)"
+      },
+      {
+        "language": "english",
+        "text": "The Thunder"
+      },
+      {
+        "language": "arabic",
+        "text": "الرعد"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 43,
+    "page":249
+  },
+  {
+    "id": 14,
+    "name": "Ibrahim",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Ibrahim"
+      },
+      {
+        "language": "english",
+        "text": "Abrahim"
+      },
+      {
+        "language": "arabic",
+        "text": "ابراهيم"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 52,
+    "page":255
+  },
+  {
+    "id": 15,
+    "name": "Al-Hijr",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Bukit"
+      },
+      {
+        "language": "english",
+        "text": "The Rocky Tract"
+      },
+      {
+        "language": "arabic",
+        "text": "الحجر"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 99,
+    "page":262
+  },
+  {
+    "id": 16,
+    "name": "An-Nahl",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Lebah Madu"
+      },
+      {
+        "language": "english",
+        "text": "The Bee"
+      },
+      {
+        "language": "arabic",
+        "text": "النحل"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 128,
+    "page":267
+  },
+  {
+    "id": 17,
+    "name": "Al-Isra",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Perjalanan Malam"
+      },
+      {
+        "language": "english",
+        "text": "The Night Journey"
+      },
+      {
+        "language": "arabic",
+        "text": "الإسراء"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 111,
+    "page":282
+  },
+  {
+    "id": 18,
+    "name": "Al-Kahf",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Para Penghuni Gua"
+      },
+      {
+        "language": "english",
+        "text": "The Cave"
+      },
+      {
+        "language": "arabic",
+        "text": "الكهف"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 110,
+    "page":293
+  },
+  {
+    "id": 19,
+    "name": "Maryam",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Maryam"
+      },
+      {
+        "language": "english",
+        "text": "Mary"
+      },
+      {
+        "language": "arabic",
+        "text": "مريم"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 98,
+    "page":305
+  },
+  {
+    "id": 20,
+    "name": "Taha",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Tha-Ha"
+      },
+      {
+        "language": "english",
+        "text": "Ta-Ha"
+      },
+      {
+        "language": "arabic",
+        "text": "طه"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 135,
+    "page":312
+  },
+  {
+    "id": 21,
+    "name": "Al-Anbya",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Para Nabi"
+      },
+      {
+        "language": "english",
+        "text": "The Prophets"
+      },
+      {
+        "language": "arabic",
+        "text": "الأنبياء"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 112,
+    "page":322
+  },
+  {
+    "id": 22,
+    "name": "Al-Haj",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Haji"
+      },
+      {
+        "language": "english",
+        "text": "The Pilgrimage"
+      },
+      {
+        "language": "arabic",
+        "text": "الحج"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 78,
+    "page":332
+  },
+  {
+    "id": 23,
+    "name": "Al-Mu'minun",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Orang-orang Mukmin"
+      },
+      {
+        "language": "english",
+        "text": "The Believers"
+      },
+      {
+        "language": "arabic",
+        "text": "المؤمنون"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 118,
+    "page":342
+  },
+  {
+    "id": 24,
+    "name": "An-Nur",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Cahaya"
+      },
+      {
+        "language": "english",
+        "text": "The Light"
+      },
+      {
+        "language": "arabic",
+        "text": "النور"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 64,
+    "page":350
+  },
+  {
+    "id": 25,
+    "name": "Al-Furqan",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Pembeda"
+      },
+      {
+        "language": "english",
+        "text": "The Criterian"
+      },
+      {
+        "language": "arabic",
+        "text": "الفرقان"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 77,
+    "page":359
+  },
+  {
+    "id": 26,
+    "name": "Ash-Shu'ara",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Penyair"
+      },
+      {
+        "language": "english",
+        "text": "The Poets"
+      },
+      {
+        "language": "arabic",
+        "text": "الشعراء"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 227,
+    "page":367
+  },
+  {
+    "id": 27,
+    "name": "An-Naml",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Semut"
+      },
+      {
+        "language": "english",
+        "text": "The Ant"
+      },
+      {
+        "language": "arabic",
+        "text": "النمل"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 93,
+    "page":377
+  },
+  {
+    "id": 28,
+    "name": "Al-Qasas",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Kisah-kisah"
+      },
+      {
+        "language": "english",
+        "text": "The Stories"
+      },
+      {
+        "language": "arabic",
+        "text": "القصص"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 88,
+    "page":385
+  },
+  {
+    "id": 29,
+    "name": "Al-'Ankabut",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Laba-laba"
+      },
+      {
+        "language": "english",
+        "text": "The Spider"
+      },
+      {
+        "language": "arabic",
+        "text": "العنكبوت"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 69,
+    "page":396
+  },
+  {
+    "id": 30,
+    "name": "Ar-Rum",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Bangsa Romawi"
+      },
+      {
+        "language": "english",
+        "text": "The Romans"
+      },
+      {
+        "language": "arabic",
+        "text": "الروم"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 60,
+    "page":404
+  },
+  {
+    "id": 31,
+    "name": "Luqman",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Luqman"
+      },
+      {
+        "language": "english",
+        "text": "Luqman"
+      },
+      {
+        "language": "arabic",
+        "text": "لقمان"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 34,
+    "page":411
+  },
+  {
+    "id": 32,
+    "name": "As-Sajdah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Sujud"
+      },
+      {
+        "language": "english",
+        "text": "The Prostration"
+      },
+      {
+        "language": "arabic",
+        "text": "السجدة"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 30,
+    "page":415
+  },
+  {
+    "id": 33,
+    "name": "Al-Ahzab",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Golongan yang Bersekutu"
+      },
+      {
+        "language": "english",
+        "text": "The Combined Forces"
+      },
+      {
+        "language": "arabic",
+        "text": "الأحزاب"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 73,
+    "page":418
+  },
+  {
+    "id": 34,
+    "name": "Saba",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Saba'"
+      },
+      {
+        "language": "english",
+        "text": "Sheba"
+      },
+      {
+        "language": "arabic",
+        "text": "سبإ"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 54,
+    "page":428
+  },
+  {
+    "id": 35,
+    "name": "Fatir",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Pencipta"
+      },
+      {
+        "language": "english",
+        "text": "Originator"
+      },
+      {
+        "language": "arabic",
+        "text": "فاطر"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 45,
+    "page":434
+  },
+  {
+    "id": 36,
+    "name": "Ya-Sin",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Yas Sin"
+      },
+      {
+        "language": "english",
+        "text": "Ya Sin"
+      },
+      {
+        "language": "arabic",
+        "text": "يس"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 83,
+    "page":440
+  },
+  {
+    "id": 37,
+    "name": "As-Saffat",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Barisan-barisan"
+      },
+      {
+        "language": "english",
+        "text": "Those who set the Ranks"
+      },
+      {
+        "language": "arabic",
+        "text": "الصافات"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 182,
+    "page":446
+  },
+  {
+    "id": 38,
+    "name": "Sad",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Shad"
+      },
+      {
+        "language": "english",
+        "text": "The Letter \"Saad\""
+      },
+      {
+        "language": "arabic",
+        "text": "ص"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 88,
+    "page":452
+  },
+  {
+    "id": 39,
+    "name": "Az-Zumar",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Para Rombongan"
+      },
+      {
+        "language": "english",
+        "text": "The Troops"
+      },
+      {
+        "language": "arabic",
+        "text": "الزمر"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 75,
+    "page":458
+  },
+  {
+    "id": 40,
+    "name": "Ghafir",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Sang Maha Pengampun"
+      },
+      {
+        "language": "english",
+        "text": "The Forgiver"
+      },
+      {
+        "language": "arabic",
+        "text": "غافر"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 85,
+    "page":467
+  },
+  {
+    "id": 41,
+    "name": "Fussilat",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Yang Dijelaskan"
+      },
+      {
+        "language": "english",
+        "text": "Explained in Detail"
+      },
+      {
+        "language": "arabic",
+        "text": "فصلت"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 54,
+    "page":477
+  },
+  {
+    "id": 42,
+    "name": "Ash-Shuraa",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Musyawarah"
+      },
+      {
+        "language": "english",
+        "text": "The Consultation"
+      },
+      {
+        "language": "arabic",
+        "text": "الشورى"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 53,
+    "page":483
+  },
+  {
+    "id": 43,
+    "name": "Az-Zukhruf",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Perhiasan"
+      },
+      {
+        "language": "english",
+        "text": "The Ornaments of Gold"
+      },
+      {
+        "language": "arabic",
+        "text": "الزخرف"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 89,
+    "page":489
+  },
+  {
+    "id": 44,
+    "name": "Ad-Dukhan",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Kabut"
+      },
+      {
+        "language": "english",
+        "text": "The Smoke"
+      },
+      {
+        "language": "arabic",
+        "text": "الدخان"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 59,
+    "page":496
+  },
+  {
+    "id": 45,
+    "name": "Al-Jathiyah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Yang Bertekuk Lutut"
+      },
+      {
+        "language": "english",
+        "text": "The Crouching"
+      },
+      {
+        "language": "arabic",
+        "text": "الجاثية"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 37,
+    "page":499
+  },
+  {
+    "id": 46,
+    "name": "Al-Ahqaf",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Bukit-bukir Pasir"
+      },
+      {
+        "language": "english",
+        "text": "The Wind-Curved Sandhills"
+      },
+      {
+        "language": "arabic",
+        "text": "الأحقاف"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 35,
+    "page":502
+  },
+  {
+    "id": 47,
+    "name": "Muhammad",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Muhammad"
+      },
+      {
+        "language": "english",
+        "text": "Muhammad"
+      },
+      {
+        "language": "arabic",
+        "text": "محمد"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 38,
+    "page":507
+  },
+  {
+    "id": 48,
+    "name": "Al-Fath",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Kemenangan"
+      },
+      {
+        "language": "english",
+        "text": "The Victory"
+      },
+      {
+        "language": "arabic",
+        "text": "الفتح"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 29,
+    "page":511
+  },
+  {
+    "id": 49,
+    "name": "Al-Hujurat",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Kamar-kamar"
+      },
+      {
+        "language": "english",
+        "text": "The Rooms"
+      },
+      {
+        "language": "arabic",
+        "text": "الحجرات"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 18,
+    "page":515
+  },
+  {
+    "id": 50,
+    "name": "Qaf",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Qaf"
+      },
+      {
+        "language": "english",
+        "text": "The Letter \"Qaf\""
+      },
+      {
+        "language": "arabic",
+        "text": "ق"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 45,
+    "page":518
+  },
+  {
+    "id": 51,
+    "name": "Adh-Dhariyat",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Angin yang Menerbangkan"
+      },
+      {
+        "language": "english",
+        "text": "The Winnowing Winds"
+      },
+      {
+        "language": "arabic",
+        "text": "الذاريات"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 60,
+    "page":520
+  },
+  {
+    "id": 52,
+    "name": "At-Tur",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Bukit"
+      },
+      {
+        "language": "english",
+        "text": "The Mount"
+      },
+      {
+        "language": "arabic",
+        "text": "الطور"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 49,
+    "page":523
+  },
+  {
+    "id": 53,
+    "name": "An-Najm",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Bintang"
+      },
+      {
+        "language": "english",
+        "text": "The Star"
+      },
+      {
+        "language": "arabic",
+        "text": "النجم"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 62,
+    "page":526
+  },
+  {
+    "id": 54,
+    "name": "Al-Qamar",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Bulan"
+      },
+      {
+        "language": "english",
+        "text": "The Moon"
+      },
+      {
+        "language": "arabic",
+        "text": "القمر"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 55,
+    "page":528
+  },
+  {
+    "id": 55,
+    "name": "Ar-Rahman",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Yang Maha Pemurah"
+      },
+      {
+        "language": "english",
+        "text": "The Beneficent"
+      },
+      {
+        "language": "arabic",
+        "text": "الرحمن"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 78,
+    "page":531
+  },
+  {
+    "id": 56,
+    "name": "Al-Waqi'ah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Hari Kiamat"
+      },
+      {
+        "language": "english",
+        "text": "The Inevitable"
+      },
+      {
+        "language": "arabic",
+        "text": "الواقعة"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 96,
+    "page":534
+  },
+  {
+    "id": 57,
+    "name": "Al-Hadid",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Besi"
+      },
+      {
+        "language": "english",
+        "text": "The Iron"
+      },
+      {
+        "language": "arabic",
+        "text": "الحديد"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 29,
+    "page":537
+  },
+  {
+    "id": 58,
+    "name": "Al-Mujadila",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Wanita yang Menggugat"
+      },
+      {
+        "language": "english",
+        "text": "The Pleading Woman"
+      },
+      {
+        "language": "arabic",
+        "text": "المجادلة"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 22,
+    "page":542
+  },
+  {
+    "id": 59,
+    "name": "Al-Hashr",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Pengusiran"
+      },
+      {
+        "language": "english",
+        "text": "The Exile"
+      },
+      {
+        "language": "arabic",
+        "text": "الحشر"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 24,
+    "page":545
+  },
+  {
+    "id": 60,
+    "name": "Al-Mumtahanah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Wanita yang Diuji"
+      },
+      {
+        "language": "english",
+        "text": "She that is to be examined"
+      },
+      {
+        "language": "arabic",
+        "text": "الممتحنة"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 13,
+    "page":549
+  },
+  {
+    "id": 61,
+    "name": "As-Saf",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Barisan"
+      },
+      {
+        "language": "english",
+        "text": "The Ranks"
+      },
+      {
+        "language": "arabic",
+        "text": "الصف"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 14,
+    "page":551
+  },
+  {
+    "id": 62,
+    "name": "Al-Jumu'ah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Hari Jum'at"
+      },
+      {
+        "language": "english",
+        "text": "The Congregation, Friday"
+      },
+      {
+        "language": "arabic",
+        "text": "الجمعة"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 11,
+    "page":553
+  },
+  {
+    "id": 63,
+    "name": "Al-Munafiqun",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Kaum Munafik"
+      },
+      {
+        "language": "english",
+        "text": "The Hypocrites"
+      },
+      {
+        "language": "arabic",
+        "text": "المنافقون"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 11,
+    "page":554
+  },
+  {
+    "id": 64,
+    "name": "At-Taghabun",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Hari Dinampakkan Kesalahan"
+      },
+      {
+        "language": "english",
+        "text": "The Mutual Disillusion"
+      },
+      {
+        "language": "arabic",
+        "text": "التغابن"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 18,
+    "page":556
+  },
+  {
+    "id": 65,
+    "name": "At-Talaq",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Perceraian"
+      },
+      {
+        "language": "english",
+        "text": "The Divorce"
+      },
+      {
+        "language": "arabic",
+        "text": "الطلاق"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 12,
+    "page":558
+  },
+  {
+    "id": 66,
+    "name": "At-Tahrim",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Mengharamkan"
+      },
+      {
+        "language": "english",
+        "text": "The Prohibtiion"
+      },
+      {
+        "language": "arabic",
+        "text": "التحريم"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 12,
+    "page":560
+  },
+  {
+    "id": 67,
+    "name": "Al-Mulk",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Kerajaan"
+      },
+      {
+        "language": "english",
+        "text": "The Sovereignty"
+      },
+      {
+        "language": "arabic",
+        "text": "الملك"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 30,
+    "page":562
+  },
+  {
+    "id": 68,
+    "name": "Al-Qalam",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Pena"
+      },
+      {
+        "language": "english",
+        "text": "The Pen"
+      },
+      {
+        "language": "arabic",
+        "text": "القلم"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 52,
+    "page":564
+  },
+  {
+    "id": 69,
+    "name": "Al-Haqqah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Kenyataan (Hari Kiamat)"
+      },
+      {
+        "language": "english",
+        "text": "The Reality"
+      },
+      {
+        "language": "arabic",
+        "text": "الحاقة"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 52,
+    "page":566
+  },
+  {
+    "id": 70,
+    "name": "Al-Ma'arij",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Tempat yang Naik"
+      },
+      {
+        "language": "english",
+        "text": "The Ascending Stairways"
+      },
+      {
+        "language": "arabic",
+        "text": "المعارج"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 44,
+    "page":568
+  },
+  {
+    "id": 71,
+    "name": "Nuh",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Nuh"
+      },
+      {
+        "language": "english",
+        "text": "Noah"
+      },
+      {
+        "language": "arabic",
+        "text": "نوح"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 28,
+    "page":570
+  },
+  {
+    "id": 72,
+    "name": "Al-Jinn",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Jin"
+      },
+      {
+        "language": "english",
+        "text": "The Jinn"
+      },
+      {
+        "language": "arabic",
+        "text": "الجن"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 28,
+    "page":572
+  },
+  {
+    "id": 73,
+    "name": "Al-Muzzammil",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Orang yang Berselimut"
+      },
+      {
+        "language": "english",
+        "text": "The Enshrouded One"
+      },
+      {
+        "language": "arabic",
+        "text": "المزمل"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 20,
+    "page":574
+  },
+  {
+    "id": 74,
+    "name": "Al-Muddaththir",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Orang yang Berkemul"
+      },
+      {
+        "language": "english",
+        "text": "The Cloaked One"
+      },
+      {
+        "language": "arabic",
+        "text": "المدثر"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 56,
+    "page":575
+  },
+  {
+    "id": 75,
+    "name": "Al-Qiyamah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Hari Berbangkit"
+      },
+      {
+        "language": "english",
+        "text": "The Resurrection"
+      },
+      {
+        "language": "arabic",
+        "text": "القيامة"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 40,
+    "page":577
+  },
+  {
+    "id": 76,
+    "name": "Al-Insan",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Manusia"
+      },
+      {
+        "language": "english",
+        "text": "The Man"
+      },
+      {
+        "language": "arabic",
+        "text": "الانسان"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 31,
+    "page":578
+  },
+  {
+    "id": 77,
+    "name": "Al-Mursalat",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Malaikat-malaikan yang Diutus"
+      },
+      {
+        "language": "english",
+        "text": "The Emissaries"
+      },
+      {
+        "language": "arabic",
+        "text": "المرسلات"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 50,
+    "page":580
+  },
+  {
+    "id": 78,
+    "name": "An-Naba",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Berita Besar"
+      },
+      {
+        "language": "english",
+        "text": "The Tidings"
+      },
+      {
+        "language": "arabic",
+        "text": "النبإ"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 40,
+    "page":582
+  },
+  {
+    "id": 79,
+    "name": "An-Nazi'at",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Malaikat yang Mencabut"
+      },
+      {
+        "language": "english",
+        "text": "Those who drag forth"
+      },
+      {
+        "language": "arabic",
+        "text": "النازعات"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 46,
+    "page":583
+  },
+  {
+    "id": 80,
+    "name": "'Abasa",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Ia Bermuka Masam"
+      },
+      {
+        "language": "english",
+        "text": "He Frowned"
+      },
+      {
+        "language": "arabic",
+        "text": "عبس"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 42,
+    "page":585
+  },
+  {
+    "id": 81,
+    "name": "At-Takwir",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Menggulung"
+      },
+      {
+        "language": "english",
+        "text": "The Overthrowing"
+      },
+      {
+        "language": "arabic",
+        "text": "التكوير"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 29,
+    "page":586
+  },
+  {
+    "id": 82,
+    "name": "Al-Infitar",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Terbelah"
+      },
+      {
+        "language": "english",
+        "text": "The Cleaving"
+      },
+      {
+        "language": "arabic",
+        "text": "الإنفطار"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 19,
+    "page":587
+  },
+  {
+    "id": 83,
+    "name": "Al-Mutaffifin",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Orang-orang Curang"
+      },
+      {
+        "language": "english",
+        "text": "The Defrauding"
+      },
+      {
+        "language": "arabic",
+        "text": "المطففين"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 36,
+    "page":587
+  },
+  {
+    "id": 84,
+    "name": "Al-Inshiqaq",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Terbelah"
+      },
+      {
+        "language": "english",
+        "text": "The Sundering"
+      },
+      {
+        "language": "arabic",
+        "text": "الإنشقاق"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 25,
+    "page":589
+  },
+  {
+    "id": 85,
+    "name": "Al-Buruj",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Gugusan Bintang"
+      },
+      {
+        "language": "english",
+        "text": "The Mansions of the Stars"
+      },
+      {
+        "language": "arabic",
+        "text": "البروج"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 22,
+    "page":590
+  },
+  {
+    "id": 86,
+    "name": "At-Tariq",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Yang Datang di Malam Hari"
+      },
+      {
+        "language": "english",
+        "text": "The Nightcommer"
+      },
+      {
+        "language": "arabic",
+        "text": "الطارق"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 17,
+    "page":591
+  },
+  {
+    "id": 87,
+    "name": "Al-A'la",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Yang Paling Tinggi"
+      },
+      {
+        "language": "english",
+        "text": "The Most High"
+      },
+      {
+        "language": "arabic",
+        "text": "الأعلى"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 19,
+    "page":591
+  },
+  {
+    "id": 88,
+    "name": "Al-Ghashiyah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Hari Pembalasan"
+      },
+      {
+        "language": "english",
+        "text": "The Overwhelming"
+      },
+      {
+        "language": "arabic",
+        "text": "الغاشية"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 26,
+    "page":592
+  },
+  {
+    "id": 89,
+    "name": "Al-Fajr",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Fajar"
+      },
+      {
+        "language": "english",
+        "text": "The Dawn"
+      },
+      {
+        "language": "arabic",
+        "text": "الفجر"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 30,
+    "page":593
+  },
+  {
+    "id": 90,
+    "name": "Al-Balad",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Negeri"
+      },
+      {
+        "language": "english",
+        "text": "The City"
+      },
+      {
+        "language": "arabic",
+        "text": "البلد"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 20,
+    "page":594
+  },
+  {
+    "id": 91,
+    "name": "Ash-Shams",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Matahari"
+      },
+      {
+        "language": "english",
+        "text": "The Sun"
+      },
+      {
+        "language": "arabic",
+        "text": "الشمس"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 15,
+    "page":595
+  },
+  {
+    "id": 92,
+    "name": "Al-Layl",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Malam"
+      },
+      {
+        "language": "english",
+        "text": "The Night"
+      },
+      {
+        "language": "arabic",
+        "text": "الليل"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 21,
+    "page":595
+  },
+  {
+    "id": 93,
+    "name": "Ad-Duhaa",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Waktu Dhuha"
+      },
+      {
+        "language": "english",
+        "text": "The Morning Hours"
+      },
+      {
+        "language": "arabic",
+        "text": "الضحى"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 11,
+    "page":596
+  },
+  {
+    "id": 94,
+    "name": "Ash-Sharh",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Melapangkan"
+      },
+      {
+        "language": "english",
+        "text": "The Relief"
+      },
+      {
+        "language": "arabic",
+        "text": "الشرح"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 8,
+    "page":596
+  },
+  {
+    "id": 95,
+    "name": "At-Tin",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Buah Tin"
+      },
+      {
+        "language": "english",
+        "text": "The Fig"
+      },
+      {
+        "language": "arabic",
+        "text": "التين"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 8,
+    "page":597
+  },
+  {
+    "id": 96,
+    "name": "Al-'Alaq",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Segumpal Darah"
+      },
+      {
+        "language": "english",
+        "text": "The Clot"
+      },
+      {
+        "language": "arabic",
+        "text": "العلق"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 19,
+    "page":597
+  },
+  {
+    "id": 97,
+    "name": "Al-Qadr",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Kemuliaan"
+      },
+      {
+        "language": "english",
+        "text": "The Power"
+      },
+      {
+        "language": "arabic",
+        "text": "القدر"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 5,
+    "page":598
+  },
+  {
+    "id": 98,
+    "name": "Al-Bayyinah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Pembuktian"
+      },
+      {
+        "language": "english",
+        "text": "The Clear Proof"
+      },
+      {
+        "language": "arabic",
+        "text": "البينة"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 8,
+    "page":598
+  },
+  {
+    "id": 99,
+    "name": "Az-Zalzalah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Kegoncangan"
+      },
+      {
+        "language": "english",
+        "text": "The Earthquake"
+      },
+      {
+        "language": "arabic",
+        "text": "الزلزلة"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 8,
+    "page":599
+  },
+  {
+    "id": 100,
+    "name": "Al-'Adiyat",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Berlari Kencang"
+      },
+      {
+        "language": "english",
+        "text": "The Courser"
+      },
+      {
+        "language": "arabic",
+        "text": "العاديات"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 11,
+    "page":599
+  },
+  {
+    "id": 101,
+    "name": "Al-Qari'ah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Hari Kiamat"
+      },
+      {
+        "language": "english",
+        "text": "The Calamity"
+      },
+      {
+        "language": "arabic",
+        "text": "القارعة"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 11,
+    "page":600
+  },
+  {
+    "id": 102,
+    "name": "At-Takathur",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Bermegah-megahan"
+      },
+      {
+        "language": "english",
+        "text": "The Rivalry in world increase"
+      },
+      {
+        "language": "arabic",
+        "text": "التكاثر"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 8,
+    "page":600
+  },
+  {
+    "id": 103,
+    "name": "Al-'Asr",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Waktu Sore"
+      },
+      {
+        "language": "english",
+        "text": "The Declining Day"
+      },
+      {
+        "language": "arabic",
+        "text": "العصر"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 3,
+    "page":601
+  },
+  {
+    "id": 104,
+    "name": "Al-Humazah",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Pengumpat"
+      },
+      {
+        "language": "english",
+        "text": "The Traducer"
+      },
+      {
+        "language": "arabic",
+        "text": "الهمزة"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 9,
+    "page":601
+  },
+  {
+    "id": 105,
+    "name": "Al-Fil",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Gajah"
+      },
+      {
+        "language": "english",
+        "text": "The Elephant"
+      },
+      {
+        "language": "arabic",
+        "text": "الفيل"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 5,
+    "page":601
+  },
+  {
+    "id": 106,
+    "name": "Quraysh",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Suku Quraisy"
+      },
+      {
+        "language": "english",
+        "text": "Quraysh"
+      },
+      {
+        "language": "arabic",
+        "text": "قريش"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 4,
+    "page":602
+  },
+  {
+    "id": 107,
+    "name": "Al-Ma'un",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Barang yang Berguna"
+      },
+      {
+        "language": "english",
+        "text": "The Small Kindesses"
+      },
+      {
+        "language": "arabic",
+        "text": "الماعون"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 7,
+    "page":602
+  },
+  {
+    "id": 108,
+    "name": "Al-Kawthar",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Nikmat Berlimpah"
+      },
+      {
+        "language": "english",
+        "text": "The Abundance"
+      },
+      {
+        "language": "arabic",
+        "text": "الكوثر"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 3,
+    "page":602
+  },
+  {
+    "id": 109,
+    "name": "Al-Kafirun",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Orang-orang Kafir"
+      },
+      {
+        "language": "english",
+        "text": "The Disbelievers"
+      },
+      {
+        "language": "arabic",
+        "text": "الكافرون"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 6,
+    "page":603
+  },
+  {
+    "id": 110,
+    "name": "An-Nasr",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Pertolongan"
+      },
+      {
+        "language": "english",
+        "text": "The Divine Support"
+      },
+      {
+        "language": "arabic",
+        "text": "النصر"
+      }
+    ],
+    "revelation": "madinah",
+    "verses": 3,
+    "page":603
+  },
+  {
+    "id": 111,
+    "name": "Al-Masad",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Gejolak Api (Sabut)"
+      },
+      {
+        "language": "english",
+        "text": "The Palm Fiber"
+      },
+      {
+        "language": "arabic",
+        "text": "المسد"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 5,
+    "page":603
+  },
+  {
+    "id": 112,
+    "name": "Al-Ikhlas",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Ikhlash"
+      },
+      {
+        "language": "english",
+        "text": "The Sincerity"
+      },
+      {
+        "language": "arabic",
+        "text": "الإخلاص"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 4,
+    "page":604
+  },
+  {
+    "id": 113,
+    "name": "Al-Falaq",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Waktu Shubuh"
+      },
+      {
+        "language": "english",
+        "text": "The Daybreak"
+      },
+      {
+        "language": "arabic",
+        "text": "الفلق"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 5,
+    "page":604
+  },
+  {
+    "id": 114,
+    "name": "An-Nas",
+    "translation": [
+      {
+        "language": "bahasa",
+        "text": "Umat Manusia"
+      },
+      {
+        "language": "english",
+        "text": "The Mankind"
+      },
+      {
+        "language": "arabic",
+        "text": "الناس"
+      }
+    ],
+    "revelation": "makkah",
+    "verses": 6,
+    "page":604
+  }
+]

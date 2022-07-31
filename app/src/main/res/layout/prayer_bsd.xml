@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.wagyufari.dzikirqu.ui.bsd.prayer.PrayerBSDViewModel" />
+
+        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+    </data>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neutral_0"
+        android:orientation="vertical"
+        app:layoutDescription="@xml/prayer_bsd_scene">
+
+
+        <View
+            android:id="@+id/handle"
+            android:layout_width="32dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/shp_primary_16dp"
+            android:elevation="1dp"
+            app:tint="@color/white"
+            android:padding="8dp"
+            android:src="@drawable/ic_book" />
+
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp"
+            app:fontFamily="@font/bold"
+            app:text="@{viewModel.book.title}"
+            tools:text="Buku Do'a" />
+
+        <TextView
+            android:id="@+id/bookDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="24dp"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:textColor="@color/textTertiary"
+            app:fontFamily="@font/regular"
+            app:text="@{viewModel.book.description}"
+            tools:text="Setiap orang pasti membutuhkan do'a, baik untuk menolak sesuatu yang tidak disukai, ataupun mendatangkan sesuatu yang disenangi. Berikut adalah beberapa do'a yang kami ambil dari Al-Qur'an dan Sunnah." />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPrayer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bookDescription" />
+
+        <View
+            android:id="@+id/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.5"
+            android:background="@drawable/shadow"
+            app:layout_constraintTop_toBottomOf="@id/bookDescription" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+</layout>

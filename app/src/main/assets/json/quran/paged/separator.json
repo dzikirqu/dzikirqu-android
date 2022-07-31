@@ -1,0 +1,1276 @@
+[
+  {
+    "page": 1,
+    "surah":1,
+    "unicode": "\uE904",
+    "line": 1
+  },
+  {
+    "page": 2,
+    "surah":2,
+    "unicode": "\uE905",
+    "line": 1
+  },
+  {
+    "page": 2,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 50,
+    "surah":3,
+    "unicode": "\uE906",
+    "line": 1
+  },
+  {
+    "page": 50,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 76,
+    "surah":4,
+    "unicode": "\uE907",
+    "line": 15
+  },
+  {
+    "page": 77,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 106,
+    "surah":5,
+    "unicode": "\uE908",
+    "line": 6
+  },
+  {
+    "page": 106,
+    "line": 7,
+    "bismillah": true
+  },
+  {
+    "page": 128,
+    "surah":6,
+    "unicode": "\uE90B",
+    "line": 1
+  },
+  {
+    "page": 128,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 151,
+    "surah":7,
+    "unicode": "\uE90C",
+    "line": 1
+  },
+  {
+    "page": 151,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 177,
+    "surah":8,
+    "unicode": "\uE90D",
+    "line": 1
+  },
+  {
+    "page": 177,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 187,
+    "surah":9,
+    "unicode": "\uE90E",
+    "line": 1
+  },
+  {
+    "page": 207,
+    "surah":10,
+    "unicode": "\uE90F",
+    "line": 15
+  },
+  {
+    "page": 208,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 221,
+    "surah":11,
+    "unicode": "\uE910",
+    "line": 7
+  },
+  {
+    "page": 221,
+    "line": 8,
+    "bismillah": true
+  },
+  {
+    "page": 235,
+    "surah":12,
+    "unicode": "\uE911",
+    "line": 9
+  },
+  {
+    "page": 235,
+    "line": 10,
+    "bismillah": true
+  },
+  {
+    "page": 249,
+    "surah":13,
+    "unicode": "\uE912",
+    "line": 1
+  },
+  {
+    "page": 249,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 255,
+    "surah":14,
+    "unicode": "\uE913",
+    "line": 3
+  },
+  {
+    "page": 255,
+    "line": 4,
+    "bismillah": true
+  },
+  {
+    "page": 262,
+    "surah":15,
+    "unicode": "\uE914",
+    "line": 1
+  },
+  {
+    "page": 262,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 267,
+    "surah":16,
+    "unicode": "\uE915",
+    "line": 7
+  },
+  {
+    "page": 267,
+    "line": 8,
+    "bismillah": true
+  },
+  {
+    "page": 282,
+    "surah":17,
+    "unicode": "\uE916",
+    "line": 1
+  },
+  {
+    "page": 282,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 293,
+    "surah":18,
+    "unicode": "\uE917",
+    "line": 10
+  },
+  {
+    "page": 293,
+    "line": 11,
+    "bismillah": true
+  },
+  {
+    "page": 305,
+    "surah":19,
+    "unicode": "\uE918",
+    "line": 1
+  },
+  {
+    "page": 305,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 312,
+    "surah":20,
+    "unicode": "\uE919",
+    "line": 5
+  },
+  {
+    "page": 312,
+    "line": 6,
+    "bismillah": true
+  },
+  {
+    "page": 322,
+    "surah":21,
+    "unicode": "\uE91A",
+    "line": 1
+  },
+  {
+    "page": 322,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 331,
+    "surah":22,
+    "unicode": "\uE91B",
+    "line": 15
+  },
+  {
+    "page": 332,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 341,
+    "surah":23,
+    "unicode": "\uE91C",
+    "line": 15
+  },
+  {
+    "page": 342,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 349,
+    "surah":24,
+    "unicode": "\uE91D",
+    "line": 15
+  },
+  {
+    "page": 350,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 359,
+    "surah":25,
+    "unicode": "\uE91E",
+    "line": 11
+  },
+  {
+    "page": 359,
+    "line": 12,
+    "bismillah": true
+  },
+  {
+    "page": 366,
+    "surah":26,
+    "unicode": "\uE91F",
+    "line": 15
+  },
+  {
+    "page": 367,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 376,
+    "surah": 27,
+    "unicode": "\uE920",
+    "line": 15
+  },
+  {
+    "page": 377,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 385,
+    "surah": 28,
+    "unicode": "\uE921",
+    "line": 8
+  },
+  {
+    "page": 385,
+    "line": 9,
+    "bismillah": true
+  },
+  {
+    "page": 396,
+    "surah": 29,
+    "unicode": "\uE922",
+    "line": 8
+  },
+  {
+    "page": 396,
+    "line": 9,
+    "bismillah": true
+  },
+  {
+    "page": 404,
+    "surah": 30,
+    "unicode": "\uE923",
+    "line": 10
+  },
+  {
+    "page": 404,
+    "line": 11,
+    "bismillah": true
+  },
+  {
+    "page": 411,
+    "surah": 31,
+    "unicode": "\uE924",
+    "line": 1
+  },
+  {
+    "page": 411,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 414,
+    "surah": 32,
+    "unicode": "\uE925",
+    "line": 15
+  },
+  {
+    "page": 415,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 417,
+    "surah": 33,
+    "unicode": "\uE926",
+    "line": 15
+  },
+  {
+    "page": 418,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 428,
+    "surah": 34,
+    "unicode": "\uE92E",
+    "line": 1
+  },
+  {
+    "page": 428,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 434,
+    "surah": 35,
+    "unicode": "\uE92F",
+    "line": 8
+  },
+  {
+    "page": 434,
+    "line": 9,
+    "bismillah": true
+  },
+  {
+    "page": 440,
+    "surah": 36,
+    "unicode": "\uE930",
+    "line": 4
+  },
+  {
+    "page": 440,
+    "line": 5,
+    "bismillah": true
+  },
+  {
+    "page": 445,
+    "surah": 37,
+    "unicode": "\uE931",
+    "line": 15
+  },
+  {
+    "page": 446,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 452,
+    "surah": 38,
+    "unicode": "\uE909",
+    "line": 15
+  },
+  {
+    "page": 453,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 458,
+    "surah": 39,
+    "unicode": "\uE90A",
+    "line": 4
+  },
+  {
+    "page": 458,
+    "line": 5,
+    "bismillah": true
+  },
+  {
+    "page": 467,
+    "surah": 40,
+    "unicode": "\uE927",
+    "line": 3
+  },
+  {
+    "page": 467,
+    "line": 4,
+    "bismillah": true
+  },
+  {
+    "page": 477,
+    "surah": 41,
+    "unicode": "\uE928",
+    "line": 1
+  },
+  {
+    "page": 477,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 483,
+    "surah": 42,
+    "unicode": "\uE929",
+    "line": 1
+  },
+  {
+    "page": 483,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 489,
+    "surah": 43,
+    "unicode": "\uE92A",
+    "line": 5
+  },
+  {
+    "page": 489,
+    "line": 6,
+    "bismillah": true
+  },
+  {
+    "page": 496,
+    "surah": 44,
+    "unicode": "\uE92B",
+    "line": 1
+  },
+  {
+    "page": 496,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 498,
+    "surah": 45,
+    "unicode": "\uE92C",
+    "line": 15
+  },
+  {
+    "page": 499,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 502,
+    "surah": 46,
+    "unicode": "\uE92D",
+    "line": 7
+  },
+  {
+    "page": 502,
+    "line": 8,
+    "bismillah": true
+  },
+  {
+    "page": 506,
+    "surah": 47,
+    "unicode": "\uE932",
+    "line": 15
+  },
+  {
+    "page": 507,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 511,
+    "surah": 48,
+    "unicode": "\uE902",
+    "line": 1
+  },
+  {
+    "page": 511,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 515,
+    "surah": 49,
+    "unicode": "\uE933",
+    "line": 7
+  },
+  {
+    "page": 515,
+    "line": 8,
+    "bismillah": true
+  },
+  {
+    "page": 518,
+    "surah": 50,
+    "unicode": "\uE934",
+    "line": 1
+  },
+  {
+    "page": 518,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 520,
+    "surah": 51,
+    "unicode": "\uE935",
+    "line": 12
+  },
+  {
+    "page": 520,
+    "line": 13,
+    "bismillah": true
+  },
+  {
+    "page": 523,
+    "surah": 52,
+    "unicode": "\uE936",
+    "line": 8
+  },
+  {
+    "page": 523,
+    "line": 9,
+    "bismillah": true
+  },
+  {
+    "page": 525,
+    "surah": 53,
+    "unicode": "\uE937",
+    "line": 15
+  },
+  {
+    "page": 526,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 528,
+    "surah": 54,
+    "unicode": "\uE938",
+    "line": 9
+  },
+  {
+    "page": 528,
+    "line": 10,
+    "bismillah": true
+  },
+  {
+    "page": 531,
+    "surah": 55,
+    "unicode": "\uE939",
+    "line": 5
+  },
+  {
+    "page": 531,
+    "line": 6,
+    "bismillah": true
+  },
+  {
+    "page": 534,
+    "surah": 56,
+    "unicode": "\uE93A",
+    "line": 7
+  },
+  {
+    "page": 534,
+    "line": 8,
+    "bismillah": true
+  },
+  {
+    "page": 537,
+    "surah": 57,
+    "unicode": "\uE93B",
+    "line": 11
+  },
+  {
+    "page": 537,
+    "line": 12,
+    "bismillah": true
+  },
+  {
+    "page": 542,
+    "surah": 58,
+    "unicode": "\uE93C",
+    "line": 1
+  },
+  {
+    "page": 542,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 545,
+    "surah": 59,
+    "unicode": "\uE900",
+    "line": 7
+  },
+  {
+    "page": 545,
+    "line": 8,
+    "bismillah": true
+  },
+  {
+    "page": 548,
+    "surah": 60,
+    "unicode": "\uE901",
+    "line": 15
+  },
+  {
+    "page": 549,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 551,
+    "surah": 61,
+    "unicode": "\uE941",
+    "line": 7
+  },
+  {
+    "page": 551,
+    "line": 8,
+    "bismillah": true
+  },
+  {
+    "page": 553,
+    "surah": 62,
+    "unicode": "\uE942",
+    "line": 1
+  },
+  {
+    "page": 553,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 554,
+    "surah": 63,
+    "unicode": "\uE943",
+    "line": 7
+  },
+  {
+    "page": 554,
+    "line": 8,
+    "bismillah": true
+  },
+  {
+    "page": 555,
+    "surah": 64,
+    "unicode": "\uE944",
+    "line": 15
+  },
+  {
+    "page": 556,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 557,
+    "surah": 65,
+    "unicode": "\uE945",
+    "line": 15
+  },
+  {
+    "page": 558,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 560,
+    "surah": 66,
+    "unicode": "\uE946",
+    "line": 1
+  },
+  {
+    "page": 560,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 562,
+    "surah": 67,
+    "unicode": "\uE947",
+    "line": 1
+  },
+  {
+    "page": 562,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 564,
+    "surah": 68,
+    "unicode": "\uE948",
+    "line": 6
+  },
+  {
+    "page": 564,
+    "line": 7,
+    "bismillah": true
+  },
+  {
+    "page": 566,
+    "surah": 69,
+    "unicode": "\uE949",
+    "line": 9
+  },
+  {
+    "page": 566,
+    "line": 10,
+    "bismillah": true
+  },
+  {
+    "page": 568,
+    "surah": 70,
+    "unicode": "\uE94A",
+    "line": 9
+  },
+  {
+    "page": 568,
+    "line": 10,
+    "bismillah": true
+  },
+  {
+    "page": 570,
+    "surah": 71,
+    "unicode": "\uE94B",
+    "line": 5
+  },
+  {
+    "page": 570,
+    "line": 6,
+    "bismillah": true
+  },
+  {
+    "page": 572,
+    "surah": 72,
+    "unicode": "\uE94C",
+    "line": 1
+  },
+  {
+    "page": 572,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 574,
+    "surah": 73,
+    "unicode": "\uE94D",
+    "line": 1
+  },
+  {
+    "page": 574,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 575,
+    "surah": 74,
+    "unicode": "\uE94E",
+    "line": 8
+  },
+  {
+    "page": 575,
+    "line": 9,
+    "bismillah": true
+  },
+  {
+    "page": 577,
+    "surah": 75,
+    "unicode": "\uE94F",
+    "line": 6
+  },
+  {
+    "page": 577,
+    "line": 7,
+    "bismillah": true
+  },
+  {
+    "page": 578,
+    "surah": 76,
+    "unicode": "\uE950",
+    "line": 9
+  },
+  {
+    "page": 578,
+    "line": 10,
+    "bismillah": true
+  },
+  {
+    "page": 580,
+    "surah": 77,
+    "unicode": "\uE951",
+    "line": 7
+  },
+  {
+    "page": 580,
+    "line": 8,
+    "bismillah": true
+  },
+  {
+    "page": 582,
+    "surah": 78,
+    "unicode": "\uE952",
+    "line": 1
+  },
+  {
+    "page": 582,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 583,
+    "surah": 79,
+    "unicode": "\uE93D",
+    "line": 8
+  },
+  {
+    "page": 583,
+    "line": 9,
+    "bismillah": true
+  },
+  {
+    "page": 584,
+    "surah": 80,
+    "unicode": "\uE93E",
+    "line": 15
+  },
+  {
+    "page": 585,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 585,
+    "surah": 81,
+    "unicode": "\uE93F",
+    "line": 15
+  },
+  {
+    "page": 586,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 586,
+    "surah": 82,
+    "unicode": "\uE940",
+    "line": 15
+  },
+  {
+    "page": 587,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 587,
+    "surah": 83,
+    "unicode": "\uE953",
+    "line": 11
+  },
+  {
+    "page": 587,
+    "line": 12,
+    "bismillah": true
+  },
+  {
+    "page": 589,
+    "surah": 84,
+    "unicode": "\uE954",
+    "line": 2
+  },
+  {
+    "page": 589,
+    "line": 3,
+    "bismillah": true
+  },
+  {
+    "page": 590,
+    "surah": 85,
+    "unicode": "\uE955",
+    "line": 1
+  },
+  {
+    "page": 590,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 590,
+    "surah": 86,
+    "unicode": "\uE956",
+    "line": 15
+  },
+  {
+    "page": 591,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 591,
+    "surah": 87,
+    "unicode": "\uE957",
+    "line": 8
+  },
+  {
+    "page": 591,
+    "line": 9,
+    "bismillah": true
+  },
+  {
+    "page": 592,
+    "surah": 88,
+    "unicode": "\uE958",
+    "line": 3
+  },
+  {
+    "page": 592,
+    "line": 4,
+    "bismillah": true
+  },
+  {
+    "page": 593,
+    "surah": 89,
+    "unicode": "\uE959",
+    "line": 1
+  },
+  {
+    "page": 593,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 594,
+    "surah": 90,
+    "unicode": "\uE95A",
+    "line": 4
+  },
+  {
+    "page": 594,
+    "line": 5,
+    "bismillah": true
+  },
+  {
+    "page": 594,
+    "surah": 91,
+    "unicode": "\uE95B",
+    "line": 15
+  },
+  {
+    "page": 595,
+    "line": 1,
+    "bismillah": true
+  },
+  {
+    "page": 595,
+    "surah": 92,
+    "unicode": "\uE95C",
+    "line": 9
+  },
+  {
+    "page": 595,
+    "line": 10,
+    "bismillah": true
+  },
+  {
+    "page": 596,
+    "surah": 93,
+    "unicode": "\uE95D",
+    "line": 4
+  },
+  {
+    "page": 596,
+    "line": 5,
+    "bismillah": true
+  },
+  {
+    "page": 596,
+    "surah": 94,
+    "unicode": "\uE95E",
+    "line": 11
+  },
+  {
+    "page": 596,
+    "line": 12,
+    "bismillah": true
+  },
+  {
+    "page": 597,
+    "surah": 95,
+    "unicode": "\uE95F",
+    "line": 1
+  },
+  {
+    "page": 597,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 597,
+    "surah": 96,
+    "unicode": "\uE960",
+    "line": 7
+  },
+  {
+    "page": 597,
+    "line": 8,
+    "bismillah": true
+  },
+  {
+    "page": 598,
+    "surah": 97,
+    "unicode": "\uE961",
+    "line": 1
+  },
+  {
+    "page": 598,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 598,
+    "surah": 98,
+    "unicode": "\uE962",
+    "line": 6
+  },
+  {
+    "page": 598,
+    "line": 7,
+    "bismillah": true
+  },
+  {
+    "page": 599,
+    "surah": 99,
+    "unicode": "\uE963",
+    "line": 3
+  },
+  {
+    "page": 599,
+    "line": 4,
+    "bismillah": true
+  },
+  {
+    "page": 599,
+    "surah": 100,
+    "unicode": "\uE964",
+    "line": 10
+  },
+  {
+    "page": 599,
+    "line": 11,
+    "bismillah": true
+  },
+  {
+    "page": 600,
+    "surah": 101,
+    "unicode": "\uE965",
+    "line": 2
+  },
+  {
+    "page": 600,
+    "line": 3,
+    "bismillah": true
+  },
+  {
+    "page": 600,
+    "surah": 102,
+    "unicode": "\uE966",
+    "line": 10
+  },
+  {
+    "page": 600,
+    "line": 11,
+    "bismillah": true
+  },
+  {
+    "page": 601,
+    "surah": 103,
+    "unicode": "\uE967",
+    "line": 1
+  },
+  {
+    "page": 601,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 601,
+    "surah": 104,
+    "unicode": "\uE968",
+    "line": 5
+  },
+  {
+    "page": 601,
+    "line": 6,
+    "bismillah": true
+  },
+  {
+    "page": 601,
+    "surah": 105,
+    "unicode": "\uE969",
+    "line": 11
+  },
+  {
+    "page": 601,
+    "line": 12,
+    "bismillah": true
+  },
+  {
+    "page": 602,
+    "surah": 106,
+    "unicode": "\uE96A",
+    "line": 1
+  },
+  {
+    "page": 602,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 602,
+    "surah": 107,
+    "unicode": "\uE96B",
+    "line": 6
+  },
+  {
+    "page": 602,
+    "line": 7,
+    "bismillah": true
+  },
+  {
+    "page": 602,
+    "surah": 108,
+    "unicode": "\uE96C",
+    "line": 12
+  },
+  {
+    "page": 602,
+    "line": 13,
+    "bismillah": true
+  },
+  {
+    "page": 603,
+    "surah": 109,
+    "unicode": "\uE96D",
+    "line": 1
+  },
+  {
+    "page": 603,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 603,
+    "surah": 110,
+    "unicode": "\uE96E",
+    "line": 6
+  },
+  {
+    "page": 603,
+    "line": 7,
+    "bismillah": true
+  },
+  {
+    "page": 603,
+    "surah": 111,
+    "unicode": "\uE96F",
+    "line": 11
+  },
+  {
+    "page": 603,
+    "line": 12,
+    "bismillah": true
+  },
+  {
+    "page": 604,
+    "surah": 112,
+    "unicode": "\uE970",
+    "line": 1
+  },
+  {
+    "page": 604,
+    "line": 2,
+    "bismillah": true
+  },
+  {
+    "page": 604,
+    "surah": 113,
+    "unicode": "\uE971",
+    "line": 5
+  },
+  {
+    "page": 604,
+    "line": 6,
+    "bismillah": true
+  },
+  {
+    "page": 604,
+    "surah": 114,
+    "unicode": "\uE972",
+    "line": 10
+  },
+  {
+    "page": 604,
+    "line": 11,
+    "bismillah": true
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

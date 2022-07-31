@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.wagyufari.dzikirqu.ui.main.quran.MainQuranViewModel" />
+
+        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:background="@color/neutral_50"
+            app:layoutDescription="@xml/fragment_main_quran_scene">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/collapsible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/statusBarBackground">
+
+                <androidx.compose.ui.platform.ComposeView
+                    android:id="@+id/appbar"
+                    android:layout_width="match_parent"
+                    android:background="@color/neutral_50"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/neutral_50"
+                app:layout_constraintBottom_toTopOf="@id/jump"
+                app:layout_constraintTop_toBottomOf="@id/collapsible">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/surah"
+                    android:name="com.wagyufari.dzikirqu.ui.main.quran.fragment.SurahFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/juz"
+                    android:name="com.wagyufari.dzikirqu.ui.main.quran.fragment.JuzFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/jump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/jumpCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="@color/neutral_0"
+                    app:cardCornerRadius="8dp">
+
+                    <TextView
+                        android:id="@+id/jumpText"
+                        locale="@{LocaleConstants.GO_TO_SURAH}"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/regular"
+                        android:padding="12dp"
+                        android:textColor="@color/neutral_900"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_low_priority"
+                        app:drawableTint="@color/neutral_900"
+                        tools:text="Go to Surah" />
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/statusBarBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:id="@+id/statusBarHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+            </RelativeLayout>
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+    </LinearLayout>
+
+</layout>

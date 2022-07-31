@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.wagyufari.dzikirqu.ui.bsd.prayerbook.PrayerBookBSDViewModel" />
+
+        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/neutral_50"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/thumb"
+            android:layout_width="32dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/neutral_300"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/search"
+            hintLocale="@{LocaleConstants.SEARCH_PRAYER}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/regular"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/shp_8dp"
+            android:backgroundTint="@color/neutral_100_night_200_light"
+            android:textSize="16sp"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/neutral_600"
+            android:focusable="false"
+            app:layout_constraintTop_toBottomOf="@id/thumb"
+            android:padding="12dp"
+            android:textColorHint="@color/textTertiary"
+            tools:hint="Search for prayer" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/search" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintTop_toBottomOf="@id/recycler" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

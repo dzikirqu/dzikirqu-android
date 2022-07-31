@@ -1,0 +1,1442 @@
+[
+  {
+    "hizb": 1,
+    "juz": 1,
+    "surah": "Al-Fatihah",
+    "verse": 1
+  },
+  {
+    "hizb": 1.25,
+    "juz": 1,
+    "surah": "Al-Baqarah",
+    "verse": 26
+  },
+  {
+    "hizb": 1.5,
+    "juz": 1,
+    "surah": "Al-Baqarah",
+    "verse": 44
+  },
+  {
+    "hizb": 1.75,
+    "juz": 1,
+    "surah": "Al-Baqarah",
+    "verse": 60
+  },
+  {
+    "hizb": 2,
+    "juz": 1,
+    "surah": "Al-Baqarah",
+    "verse": 75
+  },
+  {
+    "hizb": 2.25,
+    "juz": 1,
+    "surah": "Al-Baqarah",
+    "verse": 92
+  },
+  {
+    "hizb": 2.5,
+    "juz": 1,
+    "surah": "Al-Baqarah",
+    "verse": 106
+  },
+  {
+    "hizb": 2.75,
+    "juz": 1,
+    "surah": "Al-Baqarah",
+    "verse": 124
+  },
+  {
+    "hizb": 3,
+    "juz": 2,
+    "surah": "Al-Baqarah",
+    "verse": 142
+  },
+  {
+    "hizb": 3.25,
+    "juz": 2,
+    "surah": "Al-Baqarah",
+    "verse": 158
+  },
+  {
+    "hizb": 3.5,
+    "juz": 2,
+    "surah": "Al-Baqarah",
+    "verse": 177
+  },
+  {
+    "hizb": 3.75,
+    "juz": 2,
+    "surah": "Al-Baqarah",
+    "verse": 189
+  },
+  {
+    "hizb": 4,
+    "juz": 2,
+    "surah": "Al-Baqarah",
+    "verse": 203
+  },
+  {
+    "hizb": 4.25,
+    "juz": 2,
+    "surah": "Al-Baqarah",
+    "verse": 219
+  },
+  {
+    "hizb": 4.5,
+    "juz": 2,
+    "surah": "Al-Baqarah",
+    "verse": 233
+  },
+  {
+    "hizb": 4.75,
+    "juz": 2,
+    "surah": "Al-Baqarah",
+    "verse": 243
+  },
+  {
+    "hizb": 5,
+    "juz": 3,
+    "surah": "Al-Baqarah",
+    "verse": 253
+  },
+  {
+    "hizb": 5.25,
+    "juz": 3,
+    "surah": "Al-Baqarah",
+    "verse": 263
+  },
+  {
+    "hizb": 5.5,
+    "juz": 3,
+    "surah": "Al-Baqarah",
+    "verse": 272
+  },
+  {
+    "hizb": 5.75,
+    "juz": 3,
+    "surah": "Al-Baqarah",
+    "verse": 283
+  },
+  {
+    "hizb": 6,
+    "juz": 3,
+    "surah": "Ali 'Imran",
+    "verse": 15
+  },
+  {
+    "hizb": 6.25,
+    "juz": 3,
+    "surah": "Ali 'Imran",
+    "verse": 33
+  },
+  {
+    "hizb": 6.5,
+    "juz": 3,
+    "surah": "Ali 'Imran",
+    "verse": 52
+  },
+  {
+    "hizb": 6.75,
+    "juz": 3,
+    "surah": "Ali 'Imran",
+    "verse": 75
+  },
+  {
+    "hizb": 7,
+    "juz": 4,
+    "surah": "Ali 'Imran",
+    "verse": 93
+  },
+  {
+    "hizb": 7.25,
+    "juz": 4,
+    "surah": "Ali 'Imran",
+    "verse": 113
+  },
+  {
+    "hizb": 7.5,
+    "juz": 4,
+    "surah": "Ali 'Imran",
+    "verse": 133
+  },
+  {
+    "hizb": 7.75,
+    "juz": 4,
+    "surah": "Ali 'Imran",
+    "verse": 153
+  },
+  {
+    "hizb": 8,
+    "juz": 4,
+    "surah": "Ali 'Imran",
+    "verse": 171
+  },
+  {
+    "hizb": 8.25,
+    "juz": 4,
+    "surah": "Ali 'Imran",
+    "verse": 186
+  },
+  {
+    "hizb": 8.5,
+    "juz": 4,
+    "surah": "An-Nisa",
+    "verse": 1
+  },
+  {
+    "hizb": 8.75,
+    "juz": 4,
+    "surah": "An-Nisa",
+    "verse": 12
+  },
+  {
+    "hizb": 9,
+    "juz": 5,
+    "surah": "An-Nisa",
+    "verse": 24
+  },
+  {
+    "hizb": 9.25,
+    "juz": 5,
+    "surah": "An-Nisa",
+    "verse": 36
+  },
+  {
+    "hizb": 9.5,
+    "juz": 5,
+    "surah": "An-Nisa",
+    "verse": 58
+  },
+  {
+    "hizb": 9.75,
+    "juz": 5,
+    "surah": "An-Nisa",
+    "verse": 74
+  },
+  {
+    "hizb": 10,
+    "juz": 5,
+    "surah": "An-Nisa",
+    "verse": 88
+  },
+  {
+    "hizb": 10.25,
+    "juz": 5,
+    "surah": "An-Nisa",
+    "verse": 100
+  },
+  {
+    "hizb": 10.5,
+    "juz": 5,
+    "surah": "An-Nisa",
+    "verse": 114
+  },
+  {
+    "hizb": 10.75,
+    "juz": 5,
+    "surah": "An-Nisa",
+    "verse": 135
+  },
+  {
+    "hizb": 11,
+    "juz": 6,
+    "surah": "An-Nisa",
+    "verse": 148
+  },
+  {
+    "hizb": 11.25,
+    "juz": 6,
+    "surah": "An-Nisa",
+    "verse": 163
+  },
+  {
+    "hizb": 11.5,
+    "juz": 6,
+    "surah": "Al-Ma'idah",
+    "verse": 1
+  },
+  {
+    "hizb": 11.75,
+    "juz": 6,
+    "surah": "Al-Ma'idah",
+    "verse": 12
+  },
+  {
+    "hizb": 12,
+    "juz": 6,
+    "surah": "Al-Ma'idah",
+    "verse": 27
+  },
+  {
+    "hizb": 12.25,
+    "juz": 6,
+    "surah": "Al-Ma'idah",
+    "verse": 41
+  },
+  {
+    "hizb": 12.5,
+    "juz": 6,
+    "surah": "Al-Ma'idah",
+    "verse": 51
+  },
+  {
+    "hizb": 12.75,
+    "juz": 6,
+    "surah": "Al-Ma'idah",
+    "verse": 67
+  },
+  {
+    "hizb": 13,
+    "juz": 7,
+    "surah": "Al-Ma'idah",
+    "verse": 82
+  },
+  {
+    "hizb": 13.25,
+    "juz": 7,
+    "surah": "Al-Ma'idah",
+    "verse": 97
+  },
+  {
+    "hizb": 13.5,
+    "juz": 7,
+    "surah": "Al-Ma'idah",
+    "verse": 109
+  },
+  {
+    "hizb": 13.75,
+    "juz": 7,
+    "surah": "Al-An'am",
+    "verse": 13
+  },
+  {
+    "hizb": 14,
+    "juz": 7,
+    "surah": "Al-An'am",
+    "verse": 36
+  },
+  {
+    "hizb": 14.25,
+    "juz": 7,
+    "surah": "Al-An'am",
+    "verse": 59
+  },
+  {
+    "hizb": 14.5,
+    "juz": 7,
+    "surah": "Al-An'am",
+    "verse": 74
+  },
+  {
+    "hizb": 14.75,
+    "juz": 7,
+    "surah": "Al-An'am",
+    "verse": 95
+  },
+  {
+    "hizb": 15,
+    "juz": 8,
+    "surah": "Al-An'am",
+    "verse": 111
+  },
+  {
+    "hizb": 15.25,
+    "juz": 8,
+    "surah": "Al-An'am",
+    "verse": 127
+  },
+  {
+    "hizb": 15.5,
+    "juz": 8,
+    "surah": "Al-An'am",
+    "verse": 141
+  },
+  {
+    "hizb": 15.75,
+    "juz": 8,
+    "surah": "Al-An'am",
+    "verse": 151
+  },
+  {
+    "hizb": 16,
+    "juz": 8,
+    "surah": "Al-A'raf",
+    "verse": 1
+  },
+  {
+    "hizb": 16.25,
+    "juz": 8,
+    "surah": "Al-A'raf",
+    "verse": 31
+  },
+  {
+    "hizb": 16.5,
+    "juz": 8,
+    "surah": "Al-A'raf",
+    "verse": 47
+  },
+  {
+    "hizb": 16.75,
+    "juz": 8,
+    "surah": "Al-A'raf",
+    "verse": 65
+  },
+  {
+    "hizb": 17,
+    "juz": 9,
+    "surah": "Al-A'raf",
+    "verse": 88
+  },
+  {
+    "hizb": 17.25,
+    "juz": 9,
+    "surah": "Al-A'raf",
+    "verse": 117
+  },
+  {
+    "hizb": 17.5,
+    "juz": 9,
+    "surah": "Al-A'raf",
+    "verse": 142
+  },
+  {
+    "hizb": 17.75,
+    "juz": 9,
+    "surah": "Al-A'raf",
+    "verse": 156
+  },
+  {
+    "hizb": 18,
+    "juz": 9,
+    "surah": "Al-A'raf",
+    "verse": 171
+  },
+  {
+    "hizb": 18.25,
+    "juz": 9,
+    "surah": "Al-A'raf",
+    "verse": 189
+  },
+  {
+    "hizb": 18.5,
+    "juz": 9,
+    "surah": "Al-Anfal",
+    "verse": 1
+  },
+  {
+    "hizb": 18.75,
+    "juz": 9,
+    "surah": "Al-Anfal",
+    "verse": 22
+  },
+  {
+    "hizb": 19,
+    "juz": 10,
+    "surah": "Al-Anfal",
+    "verse": 41
+  },
+  {
+    "hizb": 19.25,
+    "juz": 10,
+    "surah": "Al-Anfal",
+    "verse": 61
+  },
+  {
+    "hizb": 19.5,
+    "juz": 10,
+    "surah": "At-Tawbah",
+    "verse": 1
+  },
+  {
+    "hizb": 19.75,
+    "juz": 10,
+    "surah": "At-Tawbah",
+    "verse": 19
+  },
+  {
+    "hizb": 20,
+    "juz": 10,
+    "surah": "At-Tawbah",
+    "verse": 34
+  },
+  {
+    "hizb": 20.25,
+    "juz": 10,
+    "surah": "At-Tawbah",
+    "verse": 46
+  },
+  {
+    "hizb": 20.5,
+    "juz": 10,
+    "surah": "At-Tawbah",
+    "verse": 60
+  },
+  {
+    "hizb": 20.75,
+    "juz": 10,
+    "surah": "At-Tawbah",
+    "verse": 75
+  },
+  {
+    "hizb": 21,
+    "juz": 11,
+    "surah": "At-Tawbah",
+    "verse": 93
+  },
+  {
+    "hizb": 21.25,
+    "juz": 11,
+    "surah": "At-Tawbah",
+    "verse": 111
+  },
+  {
+    "hizb": 21.5,
+    "juz": 11,
+    "surah": "At-Tawbah",
+    "verse": 122
+  },
+  {
+    "hizb": 21.75,
+    "juz": 11,
+    "surah": "Yunus",
+    "verse": 11
+  },
+  {
+    "hizb": 22,
+    "juz": 11,
+    "surah": "Yunus",
+    "verse": 26
+  },
+  {
+    "hizb": 22.25,
+    "juz": 11,
+    "surah": "Yunus",
+    "verse": 53
+  },
+  {
+    "hizb": 22.5,
+    "juz": 11,
+    "surah": "Yunus",
+    "verse": 71
+  },
+  {
+    "hizb": 22.75,
+    "juz": 11,
+    "surah": "Yunus",
+    "verse": 90
+  },
+  {
+    "hizb": 23,
+    "juz": 12,
+    "surah": "Hud",
+    "verse": 6
+  },
+  {
+    "hizb": 23.25,
+    "juz": 12,
+    "surah": "Hud",
+    "verse": 24
+  },
+  {
+    "hizb": 23.5,
+    "juz": 12,
+    "surah": "Hud",
+    "verse": 41
+  },
+  {
+    "hizb": 23.75,
+    "juz": 12,
+    "surah": "Hud",
+    "verse": 61
+  },
+  {
+    "hizb": 24,
+    "juz": 12,
+    "surah": "Hud",
+    "verse": 84
+  },
+  {
+    "hizb": 24.25,
+    "juz": 12,
+    "surah": "Hud",
+    "verse": 108
+  },
+  {
+    "hizb": 24.5,
+    "juz": 12,
+    "surah": "Yusuf",
+    "verse": 7
+  },
+  {
+    "hizb": 24.75,
+    "juz": 12,
+    "surah": "Yusuf",
+    "verse": 30
+  },
+  {
+    "hizb": 25,
+    "juz": 13,
+    "surah": "Yusuf",
+    "verse": 53
+  },
+  {
+    "hizb": 25.25,
+    "juz": 13,
+    "surah": "Yusuf",
+    "verse": 77
+  },
+  {
+    "hizb": 25.5,
+    "juz": 13,
+    "surah": "Yusuf",
+    "verse": 101
+  },
+  {
+    "hizb": 25.75,
+    "juz": 13,
+    "surah": "Ar-Ra'd",
+    "verse": 5
+  },
+  {
+    "hizb": 26,
+    "juz": 13,
+    "surah": "Ar-Ra'd",
+    "verse": 19
+  },
+  {
+    "hizb": 26.25,
+    "juz": 13,
+    "surah": "Ar-Ra'd",
+    "verse": 35
+  },
+  {
+    "hizb": 26.5,
+    "juz": 13,
+    "surah": "Ibrahim",
+    "verse": 10
+  },
+  {
+    "hizb": 26.75,
+    "juz": 13,
+    "surah": "Ibrahim",
+    "verse": 28
+  },
+  {
+    "hizb": 27,
+    "juz": 14,
+    "surah": "Al-Hijr",
+    "verse": 1
+  },
+  {
+    "hizb": 27.25,
+    "juz": 14,
+    "surah": "Al-Hijr",
+    "verse": 49
+  },
+  {
+    "hizb": 27.5,
+    "juz": 14,
+    "surah": "An-Nahl",
+    "verse": 1
+  },
+  {
+    "hizb": 27.75,
+    "juz": 14,
+    "surah": "An-Nahl",
+    "verse": 30
+  },
+  {
+    "hizb": 28,
+    "juz": 14,
+    "surah": "An-Nahl",
+    "verse": 51
+  },
+  {
+    "hizb": 28.25,
+    "juz": 14,
+    "surah": "An-Nahl",
+    "verse": 75
+  },
+  {
+    "hizb": 28.5,
+    "juz": 14,
+    "surah": "An-Nahl",
+    "verse": 90
+  },
+  {
+    "hizb": 28.75,
+    "juz": 14,
+    "surah": "An-Nahl",
+    "verse": 111
+  },
+  {
+    "hizb": 29,
+    "juz": 15,
+    "surah": "Al-Isra",
+    "verse": 1
+  },
+  {
+    "hizb": 29.25,
+    "juz": 15,
+    "surah": "Al-Isra",
+    "verse": 23
+  },
+  {
+    "hizb": 29.5,
+    "juz": 15,
+    "surah": "Al-Isra",
+    "verse": 50
+  },
+  {
+    "hizb": 29.75,
+    "juz": 15,
+    "surah": "Al-Isra",
+    "verse": 70
+  },
+  {
+    "hizb": 30,
+    "juz": 15,
+    "surah": "Al-Isra",
+    "verse": 99
+  },
+  {
+    "hizb": 30.25,
+    "juz": 15,
+    "surah": "Al-Kahf",
+    "verse": 17
+  },
+  {
+    "hizb": 30.5,
+    "juz": 15,
+    "surah": "Al-Kahf",
+    "verse": 32
+  },
+  {
+    "hizb": 30.75,
+    "juz": 15,
+    "surah": "Al-Kahf",
+    "verse": 51
+  },
+  {
+    "hizb": 31,
+    "juz": 16,
+    "surah": "Al-Kahf",
+    "verse": 75
+  },
+  {
+    "hizb": 31.25,
+    "juz": 16,
+    "surah": "Al-Kahf",
+    "verse": 99
+  },
+  {
+    "hizb": 31.5,
+    "juz": 16,
+    "surah": "Maryam",
+    "verse": 22
+  },
+  {
+    "hizb": 31.75,
+    "juz": 16,
+    "surah": "Maryam",
+    "verse": 59
+  },
+  {
+    "hizb": 32,
+    "juz": 16,
+    "surah": "Taha",
+    "verse": 1
+  },
+  {
+    "hizb": 32.25,
+    "juz": 16,
+    "surah": "Taha",
+    "verse": 55
+  },
+  {
+    "hizb": 32.5,
+    "juz": 16,
+    "surah": "Taha",
+    "verse": 83
+  },
+  {
+    "hizb": 32.75,
+    "juz": 16,
+    "surah": "Taha",
+    "verse": 111
+  },
+  {
+    "hizb": 33,
+    "juz": 17,
+    "surah": "Al-Anbya",
+    "verse": 1
+  },
+  {
+    "hizb": 33.25,
+    "juz": 17,
+    "surah": "Al-Anbya",
+    "verse": 29
+  },
+  {
+    "hizb": 33.5,
+    "juz": 17,
+    "surah": "Al-Anbya",
+    "verse": 51
+  },
+  {
+    "hizb": 33.75,
+    "juz": 17,
+    "surah": "Al-Anbya",
+    "verse": 83
+  },
+  {
+    "hizb": 34,
+    "juz": 17,
+    "surah": "Al-Haj",
+    "verse": 1
+  },
+  {
+    "hizb": 34.25,
+    "juz": 17,
+    "surah": "Al-Haj",
+    "verse": 19
+  },
+  {
+    "hizb": 34.5,
+    "juz": 17,
+    "surah": "Al-Haj",
+    "verse": 38
+  },
+  {
+    "hizb": 34.75,
+    "juz": 17,
+    "surah": "Al-Haj",
+    "verse": 60
+  },
+  {
+    "hizb": 35,
+    "juz": 18,
+    "surah": "Al-Mu'minun",
+    "verse": 1
+  },
+  {
+    "hizb": 35.25,
+    "juz": 18,
+    "surah": "Al-Mu'minun",
+    "verse": 36
+  },
+  {
+    "hizb": 35.5,
+    "juz": 18,
+    "surah": "Al-Mu'minun",
+    "verse": 75
+  },
+  {
+    "hizb": 35.75,
+    "juz": 18,
+    "surah": "An-Nur",
+    "verse": 1
+  },
+  {
+    "hizb": 36,
+    "juz": 18,
+    "surah": "An-Nur",
+    "verse": 21
+  },
+  {
+    "hizb": 36.25,
+    "juz": 18,
+    "surah": "An-Nur",
+    "verse": 35
+  },
+  {
+    "hizb": 36.5,
+    "juz": 18,
+    "surah": "An-Nur",
+    "verse": 53
+  },
+  {
+    "hizb": 36.75,
+    "juz": 18,
+    "surah": "Al-Furqan",
+    "verse": 1
+  },
+  {
+    "hizb": 37,
+    "juz": 19,
+    "surah": "Al-Furqan",
+    "verse": 21
+  },
+  {
+    "hizb": 37.25,
+    "juz": 19,
+    "surah": "Al-Furqan",
+    "verse": 53
+  },
+  {
+    "hizb": 37.5,
+    "juz": 19,
+    "surah": "Ash-Shu'ara",
+    "verse": 1
+  },
+  {
+    "hizb": 37.75,
+    "juz": 19,
+    "surah": "Ash-Shu'ara",
+    "verse": 52
+  },
+  {
+    "hizb": 38,
+    "juz": 19,
+    "surah": "Ash-Shu'ara",
+    "verse": 111
+  },
+  {
+    "hizb": 38.25,
+    "juz": 19,
+    "surah": "Ash-Shu'ara",
+    "verse": 181
+  },
+  {
+    "hizb": 38.5,
+    "juz": 19,
+    "surah": "An-Naml",
+    "verse": 1
+  },
+  {
+    "hizb": 38.75,
+    "juz": 19,
+    "surah": "An-Naml",
+    "verse": 27
+  },
+  {
+    "hizb": 39,
+    "juz": 20,
+    "surah": "An-Naml",
+    "verse": 56
+  },
+  {
+    "hizb": 39.25,
+    "juz": 20,
+    "surah": "An-Naml",
+    "verse": 82
+  },
+  {
+    "hizb": 39.5,
+    "juz": 20,
+    "surah": "Al-Qasas",
+    "verse": 12
+  },
+  {
+    "hizb": 39.75,
+    "juz": 20,
+    "surah": "Al-Qasas",
+    "verse": 29
+  },
+  {
+    "hizb": 40,
+    "juz": 20,
+    "surah": "Al-Qasas",
+    "verse": 51
+  },
+  {
+    "hizb": 40.25,
+    "juz": 20,
+    "surah": "Al-Qasas",
+    "verse": 76
+  },
+  {
+    "hizb": 40.5,
+    "juz": 20,
+    "surah": "Al-'Ankabut",
+    "verse": 1
+  },
+  {
+    "hizb": 40.75,
+    "juz": 20,
+    "surah": "Al-'Ankabut",
+    "verse": 26
+  },
+  {
+    "hizb": 41,
+    "juz": 21,
+    "surah": "Al-'Ankabut",
+    "verse": 46
+  },
+  {
+    "hizb": 41.25,
+    "juz": 21,
+    "surah": "Ar-Rum",
+    "verse": 1
+  },
+  {
+    "hizb": 41.5,
+    "juz": 21,
+    "surah": "Ar-Rum",
+    "verse": 31
+  },
+  {
+    "hizb": 41.75,
+    "juz": 21,
+    "surah": "Ar-Rum",
+    "verse": 54
+  },
+  {
+    "hizb": 42,
+    "juz": 21,
+    "surah": "Luqman",
+    "verse": 22
+  },
+  {
+    "hizb": 42.25,
+    "juz": 21,
+    "surah": "As-Sajdah",
+    "verse": 11
+  },
+  {
+    "hizb": 42.5,
+    "juz": 21,
+    "surah": "Al-Ahzab",
+    "verse": 1
+  },
+  {
+    "hizb": 42.75,
+    "juz": 21,
+    "surah": "Al-Ahzab",
+    "verse": 18
+  },
+  {
+    "hizb": 43,
+    "juz": 22,
+    "surah": "Al-Ahzab",
+    "verse": 31
+  },
+  {
+    "hizb": 43.25,
+    "juz": 22,
+    "surah": "Al-Ahzab",
+    "verse": 51
+  },
+  {
+    "hizb": 43.5,
+    "juz": 22,
+    "surah": "Al-Ahzab",
+    "verse": 60
+  },
+  {
+    "hizb": 43.75,
+    "juz": 22,
+    "surah": "Saba",
+    "verse": 10
+  },
+  {
+    "hizb": 44,
+    "juz": 22,
+    "surah": "Saba",
+    "verse": 24
+  },
+  {
+    "hizb": 44.25,
+    "juz": 22,
+    "surah": "Saba",
+    "verse": 46
+  },
+  {
+    "hizb": 44.5,
+    "juz": 22,
+    "surah": "Fatir",
+    "verse": 15
+  },
+  {
+    "hizb": 44.75,
+    "juz": 22,
+    "surah": "Fatir",
+    "verse": 41
+  },
+  {
+    "hizb": 45,
+    "juz": 23,
+    "surah": "Ya-Sin",
+    "verse": 28
+  },
+  {
+    "hizb": 45.25,
+    "juz": 23,
+    "surah": "Ya-Sin",
+    "verse": 60
+  },
+  {
+    "hizb": 45.5,
+    "juz": 23,
+    "surah": "As-Saffat",
+    "verse": 22
+  },
+  {
+    "hizb": 45.75,
+    "juz": 23,
+    "surah": "As-Saffat",
+    "verse": 83
+  },
+  {
+    "hizb": 46,
+    "juz": 23,
+    "surah": "As-Saffat",
+    "verse": 145
+  },
+  {
+    "hizb": 46.25,
+    "juz": 23,
+    "surah": "Sad",
+    "verse": 21
+  },
+  {
+    "hizb": 46.5,
+    "juz": 23,
+    "surah": "Sad",
+    "verse": 52
+  },
+  {
+    "hizb": 46.75,
+    "juz": 23,
+    "surah": "Az-Zumar",
+    "verse": 8
+  },
+  {
+    "hizb": 47,
+    "juz": 24,
+    "surah": "Az-Zumar",
+    "verse": 32
+  },
+  {
+    "hizb": 47.25,
+    "juz": 24,
+    "surah": "Az-Zumar",
+    "verse": 53
+  },
+  {
+    "hizb": 47.5,
+    "juz": 24,
+    "surah": "Ghafir",
+    "verse": 1
+  },
+  {
+    "hizb": 47.75,
+    "juz": 24,
+    "surah": "Ghafir",
+    "verse": 21
+  },
+  {
+    "hizb": 48,
+    "juz": 24,
+    "surah": "Ghafir",
+    "verse": 41
+  },
+  {
+    "hizb": 48.25,
+    "juz": 24,
+    "surah": "Ghafir",
+    "verse": 66
+  },
+  {
+    "hizb": 48.5,
+    "juz": 24,
+    "surah": "Fussilat",
+    "verse": 9
+  },
+  {
+    "hizb": 48.75,
+    "juz": 24,
+    "surah": "Fussilat",
+    "verse": 25
+  },
+  {
+    "hizb": 49,
+    "juz": 25,
+    "surah": "Fussilat",
+    "verse": 47
+  },
+  {
+    "hizb": 49.25,
+    "juz": 25,
+    "surah": "Ash-Shuraa",
+    "verse": 13
+  },
+  {
+    "hizb": 49.5,
+    "juz": 25,
+    "surah": "Ash-Shuraa",
+    "verse": 27
+  },
+  {
+    "hizb": 49.75,
+    "juz": 25,
+    "surah": "Ash-Shuraa",
+    "verse": 51
+  },
+  {
+    "hizb": 50,
+    "juz": 25,
+    "surah": "Az-Zukhruf",
+    "verse": 24
+  },
+  {
+    "hizb": 50.25,
+    "juz": 25,
+    "surah": "Az-Zukhruf",
+    "verse": 57
+  },
+  {
+    "hizb": 50.5,
+    "juz": 25,
+    "surah": "Ad-Dukhan",
+    "verse": 17
+  },
+  {
+    "hizb": 50.75,
+    "juz": 25,
+    "surah": "Al-Jathiyah",
+    "verse": 12
+  },
+  {
+    "hizb": 51,
+    "juz": 26,
+    "surah": "Al-Ahqaf",
+    "verse": 1
+  },
+  {
+    "hizb": 51.25,
+    "juz": 26,
+    "surah": "Al-Ahqaf",
+    "verse": 21
+  },
+  {
+    "hizb": 51.5,
+    "juz": 26,
+    "surah": "Muhammad",
+    "verse": 10
+  },
+  {
+    "hizb": 51.75,
+    "juz": 26,
+    "surah": "Muhammad",
+    "verse": 33
+  },
+  {
+    "hizb": 52,
+    "juz": 26,
+    "surah": "Al-Fath",
+    "verse": 18
+  },
+  {
+    "hizb": 52.25,
+    "juz": 26,
+    "surah": "Al-Hujurat",
+    "verse": 1
+  },
+  {
+    "hizb": 52.5,
+    "juz": 26,
+    "surah": "Al-Hujurat",
+    "verse": 14
+  },
+  {
+    "hizb": 52.75,
+    "juz": 26,
+    "surah": "Qaf",
+    "verse": 27
+  },
+  {
+    "hizb": 53,
+    "juz": 27,
+    "surah": "Adh-Dhariyat",
+    "verse": 31
+  },
+  {
+    "hizb": 53.25,
+    "juz": 27,
+    "surah": "At-Tur",
+    "verse": 24
+  },
+  {
+    "hizb": 53.5,
+    "juz": 27,
+    "surah": "An-Najm",
+    "verse": 26
+  },
+  {
+    "hizb": 53.75,
+    "juz": 27,
+    "surah": "Al-Qamar",
+    "verse": 9
+  },
+  {
+    "hizb": 54,
+    "juz": 27,
+    "surah": "Ar-Rahman",
+    "verse": 1
+  },
+  {
+    "hizb": 54.25,
+    "juz": 27,
+    "surah": "Al-Waqi'ah",
+    "verse": 1
+  },
+  {
+    "hizb": 54.5,
+    "juz": 27,
+    "surah": "Al-Waqi'ah",
+    "verse": 75
+  },
+  {
+    "hizb": 54.75,
+    "juz": 27,
+    "surah": "Al-Hadid",
+    "verse": 16
+  },
+  {
+    "hizb": 55,
+    "juz": 28,
+    "surah": "Al-Mujadila",
+    "verse": 1
+  },
+  {
+    "hizb": 55.25,
+    "juz": 28,
+    "surah": "Al-Mujadila",
+    "verse": 14
+  },
+  {
+    "hizb": 55.5,
+    "juz": 28,
+    "surah": "Al-Mumtahanah",
+    "verse": 1
+  },
+  {
+    "hizb": 55.75,
+    "juz": 28,
+    "surah": "Al-Mumtahanah",
+    "verse": 7
+  },
+  {
+    "hizb": 56,
+    "juz": 28,
+    "surah": "Al-Jumu'ah",
+    "verse": 1
+  },
+  {
+    "hizb": 56.25,
+    "juz": 28,
+    "surah": "Al-Munafiqun",
+    "verse": 4
+  },
+  {
+    "hizb": 56.5,
+    "juz": 28,
+    "surah": "At-Taghabun",
+    "verse": 1
+  },
+  {
+    "hizb": 56.75,
+    "juz": 28,
+    "surah": "At-Tahrim",
+    "verse": 1
+  },
+  {
+    "hizb": 57,
+    "juz": 29,
+    "surah": "Al-Mulk",
+    "verse": 1
+  },
+  {
+    "hizb": 57.25,
+    "juz": 29,
+    "surah": "Al-Qalam",
+    "verse": 1
+  },
+  {
+    "hizb": 57.5,
+    "juz": 29,
+    "surah": "Al-Haqqah",
+    "verse": 1
+  },
+  {
+    "hizb": 57.75,
+    "juz": 29,
+    "surah": "Al-Ma'arij",
+    "verse": 19
+  },
+  {
+    "hizb": 58,
+    "juz": 29,
+    "surah": "Al-Jinn",
+    "verse": 1
+  },
+  {
+    "hizb": 58.25,
+    "juz": 29,
+    "surah": "Al-Muzzammil",
+    "verse": 20
+  },
+  {
+    "hizb": 58.5,
+    "juz": 29,
+    "surah": "Al-Qiyamah",
+    "verse": 1
+  },
+  {
+    "hizb": 58.75,
+    "juz": 29,
+    "surah": "Al-Insan",
+    "verse": 19
+  },
+  {
+    "hizb": 59,
+    "juz": 30,
+    "surah": "An-Naba",
+    "verse": 1
+  },
+  {
+    "hizb": 59.25,
+    "juz": 30,
+    "surah": "'Abasa",
+    "verse": 1
+  },
+  {
+    "hizb": 59.5,
+    "juz": 30,
+    "surah": "Al-Infitar",
+    "verse": 1
+  },
+  {
+    "hizb": 59.75,
+    "juz": 30,
+    "surah": "Al-Inshiqaq",
+    "verse": 1
+  },
+  {
+    "hizb": 60,
+    "juz": 30,
+    "surah": "Al-A'la",
+    "verse": 1
+  },
+  {
+    "hizb": 60.25,
+    "juz": 30,
+    "surah": "Al-Balad",
+    "verse": 1
+  },
+  {
+    "hizb": 60.5,
+    "juz": 30,
+    "surah": "Ash-Sharh",
+    "verse": 1
+  },
+  {
+    "hizb": 60.75,
+    "juz": 30,
+    "surah": "Al-'Adiyat",
+    "verse": 1
+  }
+]

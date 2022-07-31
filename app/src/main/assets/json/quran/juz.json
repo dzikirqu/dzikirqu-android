@@ -1,0 +1,242 @@
+[
+  {
+    "juz": 1,
+    "surah": "Al-Fatihah",
+    "surah_id": 1,
+    "start_page": 1,
+    "end_page": 21,
+    "verse": 1
+  },
+  {
+    "juz": 2,
+    "surah": "Al-Baqarah",
+    "surah_id": 2,
+    "start_page": 22,
+    "end_page": 41,
+    "verse": 142
+  },
+  {
+    "juz": 3,
+    "surah": "Al-Baqarah",
+    "surah_id": 2,
+    "start_page": 42,
+    "end_page": 61,
+    "verse": 253
+  },
+  {
+    "juz": 4,
+    "surah": "Ali 'Imran",
+    "surah_id": 3,
+    "start_page": 62,
+    "end_page": 81,
+    "verse": 93
+  },
+  {
+    "juz": 5,
+    "surah": "An-Nisa",
+    "surah_id": 4,
+    "start_page": 82,
+    "end_page": 101,
+    "verse": 24
+  },
+  {
+    "juz": 6,
+    "surah": "An-Nisa",
+    "surah_id": 4,
+    "start_page": 102,
+    "end_page": 120,
+    "verse": 148
+  },
+  {
+    "juz": 7,
+    "surah": "Al-Ma'idah",
+    "surah_id": 5,
+    "start_page": 121,
+    "end_page": 141,
+    "verse": 82
+  },
+  {
+    "juz": 8,
+    "surah": "Al-An'am",
+    "surah_id": 6,
+    "start_page": 142,
+    "end_page": 161,
+    "verse": 111
+  },
+  {
+    "juz": 9,
+    "surah": "Al-A'raf",
+    "surah_id": 7,
+    "start_page": 162,
+    "end_page": 181,
+    "verse": 88
+  },
+  {
+    "juz": 10,
+    "surah": "Al-Anfal",
+    "surah_id": 8,
+    "start_page": 182,
+    "end_page": 200,
+    "verse": 41
+  },
+  {
+    "juz": 11,
+    "surah": "At-Tawbah",
+    "surah_id": 9,
+    "start_page": 201,
+    "end_page": 221,
+    "verse": 93
+  },
+  {
+    "juz": 12,
+    "surah": "Hud",
+    "surah_id": 11,
+    "start_page": 222,
+    "end_page": 241,
+    "verse": 6
+  },
+  {
+    "juz": 13,
+    "surah": "Yusuf",
+    "surah_id": 12,
+    "start_page": 242,
+    "end_page": 261,
+    "verse": 53
+  },
+  {
+    "juz": 14,
+    "surah": "Al-Hijr",
+    "surah_id": 15,
+    "start_page": 262,
+    "end_page": 281,
+    "verse": 1
+  },
+  {
+    "juz": 15,
+    "surah": "Al-Isra",
+    "surah_id": 17,
+    "start_page": 282,
+    "end_page": 301,
+    "verse": 1
+  },
+  {
+    "juz": 16,
+    "surah": "Al-Kahf",
+    "surah_id": 18,
+    "start_page": 302,
+    "end_page": 321,
+    "verse": 75
+  },
+  {
+    "juz": 17,
+    "surah": "Al-Anbya",
+    "surah_id": 21,
+    "start_page": 322,
+    "end_page": 341,
+    "verse": 1
+  },
+  {
+    "juz": 18,
+    "surah": "Al-Mu'minun",
+    "surah_id": 23,
+    "start_page": 342,
+    "end_page": 361,
+    "verse": 1
+  },
+  {
+    "juz": 19,
+    "surah": "Al-Furqan",
+    "surah_id": 25,
+    "start_page": 362,
+    "end_page": 381,
+    "verse": 21
+  },
+  {
+    "juz": 20,
+    "surah": "An-Naml",
+    "surah_id": 27,
+    "start_page": 382,
+    "end_page": 401,
+    "verse": 56
+  },
+  {
+    "juz": 21,
+    "surah": "Al-'Ankabut",
+    "surah_id": 29,
+    "start_page": 402,
+    "end_page": 421,
+    "verse": 46
+  },
+  {
+    "juz": 22,
+    "surah": "Al-Ahzab",
+    "surah_id": 33,
+    "start_page": 422,
+    "end_page": 441,
+    "verse": 31
+  },
+  {
+    "juz": 23,
+    "surah": "Ya-Sin",
+    "surah_id": 36,
+    "start_page": 442,
+    "end_page": 461,
+    "verse": 28
+  },
+  {
+    "juz": 24,
+    "surah": "Az-Zumar",
+    "surah_id": 39,
+    "start_page": 462,
+    "end_page": 481,
+    "verse": 32
+  },
+  {
+    "juz": 25,
+    "surah": "Fussilat",
+    "surah_id": 41,
+    "start_page": 482,
+    "end_page": 501,
+    "verse": 47
+  },
+  {
+    "juz": 26,
+    "surah": "Al-Ahqaf",
+    "surah_id": 46,
+    "start_page": 502,
+    "end_page": 521,
+    "verse": 1
+  },
+  {
+    "juz": 27,
+    "surah": "Adh-Dhariyat",
+    "surah_id": 51,
+    "start_page": 522,
+    "end_page": 541,
+    "verse": 31
+  },
+  {
+    "juz": 28,
+    "surah": "Al-Mujadila",
+    "surah_id": 58,
+    "start_page": 542,
+    "end_page": 561,
+    "verse": 1
+  },
+  {
+    "juz": 29,
+    "surah": "Al-Mulk",
+    "surah_id": 67,
+    "start_page": 562,
+    "end_page": 581,
+    "verse": 1
+  },
+  {
+    "juz": 30,
+    "surah": "An-Naba",
+    "surah_id": 78,
+    "start_page": 582,
+    "end_page": 604,
+    "verse": 1
+  }
+]

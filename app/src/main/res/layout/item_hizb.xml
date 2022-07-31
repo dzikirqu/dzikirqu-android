@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.graphics.Color" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/root"
+        android:foreground="?selectableItemBackground"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@color/neutral_100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="48dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hizb"
+                android:layout_width="wrap_content"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                android:fontFamily="@font/regular"
+                tools:text="Hizb 1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:textColor="@color/textTertiary"
+                android:textSize="14sp"
+                android:fontFamily="@font/regular"
+                tools:text="Al-Fatihah, Ayah 1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/neutral_200"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+
+</layout>

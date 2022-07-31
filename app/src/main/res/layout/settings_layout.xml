@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/neutral_50"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="14sp"
+                app:locale="@{LocaleConstants.GENERAL}"
+                tools:text="General" />
+
+
+            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+                android:id="@+id/textLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:subtitle="English"
+                app:subtitleTextColor="@color/textTertiary"
+                app:title="Language"
+                app:titleTextColor="@color/textPrimary" />
+
+            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+                android:id="@+id/textAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:subtitle="Light Mode"
+                app:subtitleTextColor="@color/textTertiary"
+                app:title="App Theme"
+                app:titleTextColor="@color/textPrimary" />
+
+            <View
+                android:id="@+id/dividerGeneral"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginStart="-16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="-16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/textTextSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/bold"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="14sp"
+                app:locale="@{LocaleConstants.TEXT_SETTINGS}"
+                tools:text="Text Settings" />
+
+            <TextView
+                android:id="@+id/arabicTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                app:locale="@{LocaleConstants.ARABIC_FONT_SIZE}"
+                tools:text="Arabic Font Size" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/arabicSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:valueFrom="20.0"
+                android:valueTo="40.0" />
+
+
+            <TextView
+                android:id="@+id/translationTitle"
+                locale="@{LocaleConstants.TRANSLATION_FONT_SIZE}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                tools:text="Translation Font Size" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/translationSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:valueFrom="12.0"
+                android:valueTo="24.0" />
+
+            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+                android:id="@+id/textArabicFont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:subtitle="Paged"
+                app:subtitleTextColor="@color/textTertiary"
+                app:title="Arabic Font"
+                app:titleTextColor="@color/textPrimary" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/arabicCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textAppearance="@style/MaterialSwitch"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                app:buttonTint="?attr/colorPrimary"
+                app:locale="@{LocaleConstants.ARABIC_TEXT}"
+                app:trackTint="@color/switch_color"
+                tools:text="Arabic Text" />
+
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/translationCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textAppearance="@style/MaterialSwitch"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                app:buttonTint="?attr/colorPrimary"
+                app:locale="@{LocaleConstants.TRANSLATION_TEXT}"
+                app:trackTint="@color/switch_color"
+                tools:text="Translation Text" />
+
+            <View
+                android:id="@+id/dividerTextSettings"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginStart="-16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="-16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/textQuranSettings"
+                locale="@{LocaleConstants.AL_QURAN_SETTINGS}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/bold"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="14sp"
+                tools:text="Al-Qur'an Settings" />
+
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/markLastReadAutoCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textAppearance="@style/MaterialSwitch"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                app:buttonTint="?attr/colorPrimary"
+                app:locale="@{LocaleConstants.MARK_LAST_READ_AUTOMATICALLY}"
+                app:trackTint="@color/switch_color"
+                tools:text="Mark last read automatically" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/wbwCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textAppearance="@style/MaterialSwitch"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                app:buttonTint="?attr/colorPrimary"
+                app:locale="@{LocaleConstants.WORD_BY_WORD_TRANSLATION}"
+                app:trackTint="@color/switch_color"
+                tools:text="Word by word translation" />
+
+            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+                android:id="@+id/textQuranReadMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:subtitle="Paged"
+                app:subtitleTextColor="@color/textTertiary"
+                app:title="Default read mode"
+                app:titleTextColor="@color/textPrimary" />
+
+            <View
+                android:id="@+id/dividerQuranSettings"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginStart="-16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="-16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/textHadithSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/bold"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="14sp"
+                app:locale="@{LocaleConstants.HADITH_SETTINGS}"
+                tools:text="Hadith Settings" />
+
+            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+                android:id="@+id/textHadithReadMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:subtitle="Paged"
+                app:subtitleTextColor="@color/textTertiary"
+                app:title="Read Mode"
+                app:titleTextColor="@color/textPrimary" />
+
+            <View
+                android:id="@+id/dividerHadithSettings"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginStart="-16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="-16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/textPraytimeSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/bold"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="14sp"
+                app:locale="@{LocaleConstants.PRAYER_TIME}"
+                tools:text="Prayer Time" />
+
+
+            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+                android:id="@+id/textCalculationMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:subtitle="Paged"
+                app:subtitleTextColor="@color/textTertiary"
+                app:title="Calculation Method"
+                app:titleTextColor="@color/textPrimary" />
+
+            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+                android:id="@+id/textAsrJuristic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:subtitle="Paged"
+                app:subtitleTextColor="@color/textTertiary"
+                app:title="Asr Juristic"
+                app:titleTextColor="@color/textPrimary" />
+
+            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+                android:id="@+id/textHigherAltitudes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:subtitle="Paged"
+                app:subtitleTextColor="@color/textTertiary"
+                app:title="Adjusting Methods for Higher Latitudes"
+                app:titleTextColor="@color/textPrimary" />
+
+            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+                android:id="@+id/textMuadzin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:subtitle="Paged"
+                app:subtitleTextColor="@color/textTertiary"
+                app:title="Muadzin"
+                app:titleTextColor="@color/textPrimary" />
+
+            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+                android:id="@+id/textPraytimeAdjustments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:subtitle="Paged"
+                app:subtitleTextColor="@color/textTertiary"
+                app:title="Manual Time Adjustments"
+                app:titleTextColor="@color/textPrimary" />
+
+            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+                android:id="@+id/textAutostart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:subtitle="The app needs autostart permission to start the adzan alarm after device reboot"
+                app:subtitleTextColor="@color/textTertiary"
+                app:title="Autostart"
+                app:titleTextColor="@color/textPrimary" />
+
+            <View
+                android:id="@+id/dividerNotesSettings"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginStart="-16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="-16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/notesFontSizeTitle"
+                app:locale="@{LocaleConstants.NOTES_FONT_SIZE}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                tools:text="Notes Font Size" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/notesFontSizeSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:valueFrom="12.0"
+                android:valueTo="24.0" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/notesWysiwyg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textAppearance="@style/MaterialSwitch"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                app:buttonTint="?attr/colorPrimary"
+                android:text="WYSIWYG"
+                app:trackTint="@color/switch_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="64dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
