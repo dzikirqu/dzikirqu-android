@@ -17,7 +17,7 @@
             android:scaleX="1.8"
             android:scaleY="1.8"
             android:src="@drawable/ic_subtract_2"
-            android:tint="@color/white" />
+            app:tint="@color/white" />
 
         <LinearLayout
             android:id="@+id/rootHeader"

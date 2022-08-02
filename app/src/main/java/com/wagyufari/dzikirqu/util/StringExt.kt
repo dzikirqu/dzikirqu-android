@@ -24,7 +24,7 @@ object StringExt {
             for (tajweedRule in rules) {
                 results.addAll(tajweedRule.rule.checkAyah(this))
             }
-            ResultUtil.INSTANCE.sort(results)
+//            ResultUtil.INSTANCE.sort(results)
             exporter.export(this, results) {
                 suspended.resume(it)
             }
