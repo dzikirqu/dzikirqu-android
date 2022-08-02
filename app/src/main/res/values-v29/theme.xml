@@ -1,23 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
 
-
         <item name="colorSecondary">@color/colorPrimary</item>
         <item name="colorSecondaryVariant">@color/colorPrimaryDark</item>
         <item name="colorOnSecondary">@color/neutral_900</item>
 
-        <item name="textColorPrimary">@color/white</item>
+        <item name="textColorPrimary">@color/colorPrimary</item>
 
-        <item name="android:statusBarColor" >?attr/colorPrimary</item>
+        <item name="android:statusBarColor" >@color/colorPrimary</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
     </style>
-
-    <style name="AppTheme.Translucent" parent="AppTheme">
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:windowLightStatusBar">true</item>
-    </style>
-
 </resources>

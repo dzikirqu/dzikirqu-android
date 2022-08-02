@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
@@ -12,12 +13,6 @@
         <item name="textColorPrimary">@color/white</item>
 
         <item name="android:statusBarColor" >?attr/colorPrimary</item>
+        <item name="android:forceDarkAllowed">false</item>
     </style>
-
-    <style name="AppTheme.Translucent" parent="AppTheme">
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:windowLightStatusBar">true</item>
-    </style>
-
 </resources>

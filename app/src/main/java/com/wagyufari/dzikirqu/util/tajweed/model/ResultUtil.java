@@ -16,10 +16,10 @@ public class ResultUtil {
    *
    * @param results the sorted results
    */
-  public void sort(List<Result> results) {
-    // note that this Comparator imposes an order inconsistent with equals
-    results.sort(Comparator.comparingInt(Result::getMinimumStartingPosition));
-  }
+//  public void sort(List<Result> results) {
+//    // note that this Comparator imposes an order inconsistent with equals
+//    results.sort(Comparator.comparingInt(Result::getMinimumStartingPosition));
+//  }
 
   public void fixOverlappingRules(List<Result> results) {
     // the following will delete portions of overlapping rules

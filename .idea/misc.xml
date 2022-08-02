@@ -5,6 +5,11 @@
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.30885416666666665" />
         <entry key="../../../Library/Android/sdk/platforms/android-31/data/res/drawable/progress_horizontal.xml" value="0.2295" />
+        <entry key="..\:/Programming/dzikirqu/dzikirqu-android/app/src/dev/res/drawable/ic_launcher_background.xml" value="0.1685" />
+        <entry key="..\:/Programming/dzikirqu/dzikirqu-android/app/src/main/res/layout/item_hadith_book.xml" value="0.33" />
+        <entry key="..\:/Programming/dzikirqu/dzikirqu-android/app/src/main/res/layout/praytime_widget_1.xml" value="0.1" />
+        <entry key="..\:/Programming/dzikirqu/dzikirqu-android/app/src/main/res/layout/praytime_widget_2.xml" value="0.33" />
+        <entry key="..\:/Programming/dzikirqu/dzikirqu-android/app/src/main/res/layout/tab_image_circle.xml" value="0.3582427536231884" />
         <entry key="app/src/dev/res/drawable/ic_bed.xml" value="0.127" />
         <entry key="app/src/dev/res/drawable/ic_book.xml" value="0.127" />
         <entry key="app/src/dev/res/drawable/ic_checkroom.xml" value="0.127" />
@@ -411,7 +416,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
