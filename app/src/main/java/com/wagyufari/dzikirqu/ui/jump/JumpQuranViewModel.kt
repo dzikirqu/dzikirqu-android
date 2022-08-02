@@ -35,11 +35,6 @@ class JumpQuranViewModel @Inject constructor(dataManager: AppDataManager, surahD
         }
     }
 
-
-    fun isFirstValueNumber():Boolean{
-        return query.value?.split(" ")?.get(0)?.filter(Char::isLetter).isNullOrEmpty().not() && query.value?.split(" ")?.get(0)?.filter(Char::isLetter).isNullOrEmpty()
-    }
-
     fun isHasSecondValue():Boolean{
         return query.value?.split(" ")?.count() ?: 0 > 1
     }
@@ -50,9 +45,6 @@ class JumpQuranViewModel @Inject constructor(dataManager: AppDataManager, surahD
 
     fun getSecondNumber():Int{
         return query.value?.split(" ")?.get(1)?.filter(Char::isDigit).toString().toInt()
-    }
-    fun getFirstNumber():Int{
-        return query.value?.split(" ")?.get(0)?.filter(Char::isDigit).toString().toInt()
     }
 
 }

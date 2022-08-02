@@ -41,7 +41,6 @@ class NotePersonalViewModel @Inject constructor(
     override fun onEvent(obj: Any) {
         when (obj) {
             is SettingsEvent -> {
-                viewMode.value = Prefs.noteViewMode
                 sortBy.value = Prefs.noteSortBy
                 isSortAsc.value = Prefs.isNoteSortAsc
             }
@@ -54,7 +53,6 @@ class NotePersonalViewModel @Inject constructor(
 
     val statusBarHeight = mutableStateOf(0)
     var profilePicture = MutableLiveData("")
-    var isSearchVisible = MutableLiveData(false)
 
     val sortBy = MutableLiveData(Prefs.noteSortBy)
     val isSortAsc = MutableLiveData(Prefs.isNoteSortAsc)
@@ -63,7 +61,6 @@ class NotePersonalViewModel @Inject constructor(
 
     val deletedNotes = dataManager.mNoteDatabase.noteDao().getDeletedNote()
 
-    val folders = dataManager.mNoteDatabase.notePropertyDao().getNoteProperties()
     val notes = Transformations.switchMap(TripleTrigger(sortBy, isSortAsc, selectedFolder)) {
         if (it.third == deletedFolderId) {
             dataManager.mNoteDatabase.noteDao().getDeletedNote()
@@ -89,8 +86,6 @@ class NotePersonalViewModel @Inject constructor(
             }
         }
     }
-
-    val viewMode = MutableLiveData(Prefs.noteViewMode)
 
     suspend fun getUserNotes(onSuccess: () -> Unit, onFailure: (Exception) -> Unit) {
         networkCall({ ApiService.create().getNotes().data?.map { it.toNote() } ?: listOf() },

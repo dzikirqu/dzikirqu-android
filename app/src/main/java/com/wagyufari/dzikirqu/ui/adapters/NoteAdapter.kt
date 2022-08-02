@@ -3,7 +3,10 @@ package com.wagyufari.dzikirqu.ui.adapters
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.view.ViewCompat
 import androidx.core.view.isVisible
+import androidx.navigation.fragment.FragmentNavigator
+import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -70,7 +73,7 @@ class NoteAdapter : ListAdapter<Any, BaseViewHolder>(NoteStaggeredDiff) {
     }
 
     interface Callback {
-        fun onSelectFolder(folder:String)
+        fun onSelectFolder(folder:String, extras: FragmentNavigator.Extras)
     }
 
     inner class NoteFolderViewHolder(private val mBinding: ItemNoteFolderBinding) :
@@ -98,9 +101,13 @@ class NoteAdapter : ListAdapter<Any, BaseViewHolder>(NoteStaggeredDiff) {
                     mBinding.count.text = String.format(LocaleConstants.N_NOTES.locale(), count.count())
                 }
             }
+
+            val folderName = getItem(position) as String
+            ViewCompat.setTransitionName(mBinding.card, folderName)
+
             mBinding.clickable.setOnClickListener {
                 mBinding.root.context.apply {
-                    mListener?.onSelectFolder(getItem(position) as String)
+                    mListener?.onSelectFolder(folderName, FragmentNavigatorExtras(mBinding.card to folderName))
                 }
             }
         }
