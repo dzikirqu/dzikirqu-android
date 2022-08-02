@@ -1,0 +1,68 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees:
+  - ImBIOS
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 2.6.9 (Newest)
+    validations:
+      required: true
+  - type: dropdown
+    id: android
+    attributes:
+      label: What android version are you seeing the problem on?
+      multiple: true
+      options:
+        - Android 12
+        - Android 11
+        - Android 10
+        - Android 9.0 (Pie)
+        - Android 8.0 (Oreo)
+        - Android 7.0 (Nougat)
+        - Android 6.0 (Marshmallow)
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Relevant screenshots and details
+      description: Please provide relevant screenshots of the problem and details of the problem.
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce bug
+      description: Please provide relevant information to reproduce the bug.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/wagyufari/dzikirqu-android)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
