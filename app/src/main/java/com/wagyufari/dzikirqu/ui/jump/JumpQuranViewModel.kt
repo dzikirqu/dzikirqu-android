@@ -7,6 +7,7 @@ import com.wagyufari.dzikirqu.base.BaseNavigator
 import com.wagyufari.dzikirqu.base.BaseViewModel
 import com.wagyufari.dzikirqu.data.AppDataManager
 import com.wagyufari.dzikirqu.data.room.dao.SurahDao
+import com.wagyufari.dzikirqu.model.Surah
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -20,10 +21,16 @@ class JumpQuranViewModel @Inject constructor(dataManager: AppDataManager, surahD
     val query = MutableLiveData<String>()
     val surah = query.switchMap { query->
         liveData {
-            if (isFirstValueNumber()){
-                emit(surahDao.getSurah().filter { it.id ==  getFirstNumber()})
-            } else{
-                emit(surahDao.getSurah().filter { it.name.filter(Char::isLetter).lowercase().contains(query.split(" ")[0].lowercase()) })
+            val surah = surahDao.getSurah()
+            if (query.isNotBlank()){
+                val firstQuery = query.split(" ")[0].lowercase()
+                emit(arrayListOf<Surah>().apply {
+                    addAll(surah.filter { it.name.filter(Char::isLetter).lowercase().contains(query.split(" ")[0].lowercase()) })
+                    addAll(surah.filter { it.name.lowercase().contains(query.split(" ")[0].lowercase()) })
+                    firstQuery.toIntOrNull()?.let { queryId->
+                        addAll(surah.filter { it.id == queryId })
+                    }
+                }.distinctBy { it.id })
             }
         }
     }

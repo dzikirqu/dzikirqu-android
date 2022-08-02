@@ -5,7 +5,7 @@
     <string name="quran_description">Bacalah Al Qur’an karena Al Qur’an akan datang pada hari kiamat nanti sebagai syafi’ (pemberi syafa’at) bagi yang membacanya.\n\nBacalah Az Zahrowain (dua surat cahaya) yaitu surat Al Baqarah dan Ali Imran karena keduanya datang pada hari kiamat nanti seperti dua awan atau seperti dua cahaya sinar matahari atau seperti dua ekor burung yang membentangkan sayapnya (bersambung satu dengan yang lainnya), keduanya akan menjadi pembela bagi yang rajin membaca dua surat tersebut.\n\nBacalah pula surat Al Baqarah. Mengambil surat tersebut adalah suatu keberkahan dan meninggalkannya akan mendapat penyesalan. Para tukang sihir tidak mungkin menghafalnya.”\n\n (HR. Muslim no. 1910. Lihat penjelasan hadits ini secara lengkap di At Taisir bi Syarhi Al Jami’ Ash Shogir, Al Munawi, 1/388, Asy Syamilah)</string>
     <string name="qibla_description">Kami melihat wajahmu (Muhammad) sering menengadah ke langit, maka akan Kami palingkan engkau ke kiblat yang engkau senangi. Maka hadapkanlah wajahmu ke arah Masjidilharam.\n\nDan di mana saja engkau berada, hadapkanlah wajahmu ke arah itu. Dan sesungguhnya orang-orang yang diberi Kitab (Taurat dan Injil) tahu, bahwa (pemindahan kiblat) itu adalah kebenaran dari Tuhan mereka. Dan Allah tidak lengah terhadap apa yang mereka kerjakan. (Al-Baqarah:144)</string>
     <string name="title_activity_bottom">BottomActivity</string>
-    <string name="jump_quran_hint">eg: \"azzumar 53\"</string>
+    <string name="jump_quran_hint">eg: \"azzumar 53\" \"39 53\" </string>
     <string name="title_pagedquran">Paged Quran</string>
     <string name="title_flyercomposer">Flyer Composer</string>
     <string name="title_hadith">Hadith</string>
