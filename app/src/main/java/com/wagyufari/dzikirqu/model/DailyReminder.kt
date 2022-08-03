@@ -165,7 +165,7 @@ data class DailyReminder(
             context.apply {
 //                03.00 - 10 Menit Sebelum Shubuh
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Bangun tidur, Shalat Tahajud dan Persiapan Shubuh",
+                    title = "Waking up, Qiyamullail (Tahajjud), Preparation for Fajr".locale(),
                     startTime = "03:00",
                     endTimePrayerConstraint = 1,
                     endTimePrayerConstraintDifference = -10,
@@ -196,10 +196,10 @@ data class DailyReminder(
                         type = DailyReminderType.Prayer, parentId = it.toInt()
                     ))
                 }
-
+                
 //                10 Menit sebelum Adzan Shubuh - 5 Menit Setelah Adzan
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Shalat Shubuh",
+                    title = "Fajr Prayer".locale(),
                     startTimePrayerConstraint = 1,
                     startTimePrayerConstraintDifference = -10,
                     endTimePrayerConstraint = 1,
@@ -234,7 +234,7 @@ data class DailyReminder(
 //                5 Menit Setelah Shubuh - 06:00
 
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Dzikir Pagi",
+                    title = "Morning Dhikr".locale(),
                     startTimePrayerConstraint = 1,
                     startTimePrayerConstraintDifference = 5,
                     endTime = "06:00",
@@ -251,7 +251,7 @@ data class DailyReminder(
 
 //                06:00 - 10:00
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Persiapan, Berangkat Kerja/Sekolah",
+                    title = "Preparation for School/Work".locale(),
                     startTime = "06:00",
                     endTime = "10:00",
                 )).let {
@@ -308,7 +308,7 @@ data class DailyReminder(
 //                10:00 - 10 menit sebelum dzuhur
 
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Aktifitas Kerja/Belajar/IRT",
+                    title = "Activities (Work, Studying, Chores)".locale(),
                     startTime = "10:00",
                     endTimePrayerConstraint = 2,
                     endTimePrayerConstraintDifference = -10,
@@ -337,7 +337,7 @@ data class DailyReminder(
 
 //                10 Menit sebelum dzuhur - 5 menit setelah dzuhur
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Shalat Dzuhur",
+                    title = "Dhuhr Prayer".locale(),
                     startTimePrayerConstraint = 2,
                     startTimePrayerConstraintDifference = -10,
                     endTimePrayerConstraint = 2,
@@ -383,7 +383,7 @@ data class DailyReminder(
 
 //                10 menit setelah dzuhur - 13:00
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Istirahat",
+                    title = "Break".locale(),
                     startTimePrayerConstraint = 2,
                     startTimePrayerConstraintDifference = 10,
                     endTime = "13:00",
@@ -413,7 +413,7 @@ data class DailyReminder(
 //                13.01 - 10 Menit Sebelum Adzan Ashar
 
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Aktifitas Kerja/Belajar/IRT",
+                    title = "Activities (Work, Studying, Chores)".locale(),
                     startTime = "13:00",
                     endTimePrayerConstraint = 3,
                     endTimePrayerConstraintDifference = -10,
@@ -438,7 +438,7 @@ data class DailyReminder(
 
 //                10 menit sebelum ashar - 5 menit setelah ashar
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Shalat Ashar",
+                    title = "Asr Prayer".locale(),
                     startTimePrayerConstraint = 3,
                     startTimePrayerConstraintDifference = -10,
                     endTimePrayerConstraint = 3,
@@ -484,7 +484,7 @@ data class DailyReminder(
 
                 // 10 menit setelah ashar - 16:00
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Dzikir Sore",
+                    title = "Evening Dhikr".locale(),
                     startTimePrayerConstraint = 3,
                     startTimePrayerConstraintDifference = 10,
                     endTime = "16:00",
@@ -499,7 +499,7 @@ data class DailyReminder(
 
                 // 16:00 - 10 menit sebelum maghrib
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Persiapan, Pulang Kerja/Sekolah",
+                    title = "Going home from work/school".locale(),
                     startTime = "16:00",
                     endTimePrayerConstraint = 4,
                     endTimePrayerConstraintDifference = -10,
@@ -527,7 +527,7 @@ data class DailyReminder(
                 }
 
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Shalat Maghrib",
+                    title = "Maghrib Prayer".locale(),
                     startTimePrayerConstraint = 4,
                     startTimePrayerConstraintDifference = -10,
                     endTimePrayerConstraint = 4,
@@ -572,7 +572,7 @@ data class DailyReminder(
                 }
 
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Istirahat",
+                    title = "Break".locale(),
                     startTimePrayerConstraint = 4,
                     startTimePrayerConstraintDifference = 10,
                     endTimePrayerConstraint = 5,
@@ -592,7 +592,7 @@ data class DailyReminder(
                     ))
                 }
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Shalat Isya",
+                    title = "'Isya Prayer".locale(),
                     startTimePrayerConstraint = 5,
                     startTimePrayerConstraintDifference = -10,
                     endTimePrayerConstraint = 5,
@@ -637,7 +637,7 @@ data class DailyReminder(
                 }
 
                 getDailyReminderParentDao().putDailyReminder(DailyReminderParent(
-                    title = "Tidur dan Istirahat",
+                    title = "Sleep and Resting".locale(),
                     startTimePrayerConstraint = 5,
                     startTimePrayerConstraintDifference = 10,
                     endTime = "22:00"
