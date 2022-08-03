@@ -46,7 +46,7 @@
             android:fontFamily="@font/regular"
             android:textColor="@color/textTertiary"
             android:layout_gravity="center"
-            android:text="DzikirQu by Wagyufari" />
+            android:text="DzikirQu by Mutiara Iman and the Community" />
 
 
     </LinearLayout>

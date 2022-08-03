@@ -2,15 +2,20 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigation_note"
-    app:startDestination="@id/mainNoteFragment">
+    app:startDestination="@id/notePersonalFragment">
 
     <fragment
-        android:id="@+id/mainNoteFragment"
+        android:id="@+id/notePersonalFragment"
         android:name="com.wagyufari.dzikirqu.ui.main.note.personal.NotePersonalFragment"
-        android:label="MainNoteFragment">
+        android:label="NotePersonalFragment">
         <action
-            android:id="@+id/actionOpenFolder"
-            app:destination="@id/mainNoteFragment" />
+            android:id="@+id/openFolderFromPersonal"
+            app:destination="@id/noteFolderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteFolderFragment"
+        android:name="com.wagyufari.dzikirqu.ui.main.note.folder.NoteFolderFragment"
+        android:label="NoteFolderFragment">
         <argument
             android:name="folderName"
             app:argType="string"/>

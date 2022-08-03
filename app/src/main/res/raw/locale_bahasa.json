@@ -202,5 +202,18 @@
   "All": "Semua",
   "Sort": "Urutkan",
   "Delete": "Hapus",
-  "Time left: ": "Waktu yang tersisa: "
+  "Time left: ": "Waktu yang tersisa: ",
+  "Waking up, Qiyamullail (Tahajjud), Preparation for Fajr": "Bangun tidur, Shalat Tahajud dan Persiapan Shubuh",
+  "Fajr Prayer": "Shalat Shubuh",
+  "Morning Dhikr": "Dzikir Pagi",
+  "Preparation for School/Work": "Persiapan, Berangkat Kerja/Sekolah",
+  "Activities (Work, Studying, Chores)":  "Aktifitas Kerja/Belajar/IRT",
+  "Dhuhr Prayer": "Shalat Dzuhur",
+  "Break": "Istirahat",
+  "Asr Prayer": "Shalat Ashar",
+  "Evening Dhikr": "Dzikir Sore",
+  "Going home from work/school": "Persiapan, Pulang Kerja/Sekolah",
+  "Maghrib Prayer": "Shalat Maghrib",
+  "'Isya Prayer": "Shalat 'Isya",
+  "Sleep and Resting": "Tidur dan Istirahat"
 }

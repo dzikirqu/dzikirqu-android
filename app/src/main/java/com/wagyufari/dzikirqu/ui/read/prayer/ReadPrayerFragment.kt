@@ -176,6 +176,7 @@ class ReadPrayerFragment :
 
     fun refreshReciteTextView(position: Int) {
         val data = viewModel.prayerData
+        if (data.value?.isEmpty() == true) return
         if (data.value?.get(position)?.notes?.getText()?.isNotBlank() == true) {
             viewDataBinding?.bottomContainer?.setBackgroundColor(ContextCompat.getColor(
                 requireActivity(),

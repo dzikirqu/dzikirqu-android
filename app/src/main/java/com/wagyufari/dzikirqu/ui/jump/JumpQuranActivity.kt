@@ -45,7 +45,8 @@ class JumpQuranActivity : BaseActivity<ActivityJumpQuranBinding, JumpQuranViewMo
                 putExtra(EXTRA_IS_NOTE_DEEPLINK, isNoteDeeplink)
             })
         }
-        fun newIntent(context: Context, isNoteDeeplink: Boolean? = false):Intent{
+
+        fun newIntent(context: Context, isNoteDeeplink: Boolean? = false): Intent {
             return Intent(context, JumpQuranActivity::class.java).apply {
                 putExtra(EXTRA_IS_NOTE_DEEPLINK, isNoteDeeplink)
             }
@@ -57,7 +58,6 @@ class JumpQuranActivity : BaseActivity<ActivityJumpQuranBinding, JumpQuranViewMo
     }
 
 
-
     @Inject
     lateinit var jumpQuranAdapter: JumpQuranAdapter
 
@@ -67,24 +67,13 @@ class JumpQuranActivity : BaseActivity<ActivityJumpQuranBinding, JumpQuranViewMo
         super.onCreate(savedInstanceState)
 
         viewModel.surah.observe(this) { surah ->
-            if (viewModel.isFirstValueNumber()) {
-                if (viewModel.isHasSecondValue() && viewModel.isSecondValueNumber()) {
-                    val result = surah.filter { viewModel.getSecondNumber() <= it.verses }
-                        .map { JumpQuranModel(it, viewModel.getSecondNumber()) }
-                    jumpQuranAdapter.submitList(result)
-                } else {
-                    val result = surah.map { JumpQuranModel(it, 1) }
-                    jumpQuranAdapter.submitList(result)
-                }
+            if (viewModel.isHasSecondValue() && viewModel.isSecondValueNumber()) {
+                val result = surah.filter { viewModel.getSecondNumber() <= it.verses }
+                    .map { JumpQuranModel(it, viewModel.getSecondNumber()) }
+                jumpQuranAdapter.submitList(result)
             } else {
-                if (viewModel.isHasSecondValue() && viewModel.isSecondValueNumber()) {
-                    val result = surah.filter { viewModel.getSecondNumber() <= it.verses }
-                        .map { JumpQuranModel(it, viewModel.getSecondNumber()) }
-                    jumpQuranAdapter.submitList(result)
-                } else {
-                    val result = surah.map { JumpQuranModel(it, 1) }
-                    jumpQuranAdapter.submitList(result)
-                }
+                val result = surah.map { JumpQuranModel(it, 1) }
+                jumpQuranAdapter.submitList(result)
             }
         }
 
@@ -99,10 +88,6 @@ class JumpQuranActivity : BaseActivity<ActivityJumpQuranBinding, JumpQuranViewMo
             addTarget(android.R.id.content)
             duration = 500L
         }
-//        window.sharedElementReturnTransition = MaterialContainerTransform().apply {
-//            addTarget(android.R.id.content)
-//            duration = 500L
-//        }
     }
 
     fun configureViews() {
@@ -123,9 +108,10 @@ class JumpQuranActivity : BaseActivity<ActivityJumpQuranBinding, JumpQuranViewMo
             adapter = jumpQuranAdapter.apply {
                 setListener(object : JumpQuranAdapter.Callback {
                     override fun onSelectedItem(surah: Surah, ayah: Int) {
-                        if (isNoteDeeplink()){
-                            RxBus.getDefault().send(NoteInsertEvent("[${surah.name} ${ayah}](https://dzikirqu.com/quran/${surah.id}/${ayah})"))
-                        } else{
+                        if (isNoteDeeplink()) {
+                            RxBus.getDefault()
+                                .send(NoteInsertEvent("[${surah.name} ${ayah}](https://dzikirqu.com/quran/${surah.id}/${ayah})"))
+                        } else {
                             ReadActivity.startSurah(this@JumpQuranActivity, surah.id, ayah)
                         }
                         finish()
@@ -140,9 +126,10 @@ class JumpQuranActivity : BaseActivity<ActivityJumpQuranBinding, JumpQuranViewMo
                     if (jumpQuranAdapter.currentList.isNotEmpty()) {
                         val surah = jumpQuranAdapter.currentList[0].surah
                         val ayah = jumpQuranAdapter.currentList[0].verse
-                        if (isNoteDeeplink()){
-                            RxBus.getDefault().send(NoteInsertEvent("[${surah.name} ${ayah}](https://dzikirqu.com/quran/${surah.id}/${ayah})"))
-                        } else{
+                        if (isNoteDeeplink()) {
+                            RxBus.getDefault()
+                                .send(NoteInsertEvent("[${surah.name} ${ayah}](https://dzikirqu.com/quran/${surah.id}/${ayah})"))
+                        } else {
                             ReadActivity.startSurah(this@JumpQuranActivity, surah.id, ayah)
                         }
                         finish()

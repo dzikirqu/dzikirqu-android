@@ -127,7 +127,7 @@ private fun MainHomeFragment.Note() {
                         val notesCount =
                             requireActivity().getNoteDao().getNotes()
                                 .observeAsState().value?.count()
-                        Text(modifier = Modifier, text = LocaleConstants.LECTURE_NOTES.locale(),
+                        Text(modifier = Modifier, text = LocaleConstants.NOTES.locale(),
                             fontFamily = lato,
                             fontSize = 16.sp,
                             fontWeight = FontWeight.Bold,
@@ -480,7 +480,7 @@ private fun MainHomeFragment.QuranLastRead() {
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically) {
             Column(Modifier) {
-                Text("Terakhir dibaca", fontFamily = lato, fontSize = 14.sp, color = colorResource(
+                Text(LocaleConstants.LAST_READ.locale(), fontFamily = lato, fontSize = 14.sp, color = colorResource(
                     id = R.color.white))
                 verticalSpacer(height = 16.dp)
                 Text(text = surah.value ?: "",

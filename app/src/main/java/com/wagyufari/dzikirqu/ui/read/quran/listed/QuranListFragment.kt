@@ -160,11 +160,15 @@ class QuranListFragment :
     }
 
     fun getAyahFromPosition(data: ArrayList<Any>): Ayah? {
-        val position =
-            (viewDataBinding?.recycler?.layoutManager as LinearLayoutManager).findFirstCompletelyVisibleItemPosition()
-        val ayah = data[if (position == -1) 0 else position]
-        if (ayah is Ayah) {
-            return ayah
+        try{
+            val position =
+                (viewDataBinding?.recycler?.layoutManager as LinearLayoutManager).findFirstCompletelyVisibleItemPosition()
+            val ayah = data[if (position == -1) 0 else position]
+            if (ayah is Ayah) {
+                return ayah
+            }
+        } catch (e:Exception){
+            return null
         }
         return null
     }

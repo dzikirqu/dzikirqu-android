@@ -3,10 +3,15 @@ package com.wagyufari.dzikirqu.ui.adapters
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
 import androidx.core.view.isVisible
+import androidx.navigation.fragment.FragmentNavigator
+import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.wagyufari.dzikirqu.R
 import com.wagyufari.dzikirqu.base.BaseViewHolder
 import com.wagyufari.dzikirqu.constants.LocaleConstants
 import com.wagyufari.dzikirqu.constants.LocaleConstants.locale
@@ -26,17 +31,17 @@ class NoteAdapter : ListAdapter<Any, BaseViewHolder>(NoteStaggeredDiff) {
 
     object NoteStaggeredDiff : DiffUtil.ItemCallback<Any>() {
         override fun areItemsTheSame(oldItem: Any, newItem: Any): Boolean {
-            return if (oldItem is Note && newItem is Note){
+            return if (oldItem is Note && newItem is Note) {
                 oldItem.id == newItem.id
-            } else{
+            } else {
                 oldItem.toString() == newItem.toString()
             }
         }
 
         override fun areContentsTheSame(oldItem: Any, newItem: Any): Boolean {
-            return if (oldItem is Note && newItem is Note){
+            return if (oldItem is Note && newItem is Note) {
                 oldItem == newItem
-            } else{
+            } else {
                 oldItem.toString() == newItem.toString()
             }
         }
@@ -70,7 +75,7 @@ class NoteAdapter : ListAdapter<Any, BaseViewHolder>(NoteStaggeredDiff) {
     }
 
     interface Callback {
-        fun onSelectFolder(folder:String)
+        fun onSelectFolder(folder: String, extras: FragmentNavigator.Extras)
     }
 
     inner class NoteFolderViewHolder(private val mBinding: ItemNoteFolderBinding) :
@@ -79,7 +84,7 @@ class NoteAdapter : ListAdapter<Any, BaseViewHolder>(NoteStaggeredDiff) {
         @SuppressLint("CheckResult")
         override fun onBind(position: Int) {
 
-            if (position == 0){
+            if (position == 0) {
                 val params = mBinding.root.layoutParams as RecyclerView.LayoutParams
                 if (position == 0) {
                     params.setMargins(
@@ -93,14 +98,21 @@ class NoteAdapter : ListAdapter<Any, BaseViewHolder>(NoteStaggeredDiff) {
 
             mBinding.name.text = getItem(position) as String
             mBinding.root.context.io {
-                val count = mBinding.root.context.getNoteDao().getNoteByFolderSuspend(getItem(position) as String)
+                val count = mBinding.root.context.getNoteDao()
+                    .getNoteByFolderSuspend(getItem(position) as String)
                 mBinding.root.context.main {
-                    mBinding.count.text = String.format(LocaleConstants.N_NOTES.locale(), count.count())
+                    mBinding.count.text =
+                        String.format(LocaleConstants.N_NOTES.locale(), count.count())
                 }
             }
+
+            val folderName = getItem(position) as String
+            ViewCompat.setTransitionName(mBinding.card, folderName)
+
             mBinding.clickable.setOnClickListener {
                 mBinding.root.context.apply {
-                    mListener?.onSelectFolder(getItem(position) as String)
+                    mListener?.onSelectFolder(folderName,
+                        FragmentNavigatorExtras(mBinding.card to folderName))
                 }
             }
         }
@@ -113,7 +125,7 @@ class NoteAdapter : ListAdapter<Any, BaseViewHolder>(NoteStaggeredDiff) {
         override fun onBind(position: Int) {
             val data = getItem(position) as Note
 
-            if (position == 0){
+            if (position == 0) {
                 val params = mBinding.root.layoutParams as RecyclerView.LayoutParams
                 if (position == 0) {
                     params.setMargins(
@@ -125,7 +137,13 @@ class NoteAdapter : ListAdapter<Any, BaseViewHolder>(NoteStaggeredDiff) {
                 }
             }
 
-            mBinding.title.text = if (data.title?.isNotBlank() == true) data.title else "Untitled data"
+            mBinding.title.text =
+                if (data.title?.isNotBlank() == true) data.title else "Untitled note"
+
+            mBinding.title.setTextColor(if (data.title?.isNotBlank() == true) ContextCompat.getColor(
+                mBinding.root.context,
+                R.color.textPrimary) else ContextCompat.getColor(mBinding.root.context,
+                R.color.textTertiary))
             mBinding.subtitle.isVisible = data.subtitle?.isNotBlank() == true
             mBinding.text.isVisible = data.content?.isNotBlank() == true
             mBinding.subtitle.text = data.subtitle

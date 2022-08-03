@@ -75,11 +75,6 @@ fun NotePersonalFragment.appbar() {
             }
         }
 
-//        if (getFolderName()?.isBlank() == false) {
-//            rightButtonImage.clear()
-//            rightButtonImageHandler.clear()
-//        }
-
         Appbar(Modifier,
             Modifier.padding(top = 16.dp,
                 start = 16.dp,
@@ -183,30 +178,9 @@ fun NotePersonalFragment.drawer() {
         }
         verticalSpacer(height = 16)
 
-        Text(modifier = Modifier.padding(start = 16.dp), text = "Folders",
-            fontFamily = lato,
-            fontSize = 16.sp,
-            color = colorResource(
-                id = R.color.textTertiary))
 
         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            verticalSpacer(height = 8.dp)
-
             val selectedFolder = viewModel.selectedFolder.observeAsState()
-//            viewModel.folders.observeAsState().value?.filterAsFolder()?.forEach {
-//                val isSelected = selectedFolder.value == it.content
-//                DrawerItem(modifier = Modifier.clickable {
-//                    if (!isSelected) {
-//                        viewModel.selectedFolder.value = it.content
-//                    } else {
-//                        viewModel.selectedFolder.value = null
-//                    }
-//                    RxBus.getDefault().send(FolderEvent(viewModel.selectedFolder.value))
-//                }, isSelected = isSelected, text = it.content)
-//            }
-
-            Divider()
-            verticalSpacer(height = 8)
 
             val isSelected = selectedFolder.value == deletedFolderId
             DrawerItem(modifier = Modifier.clickable {
