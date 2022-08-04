@@ -27,15 +27,6 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 2.6.9 (Newest)
-    validations:
-      required: true
-  - type: dropdown
     id: android
     attributes:
       label: What android version are you seeing the problem on?
