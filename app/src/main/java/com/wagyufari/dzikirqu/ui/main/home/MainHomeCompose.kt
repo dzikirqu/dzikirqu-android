@@ -13,9 +13,7 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Card
-import androidx.compose.material.ExperimentalMaterialApi
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.material.ripple.rememberRipple
 import androidx.compose.runtime.*
 import androidx.compose.runtime.livedata.observeAsState
@@ -24,16 +22,22 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.focus.FocusRequester.Companion.createRefs
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.viewinterop.AndroidView
 import androidx.constraintlayout.compose.ConstrainedLayoutReference
+import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.ConstraintLayoutScope
 import androidx.constraintlayout.compose.Dimension
 import coil.compose.rememberAsyncImagePainter
@@ -59,16 +63,27 @@ import com.wagyufari.dzikirqu.ui.dailyreminder.DailyReminderActivity
 import com.wagyufari.dzikirqu.ui.main.note.NoteActivity
 import com.wagyufari.dzikirqu.ui.read.ReadActivity
 import com.wagyufari.dzikirqu.ui.v2.theme.lato
-import com.wagyufari.dzikirqu.util.PrayerExt
-import com.wagyufari.dzikirqu.util.RxBus
+import com.wagyufari.dzikirqu.util.*
 import com.wagyufari.dzikirqu.util.StringExt.getText
-import com.wagyufari.dzikirqu.util.horizontalSpacer
-import com.wagyufari.dzikirqu.util.verticalSpacer
+import kotlinx.coroutines.NonDisposableHandle.parent
 
 @Composable
 fun MainHomeFragment.Compose() {
-    Column {
-        verticalSpacer(0)
+    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+        Header()
+        verticalSpacer(16)
+        Text("Assalamu'alaikum",
+            fontFamily = lato,
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            color = colorResource(
+                id = R.color.textPrimary))
+        Text(LocaleConstants.HAVE_YOU_READ_THE_QURAN_TODAY_Q.locale(),
+            fontFamily = lato,
+            fontSize = 16.sp,
+            color = colorResource(
+                id = R.color.textTertiary))
+        verticalSpacer(16)
         Column(Modifier.padding(horizontal = 10.dp)) {
             Feature()
             verticalSpacer(height = 16.dp)
@@ -76,12 +91,210 @@ fun MainHomeFragment.Compose() {
             verticalSpacer(height = 16.dp)
             Note()
             verticalSpacer(height = 16.dp)
-//            Instagram()
-//            verticalSpacer(height = 16.dp)
         }
         Highlights()
         DailyReminder()
 
+    }
+}
+
+@Composable
+private fun MainHomeFragment.Header() {
+    ConstraintLayout(modifier = Modifier.background(brush = Brush.radialGradient(listOf(
+        colorResource(id = R.color.colorPrimary),
+        colorResource(id = R.color.colorPrimaryDark))))) {
+
+        val (masjid, circle) = createRefs()
+
+        Image(modifier = Modifier
+            .alpha(0.4f)
+            .fillMaxWidth()
+            .fillMaxHeight(),
+            painter = painterResource(id = R.drawable.ic_subtract_2),
+            contentDescription = null,
+            contentScale = ContentScale.Fit)
+
+        Image(modifier = Modifier
+            .constrainAs(masjid) {
+                bottom.linkTo(parent.bottom)
+                start.linkTo(parent.start)
+                end.linkTo(parent.end)
+            }
+            .alpha(0.2f)
+            .width(270.dp)
+            .height(120.dp),
+            painter = painterResource(id = R.drawable.mosque),
+            contentDescription = null)
+
+        with(LocalDensity.current) {
+            Column(Modifier
+                .fillMaxWidth()
+                .padding(top = Prefs.statusBarHeight.toDp()),
+                horizontalAlignment = Alignment.CenterHorizontally) {
+                Row(modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(8.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically) {
+                    Column {
+                        Text(text = viewModel.dataManager.getGregorianDate(),
+                            fontFamily = lato,
+                            fontSize = 12.sp,
+                            color = colorResource(
+                                id = R.color.white),
+                            fontWeight = FontWeight.Bold)
+                        Text(text = viewModel.dataManager.getHijriDate(),
+                            fontFamily = lato,
+                            fontSize = 12.sp,
+                            color = colorResource(
+                                id = R.color.white))
+                    }
+                    Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                        Image(modifier = Modifier
+                            .height(28.dp)
+                            .width(28.dp)
+                            .nonRippleClickable {
+                                onClickBookmark()
+                            },
+                            painter = painterResource(id = R.drawable.ic_bookmarks),
+                            contentDescription = null,
+                            colorFilter = ColorFilter.tint(
+                                colorResource(id = R.color.white)))
+                        AndroidView(factory = {
+                            ComposeView(it).apply {
+                                setContent {
+                                    Image(modifier = Modifier
+                                        .height(28.dp)
+                                        .width(28.dp)
+                                        .width(28.dp)
+                                        .nonRippleClickable {
+                                            onClickSearch(this)
+                                        },
+                                        painter = painterResource(id = R.drawable.ic_search),
+                                        contentDescription = null,
+                                        colorFilter = ColorFilter.tint(
+                                            colorResource(id = R.color.white)))
+                                }
+                            }
+                        })
+                        Image(modifier = Modifier
+                            .height(28.dp)
+                            .width(28.dp)
+                            .width(28.dp)
+                            .nonRippleClickable {
+                                onClickSettings()
+                            },
+                            painter = painterResource(id = R.drawable.ic_settings),
+                            contentDescription = null,
+                            colorFilter = ColorFilter.tint(
+                                colorResource(id = R.color.white)))
+                    }
+                }
+
+                val textUntil = viewModel.textUntil.observeAsState().value.toString()
+                val textPrayerTime = viewModel.textPrayerTime.observeAsState().value.toString()
+                val address = viewModel.address.observeAsState().value.toString()
+                val isPrayerTimeHidden = viewModel.isPrayerTimeHidden.observeAsState().value
+                val isPrayerTimeLoading = viewModel.isPrayerTimeLoading.observeAsState().value
+                val isPrayerTimeNeedsPermission =
+                    viewModel.isPrayerTimeNeedsPermission.observeAsState().value
+
+                if (isPrayerTimeLoading == true) {
+                    CircularProgressIndicator(modifier = Modifier
+                        .height(32.dp)
+                        .width(32.dp),
+                        color = colorResource(id = R.color.white))
+                }
+
+                if (isPrayerTimeNeedsPermission == true) {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally,
+                        modifier = Modifier.padding(bottom = 48.dp,
+                            top = 12.dp,
+                            start = 24.dp,
+                            end = 24.dp)) {
+                        Text(text = LocaleConstants.THE_APP_NEEDS_LOCATION_PERMISSION_TO_GET_ACCURATE_PRAYER_TIME.locale(),
+                            fontFamily = lato,
+                            fontSize = 16.sp,
+                            color = colorResource(
+                                id = R.color.white), textAlign = TextAlign.Center)
+                        Button(onClick = {
+                            onClickGrantPermission()
+                        },
+                            colors = ButtonDefaults.buttonColors(backgroundColor = colorResource(id = R.color.white)),
+                            shape = RoundedCornerShape(4.dp)) {
+                            Text(text = LocaleConstants.GRANT_PERMISSION.locale().uppercase(),
+                                fontFamily = lato,
+                                fontSize = 14.sp,
+                                color = colorResource(
+                                    id = R.color.colorPrimary))
+                        }
+                    }
+                }
+
+                if (isPrayerTimeHidden == false) {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally,
+                        modifier = Modifier
+                            .padding(bottom = 48.dp, top = 4.dp)
+                            .nonRippleClickable {
+                                onClickPraytime()
+                            }) {
+                        Text(text = LocaleConstants.NEXT_PRAYER.locale(),
+                            fontFamily = lato,
+                            fontSize = 16.sp,
+                            color = colorResource(
+                                id = R.color.white))
+                        Text(text = textPrayerTime,
+                            fontFamily = lato,
+                            fontSize = 32.sp,
+                            color = colorResource(
+                                id = R.color.white),
+                            fontWeight = FontWeight.Bold)
+                        Text(text = textUntil,
+                            fontFamily = lato,
+                            fontSize = 16.sp,
+                            color = colorResource(
+                                id = R.color.white))
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Image(modifier = Modifier
+                                .height(24.dp)
+                                .width(24.dp)
+                                .padding(4.dp),
+                                painter = painterResource(id = R.drawable.ic_location),
+                                contentDescription = null,
+                                colorFilter = ColorFilter.tint(
+                                    colorResource(id = R.color.white)))
+                            Text(text = address,
+                                fontFamily = lato,
+                                fontSize = 14.sp,
+                                color = colorResource(
+                                    id = R.color.white))
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+        Box(modifier = Modifier
+            .constrainAs(circle) {
+                bottom.linkTo(parent.bottom)
+            }
+            .fillMaxWidth()
+            .height(32.dp)) {
+            Image(modifier = Modifier
+                .fillMaxWidth()
+                .fillMaxHeight(),
+                painter = painterResource(id = R.drawable.ic_footer),
+                contentDescription = null,
+                contentScale = ContentScale.FillBounds)
+            Box(modifier = Modifier
+                .align(Alignment.BottomStart)
+                .fillMaxWidth()
+                .height(2.dp)
+                .background(colorResource(id = R.color.neutral_100)))
+        }
     }
 }
 
@@ -101,7 +314,7 @@ private fun MainHomeFragment.Note() {
                 startActivity(Intent(requireActivity(), NoteActivity::class.java))
             },
             indication = rememberRipple(bounded = true)
-        )){
+        )) {
             Row(modifier = Modifier
                 .fillMaxWidth()
                 .padding(12.dp),
@@ -451,37 +664,31 @@ private fun MainHomeFragment.QuranLastRead() {
 
     Card(modifier = Modifier
         .fillMaxWidth()
-        .padding(horizontal = 12.dp)
-        .height(124.dp),
-        shape = RoundedCornerShape(16.dp),
-        backgroundColor = colorResource(id = R.color.colorPrimary)) {
-        Image(
-            modifier = Modifier
-                .fillMaxWidth()
-                .fillMaxHeight()
-                .combinedClickable(onClick = {
-                    StartReadQuranBSD
-                        .newInstantInstance(surah = Prefs.quranLastRead.surah,
-                            ayah = Prefs.quranLastRead.ayah)
-                        .show(childFragmentManager, "")
-                }, onLongClick = {
-                    StartReadQuranBSD
-                        .newSelectionInstance(surah = Prefs.quranLastRead.surah,
-                            ayah = Prefs.quranLastRead.ayah)
-                        .show(childFragmentManager, "")
-                }),
-            painter = painterResource(id = R.drawable.radial),
-            contentScale = ContentScale.FillBounds,
-            contentDescription = null,
-        )
+        .padding(horizontal = 16.dp), shape = RoundedCornerShape(16.dp)) {
         Row(modifier = Modifier
+            .background(brush = Brush.radialGradient(listOf(colorResource(id = R.color.colorPrimary),
+                colorResource(id = R.color.colorPrimaryDark))))
             .fillMaxWidth()
+            .combinedClickable(onClick = {
+                StartReadQuranBSD
+                    .newInstantInstance(surah = Prefs.quranLastRead.surah,
+                        ayah = Prefs.quranLastRead.ayah)
+                    .show(childFragmentManager, "")
+            }, onLongClick = {
+                StartReadQuranBSD
+                    .newSelectionInstance(surah = Prefs.quranLastRead.surah,
+                        ayah = Prefs.quranLastRead.ayah)
+                    .show(childFragmentManager, "")
+            })
             .padding(16.dp),
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically) {
             Column(Modifier) {
-                Text(LocaleConstants.LAST_READ.locale(), fontFamily = lato, fontSize = 14.sp, color = colorResource(
-                    id = R.color.white))
+                Text(LocaleConstants.LAST_READ.locale(),
+                    fontFamily = lato,
+                    fontSize = 14.sp,
+                    color = colorResource(
+                        id = R.color.white))
                 verticalSpacer(height = 16.dp)
                 Text(text = surah.value ?: "",
                     fontFamily = lato,
@@ -504,6 +711,65 @@ private fun MainHomeFragment.QuranLastRead() {
                 colorFilter = ColorFilter.tint(colorResource(id = R.color.black).copy(alpha = 0.4f)))
         }
     }
+
+//    Card(modifier = Modifier
+//        .fillMaxWidth()
+//        .padding(horizontal = 12.dp)
+//        .height(124.dp),
+//        shape = RoundedCornerShape(16.dp),
+//        backgroundColor = colorResource(id = R.color.colorPrimary)) {
+//        Image(
+//            modifier = Modifier
+//                .fillMaxWidth()
+//                .fillMaxHeight()
+//                .combinedClickable(onClick = {
+//                    StartReadQuranBSD
+//                        .newInstantInstance(surah = Prefs.quranLastRead.surah,
+//                            ayah = Prefs.quranLastRead.ayah)
+//                        .show(childFragmentManager, "")
+//                }, onLongClick = {
+//                    StartReadQuranBSD
+//                        .newSelectionInstance(surah = Prefs.quranLastRead.surah,
+//                            ayah = Prefs.quranLastRead.ayah)
+//                        .show(childFragmentManager, "")
+//                }),
+//            painter = painterResource(id = R.drawable.radial),
+//            contentScale = ContentScale.FillBounds,
+//            contentDescription = null,
+//        )
+//        Row(modifier = Modifier
+//            .fillMaxWidth()
+//            .padding(16.dp),
+//            horizontalArrangement = Arrangement.SpaceBetween,
+//            verticalAlignment = Alignment.CenterVertically) {
+//            Column(Modifier) {
+//                Text(LocaleConstants.LAST_READ.locale(),
+//                    fontFamily = lato,
+//                    fontSize = 14.sp,
+//                    color = colorResource(
+//                        id = R.color.white))
+//                verticalSpacer(height = 16.dp)
+//                Text(text = surah.value ?: "",
+//                    fontFamily = lato,
+//                    fontSize = 24.sp,
+//                    fontWeight = FontWeight.Bold,
+//                    color = colorResource(
+//                        id = R.color.white))
+//                Text(text = ayah.value ?: "",
+//                    fontFamily = lato,
+//                    fontSize = 14.sp,
+//                    color = colorResource(
+//                        id = R.color.white))
+//            }
+//            Image(modifier = Modifier
+//                .height(80.dp)
+//                .width(80.dp)
+//                .padding(0.dp),
+//                painter = painterResource(id = R.drawable.ic_quran_calligraphy),
+//                contentDescription = null,
+//                colorFilter = ColorFilter.tint(colorResource(id = R.color.black).copy(alpha = 0.4f)))
+//        }
+//    }
 }
 
 @Composable
@@ -586,7 +852,8 @@ private fun FeatureCard(modifier: Modifier, name: String, image: Int, onClick: (
                 fontSize = 12.sp,
                 fontWeight = FontWeight.Bold,
                 maxLines = 1,
-                color = colorResource(id = R.color.textPrimary)
+                color = colorResource(id = R.color.textPrimary),
+                textAlign = TextAlign.Center
             )
             verticalSpacer(height = 8)
         }

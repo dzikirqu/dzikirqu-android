@@ -45,6 +45,7 @@
             android:layout_margin="16dp"
             android:fontFamily="@font/regular"
             android:textColor="@color/textTertiary"
+            android:textAlignment="center"
             android:layout_gravity="center"
             android:text="DzikirQu by Mutiara Iman and the Community" />
 
