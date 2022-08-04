@@ -26,6 +26,14 @@ body:
       value: "A bug happened!"
     validations:
       required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      placeholder: ex. 2.6.10
+    validations:
+      required: true
   - type: dropdown
     id: android
     attributes:
