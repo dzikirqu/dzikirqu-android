@@ -684,11 +684,8 @@ private fun MainHomeFragment.QuranLastRead() {
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically) {
             Column(Modifier) {
-                Text(LocaleConstants.LAST_READ.locale(),
-                    fontFamily = lato,
-                    fontSize = 14.sp,
-                    color = colorResource(
-                        id = R.color.white))
+                Text(LocaleConstants.LAST_READ.locale(), fontFamily = lato, fontSize = 14.sp, color = colorResource(
+                    id = R.color.white))
                 verticalSpacer(height = 16.dp)
                 Text(text = surah.value ?: "",
                     fontFamily = lato,
