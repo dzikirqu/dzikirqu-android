@@ -62,12 +62,10 @@ class MainHomeFragment : BaseFragment<FragmentMainHomeBinding, MainHomeViewModel
 
     override fun onApplyWindowEvent(insets: Insets) {
         viewDataBinding?.statusBarHeight?.height(insets.top, duration = 0)
-        viewModel.statusBarHeight.value = insets.top
-        viewDataBinding?.viewHeader?.updatePadding(0,insets.top,0,0)
     }
 
-    override fun onClickSearch() {
-        val popupMenu = PopupMenu(requireActivity(), viewDataBinding?.search!!)
+    fun onClickSearch(view:View) {
+        val popupMenu = PopupMenu(requireActivity(), view)
         popupMenu.menu.add(LocaleConstants.QURAN.locale())
         popupMenu.menu.add(LocaleConstants.PRAYER.locale())
         popupMenu.setOnMenuItemClickListener {
@@ -105,14 +103,7 @@ class MainHomeFragment : BaseFragment<FragmentMainHomeBinding, MainHomeViewModel
     }
 
     override fun onClickPraytime() {
-        requireActivity().startActivity(
-            Intent(requireActivity(), PraytimeActivity::class.java),
-            ActivityOptions.makeSceneTransitionAnimation(
-                requireActivity(),
-                UtilPair.create(viewDataBinding?.viewHeader, "header"),
-                UtilPair.create(viewDataBinding?.viewPrayerTime, "text")
-            ).toBundle()
-        )
+        requireActivity().startActivity(Intent(requireActivity(), PraytimeActivity::class.java))
     }
 
     override fun onClickBookmark() {
