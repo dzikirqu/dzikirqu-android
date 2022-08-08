@@ -65,7 +65,12 @@ class ShareImageActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
         setContentView(binding.root)
 
-        binding.toolbarTitle.text = LocaleConstants.SHARE.locale()
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            title = LocaleConstants.SHARE.locale()
+        }
+
         binding.arabic.text = getArabic()
         binding.translation.text = getTranslation()
         binding.source.text = getSource()
