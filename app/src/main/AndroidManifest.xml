@@ -65,7 +65,8 @@
         <activity
             android:name="com.wagyufari.dzikirqu.ui.share.ShareImageActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.hadithchapter.HadithChapterActivity"/>
         <activity
             android:name=".ui.main.prayer.MainPrayerActivity"
             android:exported="false"
