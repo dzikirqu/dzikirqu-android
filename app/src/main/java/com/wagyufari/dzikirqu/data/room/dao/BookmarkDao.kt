@@ -34,7 +34,7 @@ interface BookmarkDao {
     suspend fun putBookmark(bookmark:Bookmark)
 
     @Query("DELETE FROM bookmarks WHERE :ids IS idString AND type IS :type")
-    suspend fun deleteBookmark(ids:String, type:String)
+    suspend fun deleteBookmark(ids:String?, type:String)
 
     @Update(entity = Bookmark::class)
     suspend fun updateHighlight(update: BookmarkHighlightUpdate)

@@ -1,5 +1,6 @@
 package com.wagyufari.dzikirqu.ui.read.prayer
 
+import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.switchMap
@@ -26,6 +27,8 @@ class ReadPrayerViewModel @Inject constructor(
     val prayerName = mutableStateOf("")
     val recite = MutableLiveData<String>()
     val position = MutableLiveData(0)
+
+    val counter = mutableStateMapOf<String, Int>()
 
     val prayerData = prayerId.switchMap {
         dataManager.getPrayerData(it)
