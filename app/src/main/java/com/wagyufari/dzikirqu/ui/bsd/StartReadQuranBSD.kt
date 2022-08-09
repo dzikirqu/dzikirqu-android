@@ -107,12 +107,12 @@ class StartReadQuranBSD : BottomSheetDialogFragment() {
 
     fun start() {
         when (Prefs.defaultQuranReadMode) {
-            ReadModeConstants.VERTICAL -> {
-                getSurah()?.let { ReadActivity.startSurah(requireActivity(), it, getAyah()) }
-                dismiss()
-            }
             ReadModeConstants.PAGED -> {
                 getSurah()?.let { requireActivity().openPagedQuran(surah = it, ayah = getAyah()) }
+                dismiss()
+            }
+            else->{
+                getSurah()?.let { ReadActivity.startSurah(requireActivity(), it, getAyah()) }
                 dismiss()
             }
         }
