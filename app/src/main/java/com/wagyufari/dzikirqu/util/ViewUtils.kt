@@ -40,10 +40,10 @@ object ViewUtils {
         return (dp * Resources.getSystem().displayMetrics.density)
     }
 
-    fun getBitmapFromView(view: View): Bitmap {
+    fun getBitmapFromView(view: View, width: Int = view.width, height: Int = view.height): Bitmap {
         //Define a bitmap with the same size as the view
         val returnedBitmap: Bitmap =
-            Bitmap.createBitmap(view.width, view.height, Bitmap.Config.ARGB_8888)
+            Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
         //Bind a canvas to it
         val canvas = Canvas(returnedBitmap)
         //Get the view's background
