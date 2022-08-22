@@ -22,7 +22,6 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.focus.FocusRequester.Companion.createRefs
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.layout.ContentScale
@@ -65,7 +64,6 @@ import com.wagyufari.dzikirqu.ui.read.ReadActivity
 import com.wagyufari.dzikirqu.ui.v2.theme.lato
 import com.wagyufari.dzikirqu.util.*
 import com.wagyufari.dzikirqu.util.StringExt.getText
-import kotlinx.coroutines.NonDisposableHandle.parent
 
 @Composable
 fun MainHomeFragment.Compose() {

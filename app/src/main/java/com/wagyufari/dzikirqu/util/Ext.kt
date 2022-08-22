@@ -7,6 +7,7 @@ import android.app.ActivityOptions
 import android.content.*
 import android.content.Context.CLIPBOARD_SERVICE
 import android.content.pm.PackageManager
+import android.content.res.Configuration
 import android.content.res.Resources
 import android.graphics.Canvas
 import android.graphics.Color
@@ -19,6 +20,7 @@ import android.os.Environment
 import android.os.Handler
 import android.text.Editable
 import android.text.TextWatcher
+import android.text.format.DateUtils
 import android.text.style.ReplacementSpan
 import android.view.*
 import android.view.inputmethod.InputMethodManager
@@ -73,7 +75,26 @@ import retrofit2.HttpException
 import java.io.File
 import java.lang.reflect.Field
 import java.net.URI
+import java.text.ParseException
 import java.util.*
+
+fun Date.toAgo(): String {
+    try {
+        val time: Long = this.time
+        val now = System.currentTimeMillis()
+        return DateUtils.getRelativeTimeSpanString(time, now, DateUtils.SECOND_IN_MILLIS).toString()
+            .toLocale()
+    } catch (e: ParseException) {
+        e.printStackTrace()
+    }
+    return ""
+}
+
+internal fun String.toLocale(): String {
+    if (Prefs.language == "english") return this
+    return this.replace("minutes ago", "menit yang lalu").replace("minute ago", "menit yang lalu").replace("seconds ago", "detik yang lalu")
+        .replace("hours ago", "jam yang lalu").replace("hour ago", "jam yang lalu")
+}
 
 fun Context.getActivity(): AppCompatActivity? = when (this) {
     is AppCompatActivity -> this
@@ -140,6 +161,7 @@ fun String.circleGlideInto(imageView: ImageView?) {
 fun verticalSpacer(height: Int) {
     Spacer(Modifier.height(height.dp))
 }
+
 @Composable
 fun verticalSpacer(height: Dp) {
     Spacer(Modifier.height(height))
@@ -224,13 +246,13 @@ fun TextView.onClickDrawableListener(onClick: () -> Unit, onDrawableRightClick: 
     }
 }
 
-fun percentageOf(value:Int, percentage:Int):Int{
-    return (value*percentage/100)
+fun percentageOf(value: Int, percentage: Int): Int {
+    return (value * percentage / 100)
 }
 
 fun animateValue(startValue: Int, endValue: Int, duration: Long? = 500, onAnimate: (Int) -> Unit) {
     ValueAnimator.ofInt(startValue, endValue).apply {
-        this.duration = duration?:500
+        this.duration = duration ?: 500
         addUpdateListener {
             onAnimate(it.animatedValue as Int)
         }

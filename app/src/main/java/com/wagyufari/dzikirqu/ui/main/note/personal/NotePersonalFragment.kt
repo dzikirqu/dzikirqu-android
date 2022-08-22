@@ -71,14 +71,6 @@ class NotePersonalFragment : BaseFragment<FragmentNotePersonalBinding, NotePerso
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        postponeEnterTransition()
-        view.doOnPreDraw { startPostponedEnterTransition() }
-        exitTransition = MaterialElevationScale(false).apply {
-            duration = 500
-        }
-        reenterTransition = MaterialElevationScale(true).apply {
-            duration = 500
-        }
 
         viewModel.navigator = this
         viewDataBinding?.lifecycleOwner = viewLifecycleOwner
@@ -124,7 +116,7 @@ class NotePersonalFragment : BaseFragment<FragmentNotePersonalBinding, NotePerso
                 viewDataBinding?.root?.findNavController()?.navigate(R.id.openFolderFromPersonal,
                     bundleOf("folderName" to folder),
                     null,
-                    extras)
+                    null)
             }
         })
 

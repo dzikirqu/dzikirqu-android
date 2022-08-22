@@ -9,10 +9,7 @@ import com.wagyufari.dzikirqu.model.Location
 import com.wagyufari.dzikirqu.model.Note
 import com.wagyufari.dzikirqu.model.NotePropertyType
 import com.wagyufari.dzikirqu.model.Speaker
-import com.wagyufari.dzikirqu.model.events.NoteEditorEvent
-import com.wagyufari.dzikirqu.model.events.NoteEditorFocusEvent
-import com.wagyufari.dzikirqu.model.events.NotePropertySelectedEvent
-import com.wagyufari.dzikirqu.model.events.SettingsEvent
+import com.wagyufari.dzikirqu.model.events.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import java.text.SimpleDateFormat
 import java.util.*
@@ -25,8 +22,8 @@ class NoteComposerViewModel @Inject constructor(dataManager: AppDataManager) :
 
     override fun onEvent(obj: Any) {
         when (obj) {
-            is NoteEditorFocusEvent -> {
-                navigator?.onEditorFocusEvent(obj.focus)
+            is NoteInsertEvent->{
+                navigator?.onNoteInsertEvent(obj.text)
             }
             is NotePropertySelectedEvent -> {
                 when (obj.property?.type) {

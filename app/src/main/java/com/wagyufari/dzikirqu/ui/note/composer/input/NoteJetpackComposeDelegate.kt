@@ -1,10 +1,19 @@
-package com.wagyufari.dzikirqu.ui.note.composer.metadata
+package com.wagyufari.dzikirqu.ui.note.composer.input
 
+import android.content.Intent
+import android.util.DisplayMetrics
+import com.wagyufari.dzikirqu.R
+import android.view.Gravity
+import android.view.LayoutInflater
+import android.view.View
+import android.widget.PopupWindow
+import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.BasicTextField
+import androidx.compose.material.Divider
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -17,11 +26,80 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.wagyufari.dzikirqu.R
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.app.ShareCompat
+import androidx.core.content.ContextCompat.startActivity
+import androidx.core.view.isVisible
+import com.wagyufari.dzikirqu.databinding.PopupNoteComposerBinding
+import com.wagyufari.dzikirqu.model.delete
+import com.wagyufari.dzikirqu.model.restore
+import com.wagyufari.dzikirqu.model.share
+import com.wagyufari.dzikirqu.ui.bsd.settings.SettingsBSD
+import com.wagyufari.dzikirqu.ui.bsd.settings.SettingsConstants
+import com.wagyufari.dzikirqu.ui.note.composer.NoteComposerActivity
+import com.wagyufari.dzikirqu.ui.note.detail.NotePreviewBSD
+import com.wagyufari.dzikirqu.ui.note.property.folder.NotePropertyFolderActivity
+import com.wagyufari.dzikirqu.ui.note.property.location.NotePropertyLocationActivity
+import com.wagyufari.dzikirqu.ui.note.property.presenter.NotePropertyPresenterActivity
+import com.wagyufari.dzikirqu.ui.note.property.tag.NotePropertyTagActivity
 import com.wagyufari.dzikirqu.ui.v2.theme.lato
+import com.wagyufari.dzikirqu.util.Appbar
 import com.wagyufari.dzikirqu.util.getLocale
+import com.wagyufari.dzikirqu.util.verticalSpacer
 import java.text.SimpleDateFormat
 import java.util.*
+
+fun NoteComposerActivity.NoteComposeLogicDelegate(){
+    viewDataBinding.appbar.setContent {
+        AppBar()
+    }
+    viewDataBinding.composeView.setContent {
+        metaData()
+    }
+}
+
+@Composable
+fun NoteComposerActivity.metaData() {
+
+    Column(Modifier.animateContentSize()) {
+        NoteMetadataView(
+            isPreview = false,
+            title = viewModel.title.value,
+            onTitleChange = {
+                viewModel.title.value = it
+            },
+            subtitle = viewModel.subtitle.value,
+            onSubtitleChange = {
+                viewModel.subtitle.value = it
+            },
+            date = viewModel.date.value,
+            onDateClicked = {
+                datePickerDialog.show()
+            },
+            presenter = viewModel.presenter.value,
+            onPresenterClicked = {
+                startActivity(Intent(this@metaData,
+                    NotePropertyPresenterActivity::class.java))
+            },
+            location = viewModel.location.value,
+            onLocationClicked = {
+                startActivity(Intent(this@metaData,
+                    NotePropertyLocationActivity::class.java))
+            },
+            tags = viewModel.tags.toHashSet().toCollection(arrayListOf()),
+            onTagClicked = {
+                startActivity(NotePropertyTagActivity.newIntent(this@metaData,
+                    viewModel.tags.toHashSet().toCollection(arrayListOf())))
+            },
+            folder = viewModel.folder.value,
+            onFolderClicked = {
+                startActivity(Intent(this@metaData,
+                    NotePropertyFolderActivity::class.java))
+            }
+        )
+        verticalSpacer(height = 8)
+    }
+}
 
 @Composable
 fun NoteMetadataView(
@@ -46,7 +124,6 @@ fun NoteMetadataView(
         modifier = Modifier
             .fillMaxWidth()
             .padding(start = 16.dp, end = 16.dp, top = 0.dp)
-            .background(colorResource(id = R.color.neutral_0))
     ) {
         if (isPreview) {
             if (title.isNotBlank()) {
@@ -124,7 +201,7 @@ fun NoteMetadataView(
                     if (!isPreview) onDateClicked()
                 },
                 title = "Tanggal",
-                image = R.drawable.ic_calendar,
+                image = com.wagyufari.dzikirqu.R.drawable.ic_calendar,
                 content = SimpleDateFormat("EEEE, dd MMM yyyy", getLocale()).format(date)
             )
             NotePropertyView(modifier = Modifier.clickable {
@@ -150,7 +227,11 @@ fun NoteMetadataView(
                 content = folder
             )
         }
-        Spacer(Modifier.height(8.dp))
+        Spacer(Modifier.height(16.dp))
+        Divider(Modifier
+            .height(1.dp)
+            .fillMaxWidth()
+            .background(colorResource(id = R.color.neutral_200)))
     }
 }
 
@@ -187,12 +268,12 @@ fun NotePropertyView(modifier: Modifier, title: String, content: String, image: 
                 .height(16.dp),
             painter = painterResource(id = image),
             contentDescription = null,
-            colorFilter = ColorFilter.tint(colorResource(id = R.color.textTertiary))
+            colorFilter = ColorFilter.tint(colorResource(id = com.wagyufari.dzikirqu.R.color.textTertiary))
         )
         Spacer(Modifier.width(8.dp))
         Text(
             "$title:",
-            color = colorResource(id = R.color.textTertiary),
+            color = colorResource(id = com.wagyufari.dzikirqu.R.color.textTertiary),
             fontFamily = lato,
             fontSize = 14.sp
         )
@@ -208,17 +289,71 @@ fun NotePropertyView(modifier: Modifier, title: String, content: String, image: 
 }
 
 @Composable
-fun NoteAddProperty(modifier: Modifier) {
-    Row(modifier = modifier, verticalAlignment = Alignment.CenterVertically) {
-        Image(
-            modifier = Modifier
-                .width(20.dp)
-                .height(20.dp),
-            painter = painterResource(id = R.drawable.ic_add),
-            contentDescription = null,
-            colorFilter = ColorFilter.tint(colorResource(id = R.color.textTertiary))
-        )
-        Spacer(Modifier.width(8.dp))
-        Text("Add a property", color = colorResource(id = R.color.textTertiary), fontFamily = lato)
+internal fun NoteComposerActivity.AppBar(){
+    val rightButtonImage = mutableListOf<Int>()
+    val rightButtonHandler = mutableListOf<(View?) -> Unit>()
+
+    rightButtonImage.add(R.drawable.ic_preview)
+    rightButtonImage.add(R.drawable.ic_more_vert)
+
+    rightButtonHandler.add {
+        NotePreviewBSD.newInstance(viewModel.content.value).show(supportFragmentManager, "")
     }
+
+    rightButtonHandler.add{
+        var popupMenu: PopupWindow? = null
+        popupMenu =
+            PopupWindow(PopupNoteComposerBinding.inflate(LayoutInflater.from(this))
+                .apply {
+                    delete.isVisible = viewModel.note.isDeleted == false
+                    delete.setOnClickListener {
+                        showDeleteConfirmationDialog {
+                            viewModel.note.delete(this@AppBar)
+                            finish()
+                        }
+                    }
+                    restore.isVisible = viewModel.note.isDeleted == true
+                    restore.setOnClickListener {
+                        viewModel.note.restore(this@AppBar)
+                        finish()
+                    }
+                    share.setOnClickListener {
+                        popupMenu?.dismiss()
+                        viewModel.note.share(this@AppBar) { url ->
+                            url?.let {
+                                ShareCompat.IntentBuilder(this@AppBar)
+                                    .setType("text/plain")
+                                    .setChooserTitle("Share")
+                                    .setText(it)
+                                    .startChooser()
+                            }
+                        }
+                    }
+                    settings.setOnClickListener {
+                        SettingsBSD(arrayListOf(SettingsConstants.NOTES)).show(
+                            supportFragmentManager,
+                            null
+                        )
+                        popupMenu?.dismiss()
+                    }
+                    checkboxPublic.isChecked = viewModel.isPublic.value
+                    checkboxPublic.setOnCheckedChangeListener { compoundButton, b ->
+                        viewModel.isPublic.value = b
+                        updateNote()
+                    }
+                }.root,
+                ConstraintLayout.LayoutParams.WRAP_CONTENT,
+                ConstraintLayout.LayoutParams.WRAP_CONTENT,
+                true)
+        val displayMetrics = DisplayMetrics()
+        windowManager.defaultDisplay.getMetrics(displayMetrics)
+        popupMenu.showAtLocation(viewDataBinding.composeView, Gravity.NO_GRAVITY,displayMetrics.widthPixels,0)
+    }
+
+
+    Appbar(backgroundColor = colorResource(id = android.R.color.transparent))
+        .withBackButton()
+        .setElevation(0)
+        .setRightButton(rightButtonImage = rightButtonImage,
+            rightButtonHandler = rightButtonHandler).build()
 }

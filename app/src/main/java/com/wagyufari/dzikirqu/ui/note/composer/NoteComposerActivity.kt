@@ -4,24 +4,12 @@ import android.app.DatePickerDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.DisplayMetrics
-import android.view.Gravity
-import android.view.LayoutInflater
 import android.view.View
-import android.widget.PopupWindow
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
-import androidx.compose.animation.animateContentSize
-import androidx.compose.foundation.layout.Column
-import androidx.compose.runtime.*
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.colorResource
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.app.ShareCompat
+import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.google.android.material.tabs.TabLayoutMediator
 import com.wagyufari.dzikirqu.BR
 import com.wagyufari.dzikirqu.R
 import com.wagyufari.dzikirqu.base.BaseActivity
@@ -30,28 +18,14 @@ import com.wagyufari.dzikirqu.constants.LocaleConstants.locale
 import com.wagyufari.dzikirqu.data.Prefs
 import com.wagyufari.dzikirqu.data.room.dao.getNoteDao
 import com.wagyufari.dzikirqu.databinding.ActivityNoteComposerBinding
-import com.wagyufari.dzikirqu.databinding.PopupNoteComposerBinding
 import com.wagyufari.dzikirqu.model.Note
-import com.wagyufari.dzikirqu.model.delete
-import com.wagyufari.dzikirqu.model.events.NoteEditorFocusEvent
-import com.wagyufari.dzikirqu.model.restore
-import com.wagyufari.dzikirqu.model.share
-import com.wagyufari.dzikirqu.ui.adapters.FragmentPagerAdapter
-import com.wagyufari.dzikirqu.ui.bsd.settings.SettingsBSD
-import com.wagyufari.dzikirqu.ui.bsd.settings.SettingsConstants
-import com.wagyufari.dzikirqu.ui.note.composer.input.NoteInputFragment
-import com.wagyufari.dzikirqu.ui.note.composer.metadata.NoteMetadataView
-import com.wagyufari.dzikirqu.ui.note.composer.preview.NotePreviewFragment
-import com.wagyufari.dzikirqu.ui.note.property.folder.NotePropertyFolderActivity
-import com.wagyufari.dzikirqu.ui.note.property.location.NotePropertyLocationActivity
-import com.wagyufari.dzikirqu.ui.note.property.presenter.NotePropertyPresenterActivity
-import com.wagyufari.dzikirqu.ui.note.property.tag.NotePropertyTagActivity
-import com.wagyufari.dzikirqu.util.Appbar
-import com.wagyufari.dzikirqu.util.RxBus
+import com.wagyufari.dzikirqu.ui.note.composer.input.*
+import com.wagyufari.dzikirqu.util.TextViewUndoRedo
+import com.wagyufari.dzikirqu.util.ViewUtils
 import com.wagyufari.dzikirqu.util.foreground.NoteBackupWorker
 import com.wagyufari.dzikirqu.util.io
-import com.wagyufari.dzikirqu.util.verticalSpacer
 import dagger.hilt.android.AndroidEntryPoint
+import io.noties.markwon.editor.MarkwonEditor
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
@@ -68,6 +42,10 @@ class NoteComposerActivity : BaseActivity<ActivityNoteComposerBinding, NoteCompo
     override val viewModel: NoteComposerViewModel by viewModels()
 
     lateinit var datePickerDialog: DatePickerDialog
+    var selectionStart = 0
+    var selectionEnd = 0
+    lateinit var mTextViewUndoRedo: TextViewUndoRedo
+    lateinit var wysiwygEditor: MarkwonEditor
 
     companion object {
 
@@ -98,14 +76,6 @@ class NoteComposerActivity : BaseActivity<ActivityNoteComposerBinding, NoteCompo
         fun NoteComposerActivity.getNoteId(): Int {
             return intent.getIntExtra(EXTRA_NOTE_ID, -1)
         }
-
-        fun NoteComposerActivity.isComposer(): Boolean {
-            return intent.getBooleanExtra(EXTRA_IS_COMPOSER, false)
-        }
-
-        fun NoteComposerActivity.isPreview(): Boolean {
-            return intent.getBooleanExtra(EXTRA_IS_PREVIEW, false)
-        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -116,7 +86,6 @@ class NoteComposerActivity : BaseActivity<ActivityNoteComposerBinding, NoteCompo
         getFolderName()?.let {
             viewModel.folder.value = it
         }
-        
 
         if (getNoteId() != -1) {
             getNoteDao().getNoteByIds(getNoteId()).observe(this) {
@@ -143,8 +112,27 @@ class NoteComposerActivity : BaseActivity<ActivityNoteComposerBinding, NoteCompo
         viewDataBinding.composeView.setContent {
             metaData()
         }
-        configurePager()
         configureDatePicker()
+        NoteInputLogicDelegate()
+        NoteComposeLogicDelegate()
+        viewDataBinding.scrollView.setOnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
+            val diff: Int = viewDataBinding.scrollView.getChildAt(0).bottom - (viewDataBinding.scrollView.height + viewDataBinding.scrollView.scrollY)
+            viewDataBinding.scrollDown.isVisible = diff != 0
+
+            viewDataBinding.divider.isVisible = viewDataBinding.scrollView.scrollY > 0
+            if (viewDataBinding.scrollView.scrollY > 0){
+                viewDataBinding.appbar.setBackgroundColor(ContextCompat.getColor(this, R.color.neutral_100))
+            } else{
+                viewDataBinding.appbar.setBackgroundColor(ContextCompat.getColor(this, R.color.neutral_0))
+            }
+
+        }
+    }
+
+    override fun onSettingsEvent() {
+        super.onSettingsEvent()
+        viewDataBinding.editor.textSize = Prefs.notesTextSize
+        viewDataBinding.editor.setText(viewDataBinding.editor.text.toString())
     }
 
     fun Context.showDeleteConfirmationDialog(onPositive: () -> Unit) {
@@ -159,122 +147,12 @@ class NoteComposerActivity : BaseActivity<ActivityNoteComposerBinding, NoteCompo
             }.show()
     }
 
-    @Composable
-    fun metaData() {
-        var isExpanded by remember { mutableStateOf(isComposer()) }
-
-        val rightButtonImage = mutableListOf<Int>()
-        val rightButtonHandler = mutableListOf<(View?) -> Unit>()
-
-        if (!isComposer()){
-            rightButtonImage.add(R.drawable.ic_info)
-            rightButtonHandler.add{
-                isExpanded = !isExpanded
-            }
+    override fun onBackPressed() {
+        if (viewDataBinding.scrollView.scrollY != 0){
+            viewDataBinding.scrollView.fullScroll(View.FOCUS_UP)
+        } else{
+            super.onBackPressed()
         }
-
-        rightButtonImage.add(R.drawable.ic_more_vert)
-        rightButtonHandler.add{
-            var popupMenu: PopupWindow? = null
-            popupMenu =
-                PopupWindow(PopupNoteComposerBinding.inflate(LayoutInflater.from(this@NoteComposerActivity))
-                    .apply {
-                        delete.isVisible = viewModel.note.isDeleted == false
-                        delete.setOnClickListener {
-                            showDeleteConfirmationDialog {
-                                viewModel.note.delete(this@NoteComposerActivity)
-                                finish()
-                            }
-                        }
-                        restore.isVisible = viewModel.note.isDeleted == true
-                        restore.setOnClickListener {
-                            viewModel.note.restore(this@NoteComposerActivity)
-                            finish()
-                        }
-                        share.setOnClickListener {
-                            popupMenu?.dismiss()
-                            viewModel.note.share(this@NoteComposerActivity) { url ->
-                                url?.let {
-                                    ShareCompat.IntentBuilder(this@NoteComposerActivity)
-                                        .setType("text/plain")
-                                        .setChooserTitle("Share")
-                                        .setText(it)
-                                        .startChooser()
-                                }
-                            }
-                        }
-                        settings.setOnClickListener {
-                            SettingsBSD(arrayListOf(SettingsConstants.NOTES)).show(
-                                supportFragmentManager,
-                                null
-                            )
-                            popupMenu?.dismiss()
-                        }
-                        checkboxPublic.isChecked = viewModel.isPublic.value
-                        checkboxPublic.setOnCheckedChangeListener { compoundButton, b ->
-                            viewModel.isPublic.value = b
-                            updateNote()
-                        }
-                    }.root,
-                    ConstraintLayout.LayoutParams.WRAP_CONTENT,
-                    ConstraintLayout.LayoutParams.WRAP_CONTENT,
-                    true)
-            val displayMetrics = DisplayMetrics()
-            windowManager.defaultDisplay.getMetrics(displayMetrics)
-            popupMenu.showAtLocation(viewDataBinding.composeView, Gravity.NO_GRAVITY,displayMetrics.widthPixels,0)
-        }
-
-        Column(Modifier.animateContentSize()) {
-            val appbar = Appbar(backgroundColor = colorResource(id = android.R.color.transparent))
-                .withBackButton()
-                .setTitle(if (isExpanded) "" else viewModel.title.value)
-                .setElevation(0)
-                .setRightButton(rightButtonImage = rightButtonImage,
-                    rightButtonHandler = rightButtonHandler)
-
-            appbar.build()
-
-            if (isExpanded) {
-                NoteMetadataView(
-                    isPreview = isPreview(),
-                    title = viewModel.title.value,
-                    onTitleChange = {
-                        viewModel.title.value = it
-                    },
-                    subtitle = viewModel.subtitle.value,
-                    onSubtitleChange = {
-                        viewModel.subtitle.value = it
-                    },
-                    date = viewModel.date.value,
-                    onDateClicked = {
-                        datePickerDialog.show()
-                    },
-                    presenter = viewModel.presenter.value,
-                    onPresenterClicked = {
-                        startActivity(Intent(this@NoteComposerActivity,
-                            NotePropertyPresenterActivity::class.java))
-                    },
-                    location = viewModel.location.value,
-                    onLocationClicked = {
-                        startActivity(Intent(this@NoteComposerActivity,
-                            NotePropertyLocationActivity::class.java))
-                    },
-                    tags = viewModel.tags.toHashSet().toCollection(arrayListOf()),
-                    onTagClicked = {
-                        startActivity(NotePropertyTagActivity.newIntent(this@NoteComposerActivity,
-                            viewModel.tags.toHashSet().toCollection(arrayListOf())))
-                    },
-                    folder = viewModel.folder.value,
-                    onFolderClicked = {
-                        startActivity(Intent(this@NoteComposerActivity,
-                            NotePropertyFolderActivity::class.java))
-                    }
-                )
-                verticalSpacer(height = 8)
-            }
-        }
-
-
     }
 
     override fun onDestroy() {
@@ -298,42 +176,6 @@ class NoteComposerActivity : BaseActivity<ActivityNoteComposerBinding, NoteCompo
         Prefs.suspendedNoteContent = ""
     }
 
-    fun configurePager() {
-        val tabTitles = arrayListOf(
-            "Write",
-            "Preview",
-        )
-        if (isPreview()) {
-            viewDataBinding.pager.adapter =
-                FragmentPagerAdapter(
-                    this,
-                    arrayListOf(
-                        NotePreviewFragment.newInstance(viewModel.note.content)
-                    )
-                )
-            TabLayoutMediator(viewDataBinding.tab, viewDataBinding.pager) { tab, position ->
-                tab.text = "Preview"
-            }.attach()
-        } else {
-            val fragments: List<Fragment> = arrayListOf(
-                NoteInputFragment.newInstance(viewModel.note.content),
-                NotePreviewFragment.newInstance(viewModel.note.content)
-            )
-            viewDataBinding.pager.adapter =
-                FragmentPagerAdapter(
-                    this,
-                    fragments
-                )
-            TabLayoutMediator(viewDataBinding.tab, viewDataBinding.pager) { tab, position ->
-                tab.text = tabTitles[position]
-                viewDataBinding.pager.setCurrentItem(1, false)
-                if (isComposer()) {
-                    viewDataBinding.pager.setCurrentItem(0, true)
-                }
-            }.attach()
-        }
-    }
-
     fun configureDatePicker() {
         val calendar = Calendar.getInstance().apply {
             time = viewModel.date.value
@@ -346,29 +188,16 @@ class NoteComposerActivity : BaseActivity<ActivityNoteComposerBinding, NoteCompo
             }, calendar[Calendar.YEAR], calendar[Calendar.MONTH], calendar[Calendar.DAY_OF_MONTH])
     }
 
-    override fun onBackPressed() {
-        if (viewDataBinding.motionLayout.currentState == R.id.start) {
-            super.onBackPressed()
-        } else {
-            viewDataBinding.motionLayout.getTransition(R.id.defaultTransition).isEnabled = true
-            viewDataBinding.motionLayout.transitionToStart()
-            RxBus.getDefault().send(NoteEditorFocusEvent(false))
-        }
-    }
-
-    override fun onEditorFocusEvent(focus: Boolean) {
-        if (focus) {
-            viewDataBinding.motionLayout.getTransition(R.id.defaultTransition).isEnabled = false
-            viewDataBinding.motionLayout.transitionToEnd()
-        }
-    }
-
     override fun onNoteEditorEvent() {
         io {
             viewModel.updateNoteData()
             Prefs.suspendedNoteId = viewModel.note.id ?: -1
             Prefs.suspendedNoteContent = viewModel.note.content ?: ""
         }
+    }
+
+    override fun onNoteInsertEvent(data: String) {
+        handleInsert(data)
     }
 
 }

@@ -23,6 +23,7 @@ import com.wagyufari.dzikirqu.ui.note.composer.NoteComposerActivity
 import com.wagyufari.dzikirqu.util.ViewUtils
 import com.wagyufari.dzikirqu.util.io
 import com.wagyufari.dzikirqu.util.main
+import com.wagyufari.dzikirqu.util.toAgo
 
 
 class NoteAdapter : ListAdapter<Any, BaseViewHolder>(NoteStaggeredDiff) {
@@ -154,9 +155,10 @@ class NoteAdapter : ListAdapter<Any, BaseViewHolder>(NoteStaggeredDiff) {
                         false))
                 }
             }
-            mBinding.date.text = data.updatedDate
+            mBinding.date.text = data.getUpdatedDateObject()?.toAgo()
             mBinding.text.text = data.content?.replace("\n", " ")
         }
     }
-
 }
+
+data class MultiViewItem (val id : Int, val content : Any?)

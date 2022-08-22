@@ -17,7 +17,7 @@ import com.wagyufari.dzikirqu.base.BaseActivity
 import com.wagyufari.dzikirqu.data.Prefs
 import com.wagyufari.dzikirqu.databinding.ActivityNoteDetailBinding
 import com.wagyufari.dzikirqu.model.Note
-import com.wagyufari.dzikirqu.ui.note.composer.metadata.NoteMetadataView
+import com.wagyufari.dzikirqu.ui.note.composer.input.NoteMetadataView
 import com.wagyufari.dzikirqu.util.Appbar
 import com.wagyufari.dzikirqu.util.setMarkdown
 import dagger.hilt.android.AndroidEntryPoint
@@ -77,54 +77,44 @@ class NoteDetailActivity : BaseActivity<ActivityNoteDetailBinding, NoteDetailVie
 
     @Composable
     fun metaData() {
-        var isExpanded by remember { mutableStateOf(false) }
-
         val rightButtonImage = mutableListOf<Int>()
         val rightButtonHandler = mutableListOf<(View?) -> Unit>()
-
-        rightButtonImage.add(R.drawable.ic_info)
-        rightButtonHandler.add {
-            isExpanded = !isExpanded
-        }
 
         Column(Modifier.animateContentSize()) {
             val appbar = Appbar(backgroundColor = colorResource(id = android.R.color.transparent))
                 .withBackButton()
-                .setTitle(if (isExpanded) "" else viewModel.title.value)
                 .setElevation(0)
                 .setRightButton(rightButtonImage = rightButtonImage,
                     rightButtonHandler = rightButtonHandler)
 
             appbar.build()
 
-            if (isExpanded) {
-                NoteMetadataView(
-                    isPreview = true,
-                    title = viewModel.title.value,
-                    onTitleChange = {
-                        viewModel.title.value = it
-                    },
-                    subtitle = viewModel.subtitle.value,
-                    onSubtitleChange = {
-                        viewModel.subtitle.value = it
-                    },
-                    date = viewModel.date.value,
-                    onDateClicked = {
-                    },
-                    presenter = viewModel.presenter.value,
-                    onPresenterClicked = {
-                    },
-                    location = viewModel.location.value,
-                    onLocationClicked = {
-                    },
-                    tags = viewModel.tags,
-                    onTagClicked = {
-                    },
-                    folder = viewModel.folder.value,
-                    onFolderClicked = {
-                    }
-                )
-            }
+            NoteMetadataView(
+                isPreview = true,
+                title = viewModel.title.value,
+                onTitleChange = {
+                    viewModel.title.value = it
+                },
+                subtitle = viewModel.subtitle.value,
+                onSubtitleChange = {
+                    viewModel.subtitle.value = it
+                },
+                date = viewModel.date.value,
+                onDateClicked = {
+                },
+                presenter = viewModel.presenter.value,
+                onPresenterClicked = {
+                },
+                location = viewModel.location.value,
+                onLocationClicked = {
+                },
+                tags = viewModel.tags,
+                onTagClicked = {
+                },
+                folder = viewModel.folder.value,
+                onFolderClicked = {
+                }
+            )
         }
 
     }

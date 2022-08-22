@@ -37,7 +37,7 @@ import com.wagyufari.dzikirqu.databinding.ActivityNotePropertyTagBinding
 import com.wagyufari.dzikirqu.model.NoteProperty
 import com.wagyufari.dzikirqu.model.NotePropertyType
 import com.wagyufari.dzikirqu.model.events.NotePropertySelectedEvent
-import com.wagyufari.dzikirqu.ui.note.composer.metadata.BasicTextFieldHint
+import com.wagyufari.dzikirqu.ui.note.composer.input.BasicTextFieldHint
 import com.wagyufari.dzikirqu.ui.v2.theme.lato
 import com.wagyufari.dzikirqu.util.Appbar
 import com.wagyufari.dzikirqu.util.RxBus
