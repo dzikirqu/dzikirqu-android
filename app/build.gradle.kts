@@ -83,6 +83,11 @@ android {
                 "SERVER_URL",
                 "\"https://api-development.dzikirqu.com/\""
             )
+            buildConfigField(
+                "String",
+                "CDN_ALQURANCLOUD_SERVER_URL",
+                "\"https://cdn.islamic.network/\""
+            )
         }
     }
 
