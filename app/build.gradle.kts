@@ -18,8 +18,8 @@ android {
         applicationId = "com.wagyufari.dzikirqu"
         minSdk = 23
         targetSdk = 30
-        versionCode = 92
-        versionName = "2.6.10"
+        versionCode = 93
+        versionName = "2.6.11"
 
         vectorDrawables.useSupportLibrary = true
 
