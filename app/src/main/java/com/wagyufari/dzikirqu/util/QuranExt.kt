@@ -65,12 +65,12 @@ fun Context.openPagedQuran(lastRead: QuranLastRead) {
 }
 
 fun Context.openPagedQuran(surah: Int, ayah: Int? = 1, page: Int? = null) {
-    val splitInstallManager = SplitInstallManagerFactory.create(this)
-    if (splitInstallManager.installedModules.contains("pagedquran").not()) {
-        this.configureInstallation {
-            openPagedQuran(surah, ayah, page)
-        }
-    } else {
+//    val splitInstallManager = SplitInstallManagerFactory.create(this)
+//    if (splitInstallManager.installedModules.contains("pagedquran").not()) {
+//        this.configureInstallation {
+//            openPagedQuran(surah, ayah, page)
+//        }
+//    } else {
         io {
             page?.let {
                 ReadActivity.startPage(this, it)
@@ -87,5 +87,5 @@ fun Context.openPagedQuran(surah: Int, ayah: Int? = 1, page: Int? = null) {
                 }
             }
         }
-    }
+//    }
 }

@@ -102,12 +102,12 @@ interface ApiService {
             }
 
             httpClient.addInterceptor(authInterceptor)
-            if (BuildConfig.DEBUG) {
-                BaseApplication.instance?.createChuckInterceptor()?.let {
-                    httpClient
-                        .addInterceptor(it)
-                }
-            }
+//            if (BuildConfig.DEBUG) {
+//                BaseApplication.instance?.createChuckInterceptor()?.let {
+//                    httpClient
+//                        .addInterceptor(it)
+//                }
+//            }
 
 
             return Retrofit.Builder()

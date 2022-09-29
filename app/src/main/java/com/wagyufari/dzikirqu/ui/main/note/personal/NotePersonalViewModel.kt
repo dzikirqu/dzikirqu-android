@@ -195,12 +195,15 @@ fun NotePersonalFragment.getGoogleIntentSenderRequest(): ActivityResultLauncher<
         val backupProgressDialog = requireActivity().getProgressDialog("Loading notes...")
         progressDialog.show()
         try {
-            val credential =
-                Identity.getSignInClient(requireActivity()).getSignInCredentialFromIntent(it?.data)
+            val credential = Identity.getSignInClient(requireActivity()).getSignInCredentialFromIntent(it?.data)
             val firebaseCredential =
                 GoogleAuthProvider.getCredential(credential.googleIdToken, null)
             Firebase.auth.signInWithCredential(firebaseCredential)
+                .addOnFailureListener {
+                    println("Process has failed ${it.message}")
+                }
                 .addOnCompleteListener(requireActivity()) { task ->
+                    println("Completed")
                     if (task.isSuccessful) {
                         Firebase.auth.currentUser?.getIdToken(true)
                             ?.addOnCompleteListener {

@@ -107,20 +107,20 @@ class ReadQuranJuzFragment(val juz: Int? = null) :
     }
 
     override fun onClickPage() {
-        val splitInstallManager = SplitInstallManagerFactory.create(requireActivity())
-        if (splitInstallManager.installedModules.contains("pagedquran").not()){
-            SplitInstallManagerFactory.create(requireActivity()).getSessionState(0)
-                .addOnSuccessListener {
-                    if (it.status() == SplitInstallSessionStatus.DOWNLOADING){
-                        Toast.makeText(requireActivity(), LocaleConstants.DOWNLOAD_IN_PROGRESS.locale(), Toast.LENGTH_SHORT).show()
-                    } else{
-                        configureInstallation()
-                    }
-                }
-                .addOnFailureListener {
-                    configureInstallation()
-                }
-        } else{
+//        val splitInstallManager = SplitInstallManagerFactory.create(requireActivity())
+//        if (splitInstallManager.installedModules.contains("pagedquran").not()){
+//            SplitInstallManagerFactory.create(requireActivity()).getSessionState(0)
+//                .addOnSuccessListener {
+//                    if (it.status() == SplitInstallSessionStatus.DOWNLOADING){
+//                        Toast.makeText(requireActivity(), LocaleConstants.DOWNLOAD_IN_PROGRESS.locale(), Toast.LENGTH_SHORT).show()
+//                    } else{
+//                        configureInstallation()
+//                    }
+//                }
+//                .addOnFailureListener {
+//                    configureInstallation()
+//                }
+//        } else{
             main{
                 val ayahLineDao = PersistenceDatabase.getDatabase(requireActivity()).ayahLineDao()
                 val ayahLine = ayahLineDao.getAyahLineByJuzNumber(juz ?: 1)
@@ -129,9 +129,8 @@ class ReadQuranJuzFragment(val juz: Int? = null) :
                 }?: kotlin.run {
                     ReadActivity.startPage(requireActivity(), ayahLine.firstOrNull()?.page ?: 1)
                 }
-
             }
-        }
+//        }
     }
 
 
