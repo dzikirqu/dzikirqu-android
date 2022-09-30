@@ -5,9 +5,12 @@ import android.content.Context
 import com.wagyufari.dzikirqu.data.ApiService
 import com.wagyufari.dzikirqu.data.AppDataManager
 import com.wagyufari.dzikirqu.data.QuranService
+import com.wagyufari.dzikirqu.data.alqurancloud.AlQuranCloudAPIService
+import com.wagyufari.dzikirqu.data.alqurancloud.QuranRecitalRepositoryImpl
 import com.wagyufari.dzikirqu.data.room.BookmarkDatabase
 import com.wagyufari.dzikirqu.data.room.NotesDatabase
 import com.wagyufari.dzikirqu.data.room.PersistenceDatabase
+import com.wagyufari.dzikirqu.domain.repository.QuranRecitalRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -83,4 +86,12 @@ object AppModule {
     @Provides
     fun provideBookmarkDao(db: BookmarkDatabase) = db.bookmarkDao()
 
+    @Singleton
+    @Provides
+    fun provideAlQuranCloudAPIService(): AlQuranCloudAPIService = object : AlQuranCloudAPIService {}
+
+    @Singleton
+    @Provides
+    fun provideQuranRecitalRepository(alQuranCloudAPIService: AlQuranCloudAPIService): QuranRecitalRepository =
+        QuranRecitalRepositoryImpl(alQuranCloudAPIService)
 }
