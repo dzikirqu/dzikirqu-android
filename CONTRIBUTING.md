@@ -1,8 +1,8 @@
 # Contribution Guidelines
 
-This document contains a set of guidelines which any contributions to wagyufari/dzikirqu-android repository must follow.
+This document contains a set of guidelines which any contributions to dzikirqu/dzikirqu-android repository must follow.
 
-[If you disagree with something here, you should open up an issue to discuss making a change!](https://github.com/wagyufari/dzikirqu-android/issues/new)
+[If you disagree with something here, you should open up an issue to discuss making a change!](https://github.com/dzikirqu/dzikirqu-android/issues/new)
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ This document contains a set of guidelines which any contributions to wagyufari/
 
 ## GitHub Flow
 
-We use a modified version of [GitHub Flow](https://guides.github.com/introduction/flow/) at wagyufari/dzikirqu-android. The only difference is instead of deploying from a reviewed pull request, we merge first and deploy straight from master.
+We use a modified version of [GitHub Flow](https://guides.github.com/introduction/flow/) at dzikirqu/dzikirqu-android. The only difference is instead of deploying from a reviewed pull request, we merge first and deploy straight from master.
 
 Part of the GitHub Flow is submitting pull requests. See https://help.github.com/articles/using-pull-requests/ for a good overview of what pull requests are and how to use them. We use the _fork & pull model_ for managing contributions.
 
