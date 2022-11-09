@@ -37,7 +37,7 @@
     </LinearLayout>
 
     <!--    <androidx.fragment.app.FragmentContainerView-->
-    <!--        android:name="com.wagyufari.dzikirqu.ui.main.home.HomeFragment"-->
+    <!--        android:name="com.dzikirqu.android.ui.main.home.HomeFragment"-->
     <!--        android:layout_width="match_parent"-->
     <!--        android:layout_height="0dp"-->
     <!--        app:layout_constraintBottom_toBottomOf="parent"-->
@@ -45,7 +45,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/container"
-        android:name="com.wagyufari.dzikirqu.ui.bsd.settings.SettingsFragment"
+        android:name="com.dzikirqu.android.ui.bsd.settings.SettingsFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/neutral_50"

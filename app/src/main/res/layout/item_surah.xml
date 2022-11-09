@@ -11,7 +11,7 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.adapters.viewmodels.ItemSurahViewModel" />
+            type="com.dzikirqu.android.ui.adapters.viewmodels.ItemSurahViewModel" />
 
     </data>
 

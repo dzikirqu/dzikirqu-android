@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.builtins.StandardNames.FqNames.list
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -9,15 +11,15 @@ plugins {
 }
 
 android {
-    compileSdk = 31
+    compileSdk = 33
     buildToolsVersion = "30.0.3"
 
     flavorDimensions("default")
 
     defaultConfig {
-        applicationId = "com.wagyufari.dzikirqu"
+        applicationId = "com.dzikirqu.android"
         minSdk = 23
-        targetSdk = 30
+        targetSdk = 33
         versionCode = 93
         versionName = "2.6.11"
 
@@ -65,7 +67,7 @@ android {
     productFlavors{
         create("prod"){
             dimension = "default"
-            applicationId = "com.wagyufari.dzikirqu"
+            applicationId = "com.dzikirqu.android"
 
 
             buildConfigField(
@@ -76,7 +78,7 @@ android {
         }
         create("dev"){
             dimension = "default"
-            applicationId = "com.wagyufari.dzikirqu.dev"
+            applicationId = "com.dzikirqu.android.dev"
 
             buildConfigField(
                 "String",
@@ -183,7 +185,7 @@ dependencies {
     implementation("com.github.Zhuinden:fragmentviewbindingdelegate-kt:1.0.0")
 
     // Activity KTX for viewModels()
-    implementation("androidx.activity:activity-ktx:1.2.3")
+    implementation("androidx.activity:activity-ktx:1.6.1")
     implementation("android.arch.lifecycle:extensions:1.1.1")
     implementation("com.google.android.gms:play-services-location:18.0.0")
     implementation("com.google.android.gms:play-services-maps:17.0.1")
@@ -202,7 +204,7 @@ dependencies {
     implementation("com.google.firebase:firebase-crashlytics")
     implementation("com.google.firebase:firebase-storage-ktx")
     implementation("com.google.firebase:firebase-auth-ktx")
-    implementation("com.google.android.gms:play-services-auth:20.2.0")
+    implementation("com.google.android.gms:play-services-auth:20.3.0")
 
     implementation("androidx.work:work-runtime-ktx:2.7.0-alpha05")
     implementation("androidx.work:work-rxjava2:2.7.0-alpha05")

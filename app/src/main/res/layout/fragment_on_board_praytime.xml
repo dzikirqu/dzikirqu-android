@@ -3,13 +3,13 @@
 
     <data>
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.onboarding.fragments.viewmodels.OnBoardPraytimeViewModel" />
+            type="com.dzikirqu.android.ui.onboarding.fragments.viewmodels.OnBoardPraytimeViewModel" />
 
-        <import type="com.wagyufari.dzikirqu.constants.RingType" />
+        <import type="com.dzikirqu.android.constants.RingType" />
 
     </data>
 

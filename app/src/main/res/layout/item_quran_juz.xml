@@ -12,7 +12,7 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.model.identifiers.JuzObject" />
+            type="com.dzikirqu.android.model.identifiers.JuzObject" />
     </data>
 
     <LinearLayout

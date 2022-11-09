@@ -12,7 +12,7 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.model.identifiers.SurahObject" />
+            type="com.dzikirqu.android.model.identifiers.SurahObject" />
     </data>
 
     <LinearLayout

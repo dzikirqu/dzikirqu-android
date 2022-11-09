@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.wagyufari.dzikirqu",
+  "applicationId": "com.dzikirqu.android",
   "variantName": "prodRelease",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 92,
-      "versionName": "2.6.10",
+      "versionCode": 93,
+      "versionName": "2.6.11",
       "outputFile": "app-prod-release.apk"
     }
   ],

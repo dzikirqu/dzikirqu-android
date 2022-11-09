@@ -7,12 +7,12 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.bsd.khatam.KhatamFooterViewModel" />
+            type="com.dzikirqu.android.ui.bsd.khatam.KhatamFooterViewModel" />
 
 
-        <import type="com.wagyufari.dzikirqu.util.praytimes.PrayerTimeHelper" />
+        <import type="com.dzikirqu.android.util.praytimes.PrayerTimeHelper" />
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
 
         <import type="android.view.View" />
     </data>

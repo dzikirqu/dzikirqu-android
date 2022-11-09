@@ -9,9 +9,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.storage.FirebaseStorage
-import com.wagyufari.dzikirqu.util.ViewUtils.getProgressDialog
-import com.wagyufari.dzikirqu.util.io
-import com.wagyufari.dzikirqu.util.main
+import com.dzikirqu.android.util.ViewUtils.getProgressDialog
+import com.dzikirqu.android.util.io
+import com.dzikirqu.android.util.main
 import com.wagyufari.flyercomposer.databinding.ActivityFlyerComposerBinding
 import com.wagyufari.flyercomposer.gallery.GalleryPickerActivity
 import com.wagyufari.flyercomposer.gallery.MediaStoreImage

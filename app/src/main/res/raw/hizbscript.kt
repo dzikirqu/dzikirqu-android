@@ -1,13 +1,13 @@
-//package com.wagyufari.dzikirqu
+//package com.dzikirqu.android
 //
 //import android.os.Bundle
 //import androidx.appcompat.app.AppCompatActivity
 //import com.google.gson.Gson
 //import com.google.gson.reflect.TypeToken
-//import com.wagyufari.dzikirqu.SurahDao
-//import com.wagyufari.dzikirqu.model.Ayah
-//import com.wagyufari.dzikirqu.model.Hizb
-//import com.wagyufari.dzikirqu.util.FileUtils
+//import com.dzikirqu.android.SurahDao
+//import com.dzikirqu.android.model.Ayah
+//import com.dzikirqu.android.model.Hizb
+//import com.dzikirqu.android.util.FileUtils
 //import dagger.hilt.android.AndroidEntryPoint
 //import javax.inject.Inject
 //

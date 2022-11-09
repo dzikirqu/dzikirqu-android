@@ -4,7 +4,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.bsd.notes.main.filter.MainNoteFilterBSDViewModel" />
+            type="com.dzikirqu.android.ui.bsd.notes.main.filter.MainNoteFilterBSDViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"

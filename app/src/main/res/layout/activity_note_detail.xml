@@ -5,9 +5,9 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.note.detail.NoteDetailViewModel" />
+            type="com.dzikirqu.android.ui.note.detail.NoteDetailViewModel" />
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
 
         <import type="android.view.View" />
     </data>

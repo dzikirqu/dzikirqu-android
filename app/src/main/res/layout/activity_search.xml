@@ -56,7 +56,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/quran"
-        android:name="com.wagyufari.dzikirqu.ui.search.quran.SearchQuranFragment"
+        android:name="com.dzikirqu.android.ui.search.quran.SearchQuranFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,14 +64,14 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/prayer"
-        android:name="com.wagyufari.dzikirqu.ui.search.prayer.SearchPrayerFragment"
+        android:name="com.dzikirqu.android.ui.search.prayer.SearchPrayerFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/notes"
-        android:name="com.wagyufari.dzikirqu.ui.search.note.SearchNoteFragment"
+        android:name="com.dzikirqu.android.ui.search.note.SearchNoteFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
