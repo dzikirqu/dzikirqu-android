@@ -5,13 +5,13 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.onboarding.OnBoardViewModel" />
+            type="com.dzikirqu.android.ui.onboarding.OnBoardViewModel" />
 
         <import type="android.view.View" />
 
-        <import type="com.wagyufari.dzikirqu.util.ResultEnum" />
+        <import type="com.dzikirqu.android.util.ResultEnum" />
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -45,6 +45,7 @@
             android:layout_margin="16dp"
             android:fontFamily="@font/regular"
             android:textColor="@color/textTertiary"
+            android:textAlignment="center"
             android:layout_gravity="center"
             android:text="DzikirQu by Mutiara Iman and the Community" />
 

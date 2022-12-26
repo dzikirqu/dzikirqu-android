@@ -61,7 +61,7 @@
                     android:layout_marginTop="4dp"
                     android:clickable="false"
                     android:fontFamily="@font/regular"
-                    android:maxLines="2"
+                    android:maxLines="1"
                     android:text="ASHYIDASUYIDASYUGDSAYDGIUAHSASDASDSADASDSADADASDASDASDSADSADSADASDASDASDASDASDASDASDASDUDIHSAIUDHS"
                     android:textColor="@color/textTertiary"
                     android:textSize="14sp" />

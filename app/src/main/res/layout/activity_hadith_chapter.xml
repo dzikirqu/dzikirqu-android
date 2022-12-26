@@ -7,9 +7,9 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.hadithchapter.HadithChapterActivityViewModel" />
+            type="com.dzikirqu.android.ui.hadithchapter.HadithChapterActivityViewModel" />
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

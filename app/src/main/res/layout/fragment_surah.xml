@@ -7,9 +7,9 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.main.quran.fragment.SurahViewModel" />
+            type="com.dzikirqu.android.ui.main.quran.fragment.SurahViewModel" />
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
         <import type="android.view.View"/>
     </data>
 

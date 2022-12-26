@@ -7,9 +7,9 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.bsd.prayerbook.PrayerBookBSDViewModel" />
+            type="com.dzikirqu.android.ui.bsd.prayerbook.PrayerBookBSDViewModel" />
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

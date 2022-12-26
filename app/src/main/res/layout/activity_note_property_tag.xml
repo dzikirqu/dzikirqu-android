@@ -4,7 +4,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.note.property.tag.NotePropertyTagViewModel" />
+            type="com.dzikirqu.android.ui.note.property.tag.NotePropertyTagViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"

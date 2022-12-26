@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wagyufari.dzikirqu">
+    package="com.dzikirqu.android">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -12,28 +12,26 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
 
     <application
-        android:name="com.wagyufari.dzikirqu.base.BaseApplication"
+        android:name="com.dzikirqu.android.base.BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
+        android:theme="@style/AppTheme">
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.khatam.KhatamActivity"
+            android:name="com.dzikirqu.android.ui.khatam.KhatamActivity"
             android:exported="false" />
 
         <activity
-            android:name=".ui.main.bookmarks.BookmarkActivity"
+            android:name="com.dzikirqu.android.ui.main.bookmarks.BookmarkActivity"
             android:exported="false" />
 
         <receiver
-            android:name="com.wagyufari.dzikirqu.util.PraytimeWidget"
+            android:name="com.dzikirqu.android.util.PraytimeWidget"
             android:exported="true"
             android:label="@string/app_widget_description_1">
             <intent-filter>
@@ -45,7 +43,7 @@
                 android:resource="@xml/praytime_info_1" />
         </receiver>
         <receiver
-            android:name="com.wagyufari.dzikirqu.util.PraytimeWidget2"
+            android:name="com.dzikirqu.android.util.PraytimeWidget2"
             android:exported="true"
             android:label="@string/app_widget_description_2">
             <intent-filter>
@@ -58,20 +56,22 @@
         </receiver>
 
         <activity
-            android:name=".ui.main.note.NoteActivity"
+            android:name="com.dzikirqu.android.ui.main.note.NoteActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Translucent" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.share.ShareImageActivity"
+            android:name="com.dzikirqu.android.ui.share.ShareImageActivity"
             android:exported="false"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.dzikirqu.android.ui.hadithchapter.HadithChapterActivity"/>
         <activity
-            android:name=".ui.main.prayer.MainPrayerActivity"
+            android:name="com.dzikirqu.android.ui.main.prayer.MainPrayerActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
-        <receiver android:name="com.wagyufari.dzikirqu.util.AutoStartReceiver">
+        <receiver android:name="com.dzikirqu.android.util.AutoStartReceiver"
+            android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
 
@@ -85,42 +85,42 @@
         </receiver>
 
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.praytime.PraytimeActivity"
+            android:name="com.dzikirqu.android.ui.praytime.PraytimeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Translucent" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.flyer.FlyerActivity"
+            android:name="com.dzikirqu.android.ui.flyer.FlyerActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.bsd.settings.SettingsActivity"
+            android:name="com.dzikirqu.android.ui.bsd.settings.SettingsActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.CrashActivity"
+            android:name="com.dzikirqu.android.ui.CrashActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.jump.JumpQuranActivity"
+            android:name="com.dzikirqu.android.ui.jump.JumpQuranActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.search.SearchActivity"
+            android:name="com.dzikirqu.android.ui.search.SearchActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.dailyreminder.DailyReminderActivity"
+            android:name="com.dzikirqu.android.ui.dailyreminder.DailyReminderActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.main.MainActivity"
+            android:name="com.dzikirqu.android.ui.main.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Translucent" /> <!-- <activity -->
         <!-- android:name=".ui.v2.main.MainV2Activity" -->
         <!-- android:screenOrientation="portrait" -->
         <!-- android:theme="@style/AppTheme" /> -->
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.SplashActivity"
+            android:name="com.dzikirqu.android.ui.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -177,51 +177,51 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.note.composer.NoteComposerActivity"
+            android:name="com.dzikirqu.android.ui.note.composer.NoteComposerActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".ui.note.detail.NoteDetailActivity"
+            android:name="com.dzikirqu.android.ui.note.detail.NoteDetailActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.note.property.location.NotePropertyLocationActivity"
+            android:name="com.dzikirqu.android.ui.note.property.location.NotePropertyLocationActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.note.property.tag.NotePropertyTagActivity"
+            android:name="com.dzikirqu.android.ui.note.property.tag.NotePropertyTagActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.note.property.presenter.NotePropertyPresenterActivity"
+            android:name="com.dzikirqu.android.ui.note.property.presenter.NotePropertyPresenterActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.note.property.folder.NotePropertyFolderActivity"
+            android:name="com.dzikirqu.android.ui.note.property.folder.NotePropertyFolderActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.hadithchapter.HadithChapterActivity"
+            android:name="com.dzikirqu.android.ui.hadithchapter.HadithChapterActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.read.ReadActivity"
+            android:name="com.dzikirqu.android.ui.read.ReadActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.quran.MainQuranActivity"
+            android:name="com.dzikirqu.android.ui.quran.MainQuranActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.onboarding.OnBoardActivity"
+            android:name="com.dzikirqu.android.ui.onboarding.OnBoardActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.wagyufari.dzikirqu.ui.onboarding.fragments.OnBoardLoadingActivity"
+            android:name="com.dzikirqu.android.ui.onboarding.fragments.OnBoardLoadingActivity"
             android:screenOrientation="portrait" />
 
-        <receiver android:name="com.wagyufari.dzikirqu.util.receiver.AdzanReceiver" />
-        <receiver android:name="com.wagyufari.dzikirqu.util.receiver.KhatamReceiver" />
-        <receiver android:name="com.wagyufari.dzikirqu.util.receiver.DailyReminderReceiver" />
+        <receiver android:name="com.dzikirqu.android.util.receiver.AdzanReceiver" />
+        <receiver android:name="com.dzikirqu.android.util.receiver.KhatamReceiver" />
+        <receiver android:name="com.dzikirqu.android.util.receiver.DailyReminderReceiver" />
 
         <service
-            android:name="com.wagyufari.dzikirqu.util.foreground.PraytimeForegroundService"
+            android:name="com.dzikirqu.android.util.foreground.PraytimeForegroundService"
             android:exported="false" />
     </application>
 

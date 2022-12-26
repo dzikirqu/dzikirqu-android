@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/notePersonalFragment"
-        android:name="com.wagyufari.dzikirqu.ui.main.note.personal.NotePersonalFragment"
+        android:name="com.dzikirqu.android.ui.main.note.personal.NotePersonalFragment"
         android:label="NotePersonalFragment">
         <action
             android:id="@+id/openFolderFromPersonal"
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/noteFolderFragment"
-        android:name="com.wagyufari.dzikirqu.ui.main.note.folder.NoteFolderFragment"
+        android:name="com.dzikirqu.android.ui.main.note.folder.NoteFolderFragment"
         android:label="NoteFolderFragment">
         <argument
             android:name="folderName"

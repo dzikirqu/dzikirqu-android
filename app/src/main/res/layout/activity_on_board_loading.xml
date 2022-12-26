@@ -5,13 +5,13 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.onboarding.fragments.viewmodels.OnBoardLoadingViewModel" />
+            type="com.dzikirqu.android.ui.onboarding.fragments.viewmodels.OnBoardLoadingViewModel" />
 
         <import type="android.view.View" />
 
-        <import type="com.wagyufari.dzikirqu.util.ResultEnum" />
+        <import type="com.dzikirqu.android.util.ResultEnum" />
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants"/>
+        <import type="com.dzikirqu.android.constants.LocaleConstants"/>
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

@@ -7,9 +7,9 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.note.composer.input.NoteInputViewModel" />
+            type="com.dzikirqu.android.ui.note.composer.input.NoteInputViewModel" />
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
 
         <import type="android.view.View" />
     </data>
@@ -60,41 +60,6 @@
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
-
-        <!--        <androidx.core.widget.NestedScrollView-->
-        <!--            android:id="@+id/scroll"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="0dp"-->
-        <!--            android:layout_marginStart="16dp"-->
-        <!--            android:layout_marginEnd="16dp"-->
-        <!--            android:isScrollContainer="true"-->
-        <!--            android:overScrollMode="never"-->
-        <!--            app:layout_constraintBottom_toTopOf="@id/formats"-->
-        <!--            app:layout_constraintTop_toTopOf="parent">-->
-
-        <!--            <LinearLayout-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:orientation="vertical">-->
-
-        <!--                <EditText-->
-        <!--                    android:id="@+id/editor"-->
-        <!--                    android:layout_width="match_parent"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:layout_marginStart="12dp"-->
-        <!--                    android:layout_marginEnd="12dp"-->
-        <!--                    android:paddingTop="32dp"-->
-        <!--                    android:background="@android:color/transparent"-->
-        <!--                    android:fontFamily="@font/regular"-->
-        <!--                    android:gravity="top"-->
-        <!--                    android:textColor="@color/textPrimary"-->
-        <!--                    android:hint="Tulis..."-->
-        <!--                    android:inputType="textMultiLine"-->
-        <!--                    android:textSize="20sp" />-->
-
-        <!--            </LinearLayout>-->
-        <!--        </androidx.core.widget.NestedScrollView>-->
-
 
         <LinearLayout
             android:id="@+id/bottomView"

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/neutral_100"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <androidx.compose.ui.platform.ComposeView
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/composeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="@font/regular"
+            android:paddingTop="32dp"
+            android:minHeight="200dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:textColor="@color/textPrimary"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

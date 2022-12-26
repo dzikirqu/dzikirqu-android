@@ -5,9 +5,9 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.note.detail.NoteDetailViewModel" />
+            type="com.dzikirqu.android.ui.note.detail.NoteDetailViewModel" />
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
 
         <import type="android.view.View" />
     </data>
@@ -28,7 +28,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/neutral_0"
-                android:elevation="4dp"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -44,6 +43,9 @@
                 android:paddingTop="32dp"
                 android:textColor="@color/textPrimary"
                 android:textSize="20sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

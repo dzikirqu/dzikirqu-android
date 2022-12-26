@@ -7,9 +7,9 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.read.prayer.ReadPrayerViewModel" />
+            type="com.dzikirqu.android.ui.read.prayer.ReadPrayerViewModel" />
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
 
         <import type="android.view.View" />
     </data>
@@ -120,63 +120,82 @@
         <!--            app:layout_constraintBottom_toBottomOf="parent"-->
         <!--            tools:text="Recite 3x" />-->
 
-        <LinearLayout
+
+        <androidx.compose.ui.platform.ComposeView
             android:id="@+id/bottomContainer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:elevation="8dp"
-            android:orientation="horizontal"
-            android:paddingStart="16dp"
-            android:paddingTop="8dp"
-            android:paddingEnd="16dp"
-            android:paddingBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent">
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"/>
 
-            <TextView
-                android:id="@+id/recite"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/circle"
-                android:backgroundTint="@color/colorPrimary"
-                android:elevation="2dp"
-                android:ellipsize="end"
-                android:fontFamily="@font/regular"
-                android:gravity="center"
-                android:maxLines="2"
-                android:padding="8dp"
-                android:textColor="@color/white"
-                android:visibility="invisible"
-                app:autoSizeMaxTextSize="20sp"
-                app:autoSizeTextType="uniform"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@id/pin"
-                tools:text="Recite 3x" />
+<!--        <LinearLayout-->
+<!--            android:id="@+id/bottomContainer"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:elevation="8dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingStart="16dp"-->
+<!--            android:paddingTop="8dp"-->
+<!--            android:paddingEnd="16dp"-->
+<!--            android:paddingBottom="8dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent">-->
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/pin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:backgroundTint="@color/neutral_0"
-                app:elevation="2dp"
-                app:fabCustomSize="48dp"
-                app:srcCompat="@drawable/ic_star"
-                app:tint="@color/colorPrimary" />
+<!--            <TextView-->
+<!--                android:id="@+id/recite"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_margin="8dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:backgroundTint="@color/colorPrimary"-->
+<!--                android:elevation="2dp"-->
+<!--                android:ellipsize="end"-->
+<!--                android:fontFamily="@font/regular"-->
+<!--                android:gravity="center"-->
+<!--                android:maxLines="2"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:visibility="invisible"-->
+<!--                app:autoSizeMaxTextSize="20sp"-->
+<!--                app:autoSizeTextType="uniform"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                app:layout_constraintRight_toLeftOf="@id/pin"-->
+<!--                tools:text="Recite 3x" />-->
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/bookmark"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:backgroundTint="@color/neutral_0"
-                app:elevation="2dp"
-                app:fabCustomSize="48dp"
-                app:srcCompat="@drawable/ic_bookmarks"
-                app:tint="@color/colorPrimary" />
-        </LinearLayout>
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/count"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:elevation="2dp"-->
+<!--                app:backgroundTint="@color/neutral_0"-->
+<!--                app:fabCustomSize="48dp"-->
+<!--                app:srcCompat="@drawable/ic_star"-->
+<!--                app:tint="@color/colorPrimary" />-->
+<!--            -->
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/pin"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:elevation="2dp"-->
+<!--                app:backgroundTint="@color/neutral_0"-->
+<!--                app:fabCustomSize="48dp"-->
+<!--                app:srcCompat="@drawable/ic_star"-->
+<!--                app:tint="@color/colorPrimary" />-->
+
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/bookmark"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:backgroundTint="@color/neutral_0"-->
+<!--                app:elevation="2dp"-->
+<!--                app:fabCustomSize="48dp"-->
+<!--                app:srcCompat="@drawable/ic_bookmarks"-->
+<!--                app:tint="@color/colorPrimary" />-->
+<!--            -->
+<!--        </LinearLayout>-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

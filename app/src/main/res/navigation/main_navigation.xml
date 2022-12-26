@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.wagyufari.dzikirqu.ui.main.home.MainHomeFragment"
+        android:name="com.dzikirqu.android.ui.main.home.MainHomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_main_home" />
     <fragment
         android:id="@+id/navigation_quran"
-        android:name="com.wagyufari.dzikirqu.ui.main.quran.MainQuranFragment"
+        android:name="com.dzikirqu.android.ui.main.quran.MainQuranFragment"
         android:label="Home"
         tools:layout="@layout/fragment_main_quran" />
     <fragment
         android:id="@+id/navigation_prayer"
-        android:name="com.wagyufari.dzikirqu.ui.main.prayer.MainPrayerFragment"
+        android:name="com.dzikirqu.android.ui.main.prayer.MainPrayerFragment"
         android:label="Home"
         tools:layout="@layout/fragment_main_prayer" />
     <fragment
         android:id="@+id/navigation_notes"
-        android:name="com.wagyufari.dzikirqu.ui.main.note.personal.NotePersonalFragment"
+        android:name="com.dzikirqu.android.ui.main.note.personal.NotePersonalFragment"
         android:label="Home"
         tools:layout="@layout/fragment_note_personal" />
 </navigation>

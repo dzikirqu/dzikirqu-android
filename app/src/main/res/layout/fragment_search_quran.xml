@@ -7,12 +7,12 @@
 
         <variable
             name="viewModel"
-            type="com.wagyufari.dzikirqu.ui.search.quran.SearchQuranViewModel" />
+            type="com.dzikirqu.android.ui.search.quran.SearchQuranViewModel" />
 
 
-        <import type="com.wagyufari.dzikirqu.util.praytimes.PrayerTimeHelper" />
+        <import type="com.dzikirqu.android.util.praytimes.PrayerTimeHelper" />
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
 
         <import type="android.view.View" />
     </data>

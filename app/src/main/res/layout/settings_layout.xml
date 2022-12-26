@@ -3,7 +3,7 @@
 
     <data>
 
-        <import type="com.wagyufari.dzikirqu.constants.LocaleConstants" />
+        <import type="com.dzikirqu.android.constants.LocaleConstants" />
     </data>
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -34,7 +34,7 @@
                 tools:text="General" />
 
 
-            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+            <com.dzikirqu.android.util.TitleSubtitleView
                 android:id="@+id/textLanguage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
                 app:title="Language"
                 app:titleTextColor="@color/textPrimary" />
 
-            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+            <com.dzikirqu.android.util.TitleSubtitleView
                 android:id="@+id/textAppTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
                 android:valueFrom="12.0"
                 android:valueTo="24.0" />
 
-            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+            <com.dzikirqu.android.util.TitleSubtitleView
                 android:id="@+id/textArabicFont"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -202,7 +202,7 @@
                 app:trackTint="@color/switch_color"
                 tools:text="Word by word translation" />
 
-            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+            <com.dzikirqu.android.util.TitleSubtitleView
                 android:id="@+id/textQuranReadMode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -234,7 +234,7 @@
                 app:locale="@{LocaleConstants.HADITH_SETTINGS}"
                 tools:text="Hadith Settings" />
 
-            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+            <com.dzikirqu.android.util.TitleSubtitleView
                 android:id="@+id/textHadithReadMode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -267,7 +267,7 @@
                 tools:text="Prayer Time" />
 
 
-            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+            <com.dzikirqu.android.util.TitleSubtitleView
                 android:id="@+id/textCalculationMethod"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -278,7 +278,7 @@
                 app:title="Calculation Method"
                 app:titleTextColor="@color/textPrimary" />
 
-            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+            <com.dzikirqu.android.util.TitleSubtitleView
                 android:id="@+id/textAsrJuristic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -289,7 +289,7 @@
                 app:title="Asr Juristic"
                 app:titleTextColor="@color/textPrimary" />
 
-            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+            <com.dzikirqu.android.util.TitleSubtitleView
                 android:id="@+id/textHigherAltitudes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -300,7 +300,7 @@
                 app:title="Adjusting Methods for Higher Latitudes"
                 app:titleTextColor="@color/textPrimary" />
 
-            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+            <com.dzikirqu.android.util.TitleSubtitleView
                 android:id="@+id/textMuadzin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -311,7 +311,7 @@
                 app:title="Muadzin"
                 app:titleTextColor="@color/textPrimary" />
 
-            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+            <com.dzikirqu.android.util.TitleSubtitleView
                 android:id="@+id/textPraytimeAdjustments"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -322,7 +322,7 @@
                 app:title="Manual Time Adjustments"
                 app:titleTextColor="@color/textPrimary" />
 
-            <com.wagyufari.dzikirqu.util.TitleSubtitleView
+            <com.dzikirqu.android.util.TitleSubtitleView
                 android:id="@+id/textAutostart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
