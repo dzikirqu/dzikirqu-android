@@ -5,6 +5,7 @@ import android.content.IntentSender
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.IntentSenderRequest
 import androidx.compose.material.ExperimentalMaterialApi
@@ -69,7 +70,12 @@ class NotePersonalFragment : BaseFragment<FragmentNotePersonalBinding, NotePerso
             scrimColor = Color.TRANSPARENT
         }
         requestGoogleLogin = getGoogleIntentSenderRequest()
+        if (Firebase.auth.currentUser == null){
+            signIn()
+        }
+    }
 
+    fun signIn() {
         oneTapClient = Identity.getSignInClient(requireActivity())
         signInRequest = BeginSignInRequest.builder()
             .setPasswordRequestOptions(BeginSignInRequest.PasswordRequestOptions.builder()
@@ -83,8 +89,19 @@ class NotePersonalFragment : BaseFragment<FragmentNotePersonalBinding, NotePerso
                     .build())
             .setAutoSelectEnabled(true)
             .build()
-
+        oneTapClient.beginSignIn(signInRequest)
+            .addOnSuccessListener(requireActivity()) { result ->
+                try {
+                    requestGoogleLogin.launch(IntentSenderRequest.Builder(result.pendingIntent.intentSender).build())
+                } catch (e: IntentSender.SendIntentException) {
+                    toast(e.localizedMessage)
+                }
+            }
+            .addOnFailureListener(requireActivity()) { e ->
+                Toast.makeText(requireActivity(), e.localizedMessage, Toast.LENGTH_SHORT).show()
+            }
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

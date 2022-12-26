@@ -39,7 +39,6 @@ import com.dzikirqu.android.model.events.SettingsEvent
 import com.dzikirqu.android.ui.main.note.personal.NotePersonalFragment
 import com.dzikirqu.android.ui.main.note.personal.NotePersonalFragment.Companion.getFolderName
 import com.dzikirqu.android.ui.main.note.personal.deletedFolderId
-import com.dzikirqu.android.ui.main.note.personal.signIn
 import com.dzikirqu.android.ui.main.note.personal.signOut
 import com.dzikirqu.android.ui.search.SearchActivity
 import com.dzikirqu.android.ui.v2.theme.lato

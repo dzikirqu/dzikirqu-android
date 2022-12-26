@@ -133,21 +133,6 @@ class NotePersonalViewModel @Inject constructor(
 
 val deletedFolderId = "196229059680-s3285vd19tkv153i8j51qj167pnpjgh4.apps.googleusercontent.com"
 
-fun NotePersonalFragment.signIn() {
-    oneTapClient.beginSignIn(signInRequest)
-        .addOnSuccessListener(requireActivity()) { result ->
-            try {
-                requestGoogleLogin.launch(IntentSenderRequest.Builder(result.pendingIntent.intentSender).build())
-            } catch (e: IntentSender.SendIntentException) {
-                toast(e.localizedMessage)
-            }
-        }
-        .addOnFailureListener(requireActivity()) { e ->
-            Toast.makeText(requireActivity(), e.localizedMessage, Toast.LENGTH_SHORT).show()
-        }
-
-}
-
 fun NotePersonalFragment.signOut() {
     if (!requireActivity().isNetworkAvailable()) toast("Please check your internet connection!")
     val progress = requireActivity().getProgressDialog("Signing out...")
